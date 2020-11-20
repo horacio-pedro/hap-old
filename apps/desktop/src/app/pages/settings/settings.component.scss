@@ -1,0 +1,54 @@
+.center-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.all-monitor_icon {
+  font-size: 50px;
+}
+
+.title-tile {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.subtitle-tile {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.menu-item-active {
+  font-weight: bolder;
+}
+
+.monitor-many {
+  position: absolute;
+  top: -9px;
+  left: 90px;
+  z-index: 0;
+}
+
+.selected {
+  color: #00d68f;
+}
+
+.centered-text {
+  margin: auto;
+}
+
+.warning-config {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: orange;
+}
+
+::ng-deep body {
+  overflow: auto !important;
+}

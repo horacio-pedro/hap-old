@@ -1,0 +1,63 @@
+<nb-card>
+	<nb-card-header class="d-flex">
+		<ngx-back-navigation></ngx-back-navigation>
+		<h5>{{ 'INTEGRATIONS.HUBSTAFF_PAGE.NAME' | translate }}</h5>
+	</nb-card-header>
+	<nb-card-body>
+		<form
+			[formGroup]="authorizeForm"
+			(ngSubmit)="authorizeHubstaff()"
+			*ngIf="!hubStaffAppCode; else clientFormVar"
+		>
+			<div class="form-group">
+				<label for="client_id" class="label">{{
+					'INTEGRATIONS.HUBSTAFF_PAGE.CLIENT_ID' | translate
+				}}</label>
+				<input
+					fullWidth
+					id="client_id"
+					formControlName="client_id"
+					type="text"
+					nbInput
+					placeholder="Hubstaff Client ID"
+				/>
+			</div>
+			<div class="hint">
+				<nb-icon icon="info-outline"></nb-icon>
+				Next you will be taken to Hubstaff to grant permission to Gauzy.
+			</div>
+			<button nbButton status="primary" [disabled]="!authorizeForm.valid">
+				next
+			</button>
+		</form>
+
+		<ng-template #clientFormVar>
+			<form [formGroup]="clientSecretForm" (ngSubmit)="addIntegration()">
+				<div class="form-group">
+					<label for="client_secret" class="label">{{
+						'INTEGRATIONS.HUBSTAFF_PAGE.CLIENT_SECRET' | translate
+					}}</label>
+					<input
+						fullWidth
+						id="client_secret"
+						formControlName="client_secret"
+						type="text"
+						nbInput
+						placeholder="Hubstaff Client Secret"
+					/>
+				</div>
+				<div class="hint">
+					<nb-icon icon="info-outline"></nb-icon>
+					Enter client secret to get access token.
+				</div>
+				<button
+					nbButton
+					status="primary"
+					[disabled]="!clientSecretForm.valid"
+				>
+					next
+				</button>
+			</form>
+		</ng-template>
+	</nb-card-body>
+</nb-card>
