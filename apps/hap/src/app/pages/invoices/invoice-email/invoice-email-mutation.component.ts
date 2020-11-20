@@ -6,7 +6,7 @@ import {
 	InvoiceTypeEnum,
 	InvoiceStatusTypesEnum,
 	IInvoiceItem
-} from '@gauzy/models';
+} from '@hap/models';
 import { TranslateService } from '@ngx-translate/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NbDialogRef, NbToastrService } from '@nebular/theme';

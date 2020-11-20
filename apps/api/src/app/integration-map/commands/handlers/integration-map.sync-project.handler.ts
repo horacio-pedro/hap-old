@@ -1,6 +1,6 @@
 import { CommandHandler, ICommandHandler, CommandBus } from '@nestjs/cqrs';
 import { IntegrationMapSyncProjectCommand } from '..';
-import { IntegrationEntity } from '@gauzy/models';
+import { IntegrationEntity } from '@hap/models';
 import { IntegrationMapService } from '../../integration-map.service';
 import { OrganizationProjectCreateCommand } from '../../../organization-projects/commands/organization-project.create.command';
 import { IntegrationMap } from '../../integration-map.entity';
@@ -25,7 +25,7 @@ export class IntegrationMapSyncProjectHandler
 		);
 
 		return await this._ims.create({
-			gauzyId: project.id,
+			hapId: project.id,
 			integrationId,
 			sourceId,
 			entity: IntegrationEntity.PROJECT

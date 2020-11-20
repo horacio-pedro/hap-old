@@ -1,4 +1,4 @@
-import { ICustomizeEmailTemplateFindInput } from '@gauzy/models';
+import { ICustomizeEmailTemplateFindInput } from '@hap/models';
 import { IQuery } from '@nestjs/cqrs';
 
 export class FindEmailTemplateQuery implements IQuery {

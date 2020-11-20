@@ -2,7 +2,7 @@ import {
 	IEmployeeCreateInput,
 	PermissionsEnum,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	Body,
 	Controller,

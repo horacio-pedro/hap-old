@@ -4,7 +4,7 @@ import { ProductVariantCreateCommand } from '../product-variant.create.command';
 import { ProductVariantService } from '../../product-variant.service';
 import { ProductVariantPriceService } from '../../../product-variant-price/product-variant-price.service';
 import { ProductVariantSettingService } from '../../../product-settings/product-settings.service';
-import { IVariantCreateInput } from '@gauzy/models';
+import { IVariantCreateInput } from '@hap/models';
 import { ProductService } from '../../../product/product.service';
 
 @CommandHandler(ProductVariantCreateCommand)

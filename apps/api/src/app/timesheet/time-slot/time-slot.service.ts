@@ -5,7 +5,7 @@ import { CrudService } from '../../core/crud/crud.service';
 import { TimeSlot } from '../time-slot.entity';
 import { moment } from '../../core/moment-extend';
 import { RequestContext } from '../../core/context/request-context';
-import { PermissionsEnum, IGetTimeSlotInput } from '@gauzy/models';
+import { PermissionsEnum, IGetTimeSlotInput } from '@hap/models';
 import { TimeSlotMinute } from '../time-slot-minute.entity';
 import { generateTimeSlots } from './utils';
 import { CommandBus } from '@nestjs/cqrs';

@@ -4,12 +4,12 @@ import * as path from 'path';
 import * as url from 'url';
 import { environment } from '../environments/environment';
 import { LocalStore } from '../libs/getSetStore';
-export function createGauzyWindow(gauzyWindow, serve) {
-	log.info('createGauzyWindow started');
+export function createHapWindow(hapWindow, serve) {
+	log.info('createHapWindow started');
 
 	let mainWindowSettings: Electron.BrowserWindowConstructorOptions = null;
 	mainWindowSettings = windowSetting();
-	gauzyWindow = new BrowserWindow(mainWindowSettings);
+	hapWindow = new BrowserWindow(mainWindowSettings);
 	let launchPath;
 
 	if (serve) {
@@ -17,9 +17,9 @@ export function createGauzyWindow(gauzyWindow, serve) {
 			electron: require(`${__dirname}/../../../../node_modules/electron`)
 		});
 
-		launchPath = `http://localhost:${environment.GAUZY_UI_DEFAULT_PORT}`;
+		launchPath = `http://localhost:${environment.HAP_UI_DEFAULT_PORT}`;
 
-		gauzyWindow.loadURL(launchPath);
+		hapWindow.loadURL(launchPath);
 	} else {
 		launchPath = url.format({
 			pathname: path.join(__dirname, '../index.html'),
@@ -27,30 +27,30 @@ export function createGauzyWindow(gauzyWindow, serve) {
 			slashes: true
 		});
 
-		gauzyWindow.loadURL(launchPath);
+		hapWindow.loadURL(launchPath);
 	}
 
 	const appConfig = LocalStore.getStore('configs');
-	if (!appConfig.gauzyWindow) {
-		gauzyWindow.hide();
+	if (!appConfig.hapWindow) {
+		hapWindow.hide();
 	}
 
 	// console.log('launched electron with:', launchPath);
-	// gauzyWindow.webContents.toggleDevTools();
+	// hapWindow.webContents.toggleDevTools();
 
-	gauzyWindow.on('close', (e) => {
+	hapWindow.on('close', (e) => {
 		// Dereference the window object, usually you would store windows
 		// in an array if your app supports multi windows, this is the time
 		// when you should delete the corresponding element.
 		e.preventDefault();
-		gauzyWindow.hide(); // gauzyWindow = null;
+		hapWindow.hide(); // hapWindow = null;
 	});
 
 	initMainListener();
 
-	log.info('createGauzyWindow completed');
+	log.info('createHapWindow completed');
 
-	return gauzyWindow;
+	return hapWindow;
 }
 
 const windowSetting = () => {
@@ -69,7 +69,7 @@ const windowSetting = () => {
 		height: sizes.height,
 		x: 0,
 		y: 0,
-		title: 'Gauzy'
+		title: 'HAP'
 	};
 	return mainWindowSettings;
 };

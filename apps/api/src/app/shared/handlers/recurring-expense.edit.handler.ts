@@ -2,7 +2,7 @@ import {
 	IRecurringExpenseEditInput,
 	IRecurringExpenseModel,
 	StartDateUpdateTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { BadRequestException } from '@nestjs/common';
 import {
 	Between,

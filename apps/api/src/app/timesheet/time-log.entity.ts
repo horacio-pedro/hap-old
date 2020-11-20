@@ -18,7 +18,7 @@ import {
 	IOrganizationProject,
 	IOrganizationContact,
 	ITimeSlot
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsBoolean, IsDateString, IsEnum } from 'class-validator';
 import { Employee } from '../employee/employee.entity';

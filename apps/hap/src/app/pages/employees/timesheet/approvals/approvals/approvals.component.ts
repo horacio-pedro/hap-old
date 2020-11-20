@@ -6,21 +6,21 @@ import {
 	ITimesheet,
 	TimesheetStatus,
 	IGetTimesheetInput
-} from '@gauzy/models';
-import { toUTC } from '@gauzy/utils';
+} from '@hap/models';
+import { toUTC } from '@hap/utils';
 import {
 	NbCheckboxComponent,
 	NbDialogRef,
 	NbMenuService
 } from '@nebular/theme';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { ToastrService } from 'apps/gauzy/src/app/@core/services/toastr.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { ToastrService } from 'apps/hap/src/app/@core/services/toastr.service';
 import { debounceTime, filter, map } from 'rxjs/operators';
 import { Subject } from 'rxjs/internal/Subject';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { Router } from '@angular/router';
-import { TimesheetService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet.service';
-import { TimesheetFilterService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet-filter.service';
+import { TimesheetService } from 'apps/hap/src/app/@shared/timesheet/timesheet.service';
+import { TimesheetFilterService } from 'apps/hap/src/app/@shared/timesheet/timesheet-filter.service';
 
 @UntilDestroy({ checkProperties: true })
 @Component({

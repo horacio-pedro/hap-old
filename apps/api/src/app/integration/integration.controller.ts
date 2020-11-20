@@ -14,7 +14,7 @@ import { IntegrationType } from './integration-type.entity';
 import { ApiResponse, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { CommandBus } from '@nestjs/cqrs';
 import { IntegrationTypeGetCommand, IntegrationGetCommand } from './commands';
-import { IntegrationEnum } from '@gauzy/models';
+import { IntegrationEnum } from '@hap/models';
 
 @ApiTags('Integrations')
 @UseGuards(AuthGuard('jwt'))

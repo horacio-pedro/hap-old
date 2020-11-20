@@ -1,4 +1,4 @@
-import { IOrganizationTeamEmployee } from '@gauzy/models';
+import { IOrganizationTeamEmployee } from '@hap/models';
 import { Entity, Column, ManyToOne, JoinColumn, RelationId } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsNotEmpty } from 'class-validator';

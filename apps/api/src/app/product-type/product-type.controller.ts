@@ -15,7 +15,7 @@ import {
 import { ProductTypeService } from './product-type.service';
 import { AuthGuard } from '@nestjs/passport';
 import { ParseJsonPipe } from '../shared/pipes/parse-json.pipe';
-import { LanguagesEnum, IProductTypeTranslatable } from '@gauzy/models';
+import { LanguagesEnum, IProductTypeTranslatable } from '@hap/models';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('ProductTypes')

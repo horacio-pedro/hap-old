@@ -6,7 +6,7 @@ import {
 	PermissionsEnum,
 	IRequestApprovalCreateInput,
 	RequestApprovalStatusTypesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	Query,
 	HttpStatus,

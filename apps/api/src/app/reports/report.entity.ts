@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsNotEmpty } from 'class-validator';
-import { IReport, IReportCategory } from '@gauzy/models';
+import { IReport, IReportCategory } from '@hap/models';
 import { ReportCategory } from './report-category.entity';
 import { Base } from '../core/entities/base';
 import { FileStorage } from '../core/file-storage';

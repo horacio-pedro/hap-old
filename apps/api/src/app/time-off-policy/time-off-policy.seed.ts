@@ -3,7 +3,7 @@ import {
 	ITimeOffPolicy as ITimeOfPolicy,
 	IOrganization,
 	IEmployee
-} from '@gauzy/models';
+} from '@hap/models';
 import { TimeOffPolicy } from './time-off-policy.entity';
 import { Tenant } from '../tenant/tenant.entity';
 import * as faker from 'faker';

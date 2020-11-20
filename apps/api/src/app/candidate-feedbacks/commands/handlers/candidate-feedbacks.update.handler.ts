@@ -3,7 +3,7 @@ import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { FeedbackUpdateCommand } from '../candidate-feedbacks.update.command';
 import { CandidateFeedbacksService } from '../../candidate-feedbacks.service';
 import { CandidateInterviewService } from '../../../candidate-interview/candidate-interview.service';
-import { ICandidateFeedback } from '@gauzy/models';
+import { ICandidateFeedback } from '@hap/models';
 
 @CommandHandler(FeedbackUpdateCommand)
 export class FeedbackUpdateHandler

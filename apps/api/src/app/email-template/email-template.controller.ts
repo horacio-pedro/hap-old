@@ -2,7 +2,7 @@ import {
 	ICustomizableEmailTemplate,
 	ICustomizeEmailTemplateFindInput,
 	IEmailTemplateSaveInput
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	Body,
 	Controller,

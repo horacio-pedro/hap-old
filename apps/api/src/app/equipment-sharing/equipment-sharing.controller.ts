@@ -13,7 +13,7 @@ import { CrudController, IPagination } from '../core';
 import { EquipmentSharing } from './equipment-sharing.entity';
 import { EquipmentSharingService } from './equipment-sharing.service';
 import { AuthGuard } from '@nestjs/passport';
-import { RequestApprovalStatusTypesEnum } from '@gauzy/models';
+import { RequestApprovalStatusTypesEnum } from '@hap/models';
 import { Post } from '@nestjs/common';
 import { CommandBus } from '@nestjs/cqrs';
 import {

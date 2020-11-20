@@ -20,7 +20,7 @@ import { ProductCreateCommand } from './commands/product.create.command';
 import { ProductUpdateCommand } from './commands/product.update.command';
 import { AuthGuard } from '@nestjs/passport';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
-import { PermissionsEnum, IProductCreateInput } from '@gauzy/models';
+import { PermissionsEnum, IProductCreateInput } from '@hap/models';
 import { Permissions } from '../shared/decorators/permissions';
 import { ProductDeleteCommand } from './commands';
 import { DeleteResult } from 'typeorm';

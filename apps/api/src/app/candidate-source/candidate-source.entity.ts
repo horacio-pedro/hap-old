@@ -1,5 +1,5 @@
 import { Column, Entity } from 'typeorm';
-import { ICandidateSource } from '@gauzy/models';
+import { ICandidateSource } from '@hap/models';
 import { IsString, IsNotEmpty } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

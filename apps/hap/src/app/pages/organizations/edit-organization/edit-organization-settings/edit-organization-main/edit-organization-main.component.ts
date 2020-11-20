@@ -1,13 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CurrenciesEnum, IOrganization, ITag } from '@gauzy/models';
+import { CurrenciesEnum, IOrganization, ITag } from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
-import { OrganizationEditStore } from 'apps/gauzy/src/app/@core/services/organization-edit-store.service';
+import { OrganizationEditStore } from 'apps/hap/src/app/@core/services/organization-edit-store.service';
 import { Subject } from 'rxjs';
 import { first, takeUntil } from 'rxjs/operators';
 import { EmployeesService } from '../../../../../@core/services';
 import { OrganizationsService } from '../../../../../@core/services/organizations.service';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

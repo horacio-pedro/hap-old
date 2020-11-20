@@ -8,8 +8,8 @@ import {
 	ICandidateFeedback,
 	ICandidateTechnologies,
 	ICandidatePersonalQualities
-} from '@gauzy/models';
-import { CandidateFeedbacksService } from 'apps/gauzy/src/app/@core/services/candidate-feedbacks.service';
+} from '@hap/models';
+import { CandidateFeedbacksService } from 'apps/hap/src/app/@core/services/candidate-feedbacks.service';
 
 @Component({
 	selector: 'ga-average-criterions-rating-chart',

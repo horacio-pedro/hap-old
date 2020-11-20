@@ -7,7 +7,7 @@ import {
 	IOrganization,
 	IBasePerTenantAndOrganizationEntityModel,
 	ITenant
-} from '@gauzy/models';
+} from '@hap/models';
 import { Base } from './base';
 import { Tenant } from '../../tenant/tenant.entity';
 

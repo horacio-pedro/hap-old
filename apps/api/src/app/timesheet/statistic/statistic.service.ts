@@ -18,7 +18,7 @@ import {
 	IGetManualTimesStatistics,
 	IManualTimesStatistics,
 	TimeLogType
-} from '@gauzy/models';
+} from '@hap/models';
 import { TimeSlot } from '../time-slot.entity';
 import { Employee } from '../../employee/employee.entity';
 import { RequestContext } from '../../core/context';

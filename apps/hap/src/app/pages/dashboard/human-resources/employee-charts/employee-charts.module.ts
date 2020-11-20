@@ -4,7 +4,7 @@ import { NbIconModule, NbSelectModule } from '@nebular/theme';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ChartModule } from 'angular2-chartjs';
-import { ThemeModule } from 'apps/gauzy/src/app/@theme/theme.module';
+import { ThemeModule } from 'apps/hap/src/app/@theme/theme.module';
 import { EmployeeChartsComponent } from './employee-charts.component';
 import { EmployeeDoughnutChartComponent } from './employee-doughnut-chart/employee-doughnut-chart.component';
 import { EmployeeHorizontalBarChartComponent } from './employee-horizontal-bar-chart/employee-horizontal-bar-chart.component';

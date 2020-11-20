@@ -1,6 +1,6 @@
 import { Entity, Column, ManyToOne, OneToMany, JoinTable } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
-import { IHelpCenter, IHelpCenterArticle } from '@gauzy/models';
+import { IHelpCenter, IHelpCenterArticle } from '@hap/models';
 import { HelpCenterArticle } from '../help-center-article/help-center-article.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 

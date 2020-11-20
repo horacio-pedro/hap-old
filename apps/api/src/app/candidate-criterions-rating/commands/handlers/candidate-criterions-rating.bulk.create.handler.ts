@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { CandidateCriterionsRatingBulkCreateCommand } from '../candidate-criterions-rating.bulk.create.command';
 import { CandidateCriterionsRatingService } from '../../candidate-criterion-rating.service';
-import { ICandidateCriterionsRatingCreateInput } from '@gauzy/models';
+import { ICandidateCriterionsRatingCreateInput } from '@hap/models';
 
 @CommandHandler(CandidateCriterionsRatingBulkCreateCommand)
 export class CandidateCriterionsRatingBulkCreateHandler

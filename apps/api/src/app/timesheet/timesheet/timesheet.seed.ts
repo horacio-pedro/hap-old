@@ -4,7 +4,7 @@ import {
 	TimesheetStatus,
 	IOrganizationProject,
 	ITimeSlot
-} from '@gauzy/models';
+} from '@hap/models';
 import { Timesheet } from '../timesheet.entity';
 import { Employee } from '../../employee/employee.entity';
 import * as moment from 'moment';

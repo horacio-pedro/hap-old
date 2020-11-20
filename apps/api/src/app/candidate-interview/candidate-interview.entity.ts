@@ -9,7 +9,7 @@ import {
 	ICandidateTechnologies,
 	ICandidatePersonalQualities,
 	ICandidate
-} from '@gauzy/models';
+} from '@hap/models';
 import { CandidateInterviewers } from '../candidate-interviewers/candidate-interviewers.entity';
 import { CandidateFeedback } from '../candidate-feedbacks/candidate-feedbacks.entity';
 import { Candidate } from '../candidate/candidate.entity';

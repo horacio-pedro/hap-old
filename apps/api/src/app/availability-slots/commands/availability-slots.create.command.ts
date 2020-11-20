@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IAvailabilitySlotsCreateInput } from '@gauzy/models';
+import { IAvailabilitySlotsCreateInput } from '@hap/models';
 
 export class AvailabilitySlotsCreateCommand implements ICommand {
 	static readonly type = '[AvailabilitySlots] Create';

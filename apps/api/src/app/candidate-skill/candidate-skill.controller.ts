@@ -17,7 +17,7 @@ import { IPagination } from '../core';
 import { AuthGuard } from '@nestjs/passport';
 import { RoleGuard } from '../shared/guards/auth/role.guard';
 import { Roles } from '../shared/decorators/roles';
-import { RolesEnum } from '@gauzy/models';
+import { RolesEnum } from '@hap/models';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('CandidateSkill')

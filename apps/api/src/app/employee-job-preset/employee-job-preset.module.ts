@@ -1,4 +1,4 @@
-import { GauzyAIService } from '@gauzy/integration-ai';
+import { HapAIService } from '@hap/integration-ai';
 import { Module } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -42,7 +42,7 @@ import { JobSearchPresetController } from './job-search-preset.controller';
 		JobPresetService,
 		JobSearchCategoryService,
 		JobSearchOccupationService,
-		GauzyAIService
+		HapAIService
 	],
 	exports: [
 		JobPresetService,

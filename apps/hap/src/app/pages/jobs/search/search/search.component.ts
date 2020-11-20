@@ -7,21 +7,21 @@ import {
 	JobPostSourceEnum,
 	JobPostStatusEnum,
 	JobPostTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { TranslateService } from '@ngx-translate/core';
-import { JobService } from 'apps/gauzy/src/app/@core/services/job.service';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { ToastrService } from 'apps/gauzy/src/app/@core/services/toastr.service';
-import { AvatarComponent } from 'apps/gauzy/src/app/@shared/components/avatar/avatar.component';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { JobService } from 'apps/hap/src/app/@core/services/job.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { ToastrService } from 'apps/hap/src/app/@core/services/toastr.service';
+import { AvatarComponent } from 'apps/hap/src/app/@shared/components/avatar/avatar.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { Ng2SmartTableComponent, ServerDataSource } from 'ng2-smart-table';
 import {
 	Nl2BrPipe,
 	TruncatePipe
-} from 'apps/gauzy/src/app/@shared/pipes/text.pipe';
-import { StatusBadgeComponent } from 'apps/gauzy/src/app/@shared/status-badge/status-badge.component';
-import { SelectedEmployee } from 'apps/gauzy/src/app/@theme/components/header/selectors/employee/employee.component';
+} from 'apps/hap/src/app/@shared/pipes/text.pipe';
+import { StatusBadgeComponent } from 'apps/hap/src/app/@shared/status-badge/status-badge.component';
+import { SelectedEmployee } from 'apps/hap/src/app/@theme/components/header/selectors/employee/employee.component';
 import * as moment from 'moment';
 import { Subject, Subscription, timer } from 'rxjs';
 import { debounceTime, filter, tap } from 'rxjs/operators';

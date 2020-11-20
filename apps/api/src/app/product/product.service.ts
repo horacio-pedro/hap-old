@@ -3,7 +3,7 @@ import { IPagination } from '../core';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Product } from './product.entity';
-import { IProductCreateInput, IProductFindInput } from '@gauzy/models';
+import { IProductCreateInput, IProductFindInput } from '@hap/models';
 import { TenantAwareCrudService } from '../core/crud/tenant-aware-crud.service';
 
 @Injectable()

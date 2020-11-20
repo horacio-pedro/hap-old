@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IEmployeeCreateInput, LanguagesEnum } from '@gauzy/models';
+import { IEmployeeCreateInput, LanguagesEnum } from '@hap/models';
 
 export class EmployeeCreateCommand implements ICommand {
 	static readonly type = '[Employee] Register';

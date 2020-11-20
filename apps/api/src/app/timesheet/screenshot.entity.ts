@@ -6,7 +6,7 @@ import {
 	JoinColumn,
 	AfterLoad
 } from 'typeorm';
-import { IScreenshot, ITimeSlot } from '@gauzy/models';
+import { IScreenshot, ITimeSlot } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsOptional, IsNumber, IsDateString } from 'class-validator';
 import { TimeSlot } from './time-slot.entity';

@@ -3,7 +3,7 @@ import { EmployeeAppointment } from './employee-appointment.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, FindManyOptions } from 'typeorm';
 import { Injectable } from '@nestjs/common';
-import { IEmployeeAppointmentCreateInput } from '@gauzy/models';
+import { IEmployeeAppointmentCreateInput } from '@hap/models';
 import { environment as env } from '@env-api/environment';
 import { sign, decode } from 'jsonwebtoken';
 

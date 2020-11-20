@@ -1,4 +1,4 @@
-import { ICandidate, IOrganizationEmploymentType } from '@gauzy/models';
+import { ICandidate, IOrganizationEmploymentType } from '@hap/models';
 import { Column, Entity, JoinTable, ManyToMany } from 'typeorm';
 import { Employee } from '../employee/employee.entity';
 import { Tag } from '../tags/tag.entity';

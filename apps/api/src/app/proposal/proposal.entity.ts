@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsNotEmpty, IsString, IsOptional, IsDate } from 'class-validator';
-import { IProposal, IEmployee, ITag } from '@gauzy/models';
+import { IProposal, IEmployee, ITag } from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { Tag } from '../tags/tag.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

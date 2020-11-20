@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IActivity } from '@gauzy/models';
+import { IActivity } from '@hap/models';
 
 export class ActivityCreateCommand implements ICommand {
 	static readonly type = '[Activity] Create Activity';

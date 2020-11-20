@@ -1,4 +1,4 @@
-import { IOrganization, IOrganizationUpdateInput } from '@gauzy/models';
+import { IOrganization, IOrganizationUpdateInput } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { OrganizationService } from '../../organization.service';
 import { OrganizationUpdateCommand } from '../organization.update.command';
@@ -12,9 +12,9 @@ export class OrganizationUpdateHandler
 		command: OrganizationUpdateCommand
 	): Promise<IOrganization> {
 		const { input } = command;
-		const { gauzyId } = input;
+		const { hapId } = input;
 
-		return this.updateOrganization(gauzyId, input);
+		return this.updateOrganization(hapId, input);
 	}
 
 	private async updateOrganization(
@@ -25,7 +25,7 @@ export class OrganizationUpdateHandler
 			id
 		);
 		if (organization) {
-			delete input.gauzyId;
+			delete input.hapId;
 
 			const request = {
 				...input,

@@ -4,7 +4,7 @@ import { Repository, FindManyOptions } from 'typeorm';
 import { AvailabilitySlot } from './availability-slots.entity';
 import { CrudService } from '../core/crud/crud.service';
 import { IPagination } from '../core';
-import { IAvailabilitySlotsCreateInput } from '@gauzy/models';
+import { IAvailabilitySlotsCreateInput } from '@hap/models';
 
 @Injectable()
 export class AvailabilitySlotsService extends CrudService<AvailabilitySlot> {

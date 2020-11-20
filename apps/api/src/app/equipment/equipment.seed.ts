@@ -2,7 +2,7 @@ import { Connection } from 'typeorm';
 import { Equipment } from './equipment.entity';
 import * as faker from 'faker';
 import { Tag } from '../tags/tag.entity';
-import { CurrenciesEnum, IOrganization } from '@gauzy/models';
+import { CurrenciesEnum, IOrganization } from '@hap/models';
 import { Tenant } from '../tenant/tenant.entity';
 import { Organization } from '../organization/organization.entity';
 

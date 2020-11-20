@@ -1,6 +1,6 @@
 import { Entity, Column } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
-import { IHelpCenterAuthor } from '@gauzy/models';
+import { IHelpCenterAuthor } from '@hap/models';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 
 @Entity('knowledge_base_author')

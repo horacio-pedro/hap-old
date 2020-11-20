@@ -1,7 +1,7 @@
 import {
 	LanguagesEnum,
 	IOrganizationContactAcceptInviteInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { ICommand } from '@nestjs/cqrs';
 
 export class InviteAcceptOrganizationContactCommand implements ICommand {

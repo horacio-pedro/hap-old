@@ -3,10 +3,10 @@ import { Subject } from 'rxjs';
 import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { CandidatePersonalQualitiesService } from 'apps/gauzy/src/app/@core/services/candidate-personal-qualities.service';
-import { ICandidatePersonalQualities, IOrganization } from '@gauzy/models';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { CandidatePersonalQualitiesService } from 'apps/hap/src/app/@core/services/candidate-personal-qualities.service';
+import { ICandidatePersonalQualities, IOrganization } from '@hap/models';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({

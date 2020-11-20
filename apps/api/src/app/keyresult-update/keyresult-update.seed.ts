@@ -7,7 +7,7 @@ import {
 	KeyResultUpdateStatusEnum,
 	KeyResultTypeEnum,
 	KeyResultDeadlineEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import * as moment from 'moment';
 import { GoalTimeFrame } from '../goal-time-frame/goal-time-frame.entity';
 import { Organization } from '../organization/organization.entity';

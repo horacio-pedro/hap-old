@@ -1,4 +1,4 @@
-import { ITask, ITaskUpdateInput } from '@gauzy/models';
+import { ITask, ITaskUpdateInput } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { TaskService } from '../../task.service';
 import { TaskUpdateCommand } from '../task-update.command';

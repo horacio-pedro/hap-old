@@ -26,12 +26,12 @@ import { UUIDValidationPipe, ParseJsonPipe } from '../shared';
 import { User } from './user.entity';
 import { UserService } from './user.service';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { Permissions } from '../shared/decorators/permissions';
 import { RequestContext } from '../core/context';
 import { CommandBus } from '@nestjs/cqrs';
 import { UserCreateCommand } from './commands';
-import { IUserCreateInput, IUserUpdateInput } from '@gauzy/models';
+import { IUserCreateInput, IUserUpdateInput } from '@hap/models';
 import { AuthGuard } from '@nestjs/passport';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 

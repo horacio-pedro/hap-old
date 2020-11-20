@@ -20,7 +20,7 @@ import {
 	IProduct,
 	IExpense,
 	ExpenseTypesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { filter, first } from 'rxjs/operators';
 import { OrganizationsService } from '../../../@core/services/organizations.service';
 import { OrganizationContactService } from '../../../@core/services/organization-contact.service';

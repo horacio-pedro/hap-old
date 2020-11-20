@@ -10,7 +10,7 @@ import {
 	CurrenciesEnum,
 	KeyResultNumberUnitsEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogRef } from '@nebular/theme';
 import { KeyResultService } from '../../../@core/services/keyresult.service';
 import { Subject } from 'rxjs';

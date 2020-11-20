@@ -2,7 +2,7 @@ require('dotenv').config();
 import * as path from 'path';
 import { IEnvironment } from './ienvironment';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { FileStorageProviderEnum } from '@gauzy/models';
+import { FileStorageProviderEnum } from '@hap/models';
 
 const dbType =
 	process.env.DB_TYPE && process.env.DB_TYPE === 'sqlite'
@@ -10,8 +10,8 @@ const dbType =
 		: 'postgres';
 
 let databaseConfig: TypeOrmModuleOptions;
-if (process.env.IS_ELECTRON && process.env.GAUZY_USER_PATH) {
-	require('app-root-path').setPath(process.env.GAUZY_USER_PATH);
+if (process.env.IS_ELECTRON && process.env.HAP_USER_PATH) {
+	require('app-root-path').setPath(process.env.HAP_USER_PATH);
 }
 
 switch (dbType) {
@@ -38,7 +38,7 @@ switch (dbType) {
 			type: dbType,
 			database:
 				process.env.DB_PATH ||
-				path.join(__dirname, '../../data/gauzy.sqlite3'),
+				path.join(__dirname, '../../data/hap.sqlite3'),
 			keepConnectionAlive: true,
 			logging: true,
 			logger: 'file', //Removes console logging, instead logs all queries in a file ormlogs.log
@@ -61,7 +61,7 @@ export const environment: IEnvironment = {
 		LOG_LEVEL: 'debug'
 	},
 
-	EXPRESS_SESSION_SECRET: 'gauzy',
+	EXPRESS_SESSION_SECRET: 'hap',
 	USER_PASSWORD_BCRYPT_SALT_ROUNDS: 12,
 	JWT_SECRET: 'secretKey',
 
@@ -153,12 +153,12 @@ export const environment: IEnvironment = {
 	},
 
 	isElectron: process.env.IS_ELECTRON === 'true' ? true : false,
-	gauzyUserPath: process.env.GAUZY_USER_PATH,
+	hapUserPath: process.env.HAP_USER_PATH,
 	allowSuperAdminRole:
 		process.env.AllowSuperAdminRole === 'false' ? false : true,
 
 	/**
-	 * Endpoint for Gauzy AI API (optional), e.g.: http://localhost:3005/graphql
+	 * Endpoint for hap AI API (optional), e.g.: http://localhost:3005/graphql
 	 */
-	gauzyAIGraphQLEndpoint: process.env.GAUZY_AI_GRAPHQL_ENDPOINT
+	hapAIGraphQLEndpoint: process.env.HAP_AI_GRAPHQL_ENDPOINT
 };

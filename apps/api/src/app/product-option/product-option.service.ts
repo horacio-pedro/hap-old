@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { CrudService } from '../core';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { IProductOption } from '@gauzy/models';
+import { IProductOption } from '@hap/models';
 import { ProductOption } from './product-option.entity';
 
 @Injectable()

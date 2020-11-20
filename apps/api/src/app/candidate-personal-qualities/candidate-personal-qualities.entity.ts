@@ -3,7 +3,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import {
 	ICandidatePersonalQualities,
 	ICandidateInterview
-} from '@gauzy/models';
+} from '@hap/models';
 import { CandidateInterview } from '../candidate-interview/candidate-interview.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 

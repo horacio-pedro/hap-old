@@ -3,7 +3,7 @@ import {
 	IEmployeeStatisticSum,
 	IMonthAggregatedSplitExpense,
 	IStatisticSum
-} from '@gauzy/models';
+} from '@hap/models';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { startOfMonth, subMonths } from 'date-fns';
 import { RequestContext } from '../../../core/context';

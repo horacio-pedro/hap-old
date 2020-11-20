@@ -16,7 +16,7 @@ import {
 import { AuthGuard } from '@nestjs/passport';
 import { Payment } from './payment.entity';
 import { PaymentService } from './payment.service';
-import { IPayment, PermissionsEnum } from '@gauzy/models';
+import { IPayment, PermissionsEnum } from '@hap/models';
 import { ParseJsonPipe } from '../shared';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
 import { Permissions } from '../shared/decorators/permissions';

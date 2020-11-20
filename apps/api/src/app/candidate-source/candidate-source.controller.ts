@@ -14,7 +14,7 @@ import { CrudController } from '../core/crud/crud.controller';
 import { CandidateSourceService } from './candidate-source.service';
 import { AuthGuard } from '@nestjs/passport';
 import { IPagination } from '../core';
-import { ICandidateSource } from '@gauzy/models';
+import { ICandidateSource } from '@hap/models';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('CandidateSource')

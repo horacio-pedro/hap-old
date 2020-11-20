@@ -1,5 +1,5 @@
 import { Connection } from 'typeorm';
-import { IOrganization, JobPostSourceEnum } from '@gauzy/models';
+import { IOrganization, JobPostSourceEnum } from '@hap/models';
 import { Tenant } from '../../tenant/tenant.entity';
 import { JobSearchOccupation } from './job-search-occupation.entity';
 

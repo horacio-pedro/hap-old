@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IEmployeeAppointmentUpdateInput } from '@gauzy/models';
+import { IEmployeeAppointmentUpdateInput } from '@hap/models';
 
 export class EmployeeAppointmentUpdateCommand implements ICommand {
 	static readonly type = '[EmployeeAppointment] Update';

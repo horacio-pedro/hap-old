@@ -1,6 +1,6 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
 import { FileStorage } from './file-storage';
-import { FileStorageProviderEnum, UploadedFile } from '@gauzy/models';
+import { FileStorageProviderEnum, UploadedFile } from '@hap/models';
 
 export const UploadedFileStorage = createParamDecorator(
 	(data: FileStorageProviderEnum, ctx: ExecutionContext): UploadedFile => {

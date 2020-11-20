@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NbDialogRef } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import * as timezone from 'moment-timezone';
 
 export interface EmployeeSchedule {

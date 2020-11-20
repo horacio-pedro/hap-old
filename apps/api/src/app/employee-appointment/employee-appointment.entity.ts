@@ -1,4 +1,4 @@
-import { IEmployeeAppointment } from '@gauzy/models';
+import { IEmployeeAppointment } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import {
 	IsNotEmpty,

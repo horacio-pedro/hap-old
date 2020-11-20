@@ -1,5 +1,5 @@
 import { Entity, Column, ManyToOne, JoinColumn } from 'typeorm';
-import { IProductOption } from '@gauzy/models';
+import { IProductOption } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString } from 'class-validator';
 import { Product } from '../product/product.entity';

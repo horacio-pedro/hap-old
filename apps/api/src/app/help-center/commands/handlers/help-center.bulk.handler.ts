@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { HelpCenter } from '../../help-center.entity';
 import { HelpCenterService } from '../../help-center.service';
-import { IHelpCenter } from '@gauzy/models';
+import { IHelpCenter } from '@hap/models';
 import { HelpCenterUpdateCommand } from '../help-center.bulk.command';
 
 @CommandHandler(HelpCenterUpdateCommand)

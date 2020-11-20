@@ -6,7 +6,7 @@ import { RequestContext } from '../../../core/context';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Employee } from '../../../employee/employee.entity';
 import { Repository } from 'typeorm';
-import { RolesEnum } from '@gauzy/models';
+import { RolesEnum } from '@hap/models';
 
 @Injectable()
 export class OrganizationPermissionGuard implements CanActivate {

@@ -1,4 +1,4 @@
-import { ExpenseCategoriesEnum, IOrganization } from '@gauzy/models';
+import { ExpenseCategoriesEnum, IOrganization } from '@hap/models';
 import { Connection } from 'typeorm';
 import { ExpenseCategory } from './expense-category.entity';
 import { Tenant } from '../tenant/tenant.entity';

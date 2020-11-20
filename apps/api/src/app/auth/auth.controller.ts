@@ -16,7 +16,7 @@ import { User as IUser } from '../user/user.entity';
 import { CommandBus } from '@nestjs/cqrs';
 import { AuthRegisterCommand } from './commands';
 import { RequestContext } from '../core/context';
-import { IUserRegistrationInput, LanguagesEnum } from '@gauzy/models';
+import { IUserRegistrationInput, LanguagesEnum } from '@hap/models';
 import { getUserDummyImage } from '../core';
 import { environment as env } from '@env-api/environment';
 import { AuthGuard } from '@nestjs/passport';

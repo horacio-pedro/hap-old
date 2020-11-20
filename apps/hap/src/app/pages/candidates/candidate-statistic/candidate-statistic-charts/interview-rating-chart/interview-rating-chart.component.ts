@@ -2,9 +2,9 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { ICandidate, ICandidateInterview, IEmployee } from '@gauzy/models';
-import { CandidateInterviewService } from 'apps/gauzy/src/app/@core/services/candidate-interview.service';
-import { CandidateFeedbacksService } from 'apps/gauzy/src/app/@core/services/candidate-feedbacks.service';
+import { ICandidate, ICandidateInterview, IEmployee } from '@hap/models';
+import { CandidateInterviewService } from 'apps/hap/src/app/@core/services/candidate-interview.service';
+import { CandidateFeedbacksService } from 'apps/hap/src/app/@core/services/candidate-feedbacks.service';
 
 @Component({
 	selector: 'ga-interview-rating-chart',

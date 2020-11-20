@@ -3,7 +3,7 @@ import {
 	IRolePermission as IRolePermissions,
 	RolesEnum,
 	ITenant
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsEnum, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 import {

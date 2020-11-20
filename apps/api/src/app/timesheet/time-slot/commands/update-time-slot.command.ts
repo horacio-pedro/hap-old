@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { ITimeSlot } from '@gauzy/models';
+import { ITimeSlot } from '@hap/models';
 
 export class UpdateTimeSlotCommand implements ICommand {
 	static readonly type = '[TimeSlot] update';

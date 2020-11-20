@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { IntegrationSettingGetManyCommand } from '..';
 import { IntegrationSettingService } from '../../integration-setting.service';
-import { IIntegrationSetting } from '@gauzy/models';
+import { IIntegrationSetting } from '@hap/models';
 import { RequestContext } from '../../../core/context';
 
 @CommandHandler(IntegrationSettingGetManyCommand)

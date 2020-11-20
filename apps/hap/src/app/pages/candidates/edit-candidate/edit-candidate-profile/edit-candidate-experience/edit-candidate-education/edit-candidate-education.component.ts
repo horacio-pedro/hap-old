@@ -1,21 +1,21 @@
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 import { NbToastrService } from '@nebular/theme';
-import { CandidateEducationsService } from 'apps/gauzy/src/app/@core/services/candidate-educations.service';
+import { CandidateEducationsService } from 'apps/hap/src/app/@core/services/candidate-educations.service';
 import {
 	ICandidateEducation,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { LocalDataSource } from 'ng2-smart-table';
-import { ComponentEnum } from 'apps/gauzy/src/app/@core/constants/layout.constants';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { DateViewComponent } from 'apps/gauzy/src/app/@shared/table-components/date-view/date-view.component';
+import { ComponentEnum } from 'apps/hap/src/app/@core/constants/layout.constants';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { DateViewComponent } from 'apps/hap/src/app/@shared/table-components/date-view/date-view.component';
 
 @Component({
 	selector: 'ga-edit-candidate-education',

@@ -6,7 +6,7 @@ import {
 	ComponentLayoutStyleEnum,
 	IOrganization,
 	IEventTypeViewModel
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	ActivatedRoute,
 	Router,

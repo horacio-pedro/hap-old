@@ -5,7 +5,7 @@ import {
 	IEmployeeRecurringExpense,
 	IOrganization,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
 import { first, takeUntil } from 'rxjs/operators';

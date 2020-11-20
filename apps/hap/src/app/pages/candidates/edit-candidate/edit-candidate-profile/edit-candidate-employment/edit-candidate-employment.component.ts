@@ -8,7 +8,7 @@ import {
 	ITag,
 	ICandidate,
 	IEmployeeLevel
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { OrganizationDepartmentsService } from '../../../../../@core/services/organization-departments.service';
 import { OrganizationEmploymentTypesService } from '../../../../../@core/services/organization-employment-types.service';

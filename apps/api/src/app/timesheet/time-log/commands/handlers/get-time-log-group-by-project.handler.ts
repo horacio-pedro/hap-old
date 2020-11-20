@@ -1,7 +1,7 @@
 import { ICommandHandler, CommandHandler } from '@nestjs/cqrs';
 import { chain } from 'underscore';
 import * as moment from 'moment';
-import { IReportDayGroupByProject, ITimeLog, ITimeSlot } from '@gauzy/models';
+import { IReportDayGroupByProject, ITimeLog, ITimeSlot } from '@hap/models';
 import { GetTimeLogGroupByProjectCommand } from '../get-time-log-group-by-project.command';
 
 @CommandHandler(GetTimeLogGroupByProjectCommand)

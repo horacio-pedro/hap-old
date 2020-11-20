@@ -6,14 +6,14 @@ import { WakatimeModule } from './wakatime/wakatime.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Wakatime } from './wakatime/wakatime.entity';
 
-require('app-root-path').setPath(process.env.GAUZY_USER_PATH);
+require('app-root-path').setPath(process.env.HAP_USER_PATH);
 
 @Module({
 	imports: [
 		TypeOrmModule.forRoot({
 			type: 'sqlite',
-			database: process.env.GAUZY_USER_PATH
-				? `${process.env.GAUZY_USER_PATH}/gauzy.sqlite3`
+			database: process.env.HAP_USER_PATH
+				? `${process.env.HAP_USER_PATH}/hap.sqlite3`
 				: '',
 			keepConnectionAlive: true,
 			logging: true,

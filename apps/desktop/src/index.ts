@@ -21,7 +21,7 @@ log.catchErrors({
 			})
 			.then((result) => {
 				if (result.response === 1) {
-					submitIssue('https://github.com/ever-co/gauzy/issues/new', {
+					submitIssue('https://github.com/conexoesinfinito/hap/issues/new', {
 						title: `Automatic error report for Desktop App ${versions.app}`,
 						body:
 							'Error:\n```' +
@@ -48,18 +48,18 @@ import TrayIcon from './libs/tray-icon';
 import AppMenu from './libs/menu';
 import DataModel from './local-data/local-table';
 import { LocalStore } from './libs/getSetStore';
-import { createGauzyWindow } from './window/gauzy';
+import { createhapWindow } from './window/hap';
 import { createSetupWindow } from './window/setup';
 import { createTimeTrackerWindow } from './window/timeTracker';
 import { createSettingsWindow } from './window/settings';
 import { fork } from 'child_process';
 
 // the folder where all app data will be stored (e.g. sqlite DB, settings, cache, etc)
-// C:\Users\USERNAME\AppData\Roaming\gauzy-desktop
-process.env.GAUZY_USER_PATH = app.getPath('userData');
-log.info(`GAUZY_USER_PATH: ${process.env.GAUZY_USER_PATH}`);
+// C:\Users\USERNAME\AppData\Roaming\hap-desktop
+process.env.hap_USER_PATH = app.getPath('userData');
+log.info(`hap_USER_PATH: ${process.env.hap_USER_PATH}`);
 
-const sqlite3filename = `${process.env.GAUZY_USER_PATH}/gauzy.sqlite3`;
+const sqlite3filename = `${process.env.hap_USER_PATH}/hap.sqlite3`;
 log.info(`Sqlite DB path: ${sqlite3filename}`);
 
 const knex = require('knex')({
@@ -78,10 +78,10 @@ let serve: boolean;
 const args = process.argv.slice(1);
 serve = args.some((val) => val === '--serve');
 
-let gauzyWindow: BrowserWindow = null;
+let hapWindow: BrowserWindow = null;
 let setupWindow: BrowserWindow = null;
 let timeTrackerWindow: BrowserWindow = null;
-let NotificationWindow: BrowserWindow = null;
+const NotificationWindow: BrowserWindow = null;
 let settingsWindow: BrowserWindow = null;
 
 let tray = null;
@@ -89,8 +89,8 @@ let appMenu = null;
 let isAlreadyRun = false;
 let willQuit = false;
 let onWaitingServer = false;
-let alreadyQuit = false;
-let serverGauzy = null;
+const alreadyQuit = false;
+let serverhap = null;
 let serverDesktop = null;
 let dialogErr = false;
 
@@ -114,10 +114,10 @@ function startServer(value, restart = false) {
 			value.port || environment.API_DEFAULT_PORT
 		}`;
 		// require(path.join(__dirname, 'api/main.js'));
-		serverGauzy = fork(path.join(__dirname, 'api/main.js'), {
+		serverhap = fork(path.join(__dirname, 'api/main.js'), {
 			silent: true
 		});
-		serverGauzy.stdout.on('data', (data) => {
+		serverhap.stdout.on('data', (data) => {
 			const msgData = data.toString();
 			if (
 				msgData.indexOf('Unable to connect to the database') > -1 &&
@@ -242,8 +242,8 @@ ipcMain.on('server_is_ready', () => {
 			setupWindow.hide();
 			if (!settingsWindow)
 				settingsWindow = createSettingsWindow(settingsWindow);
-			if (!gauzyWindow)
-				gauzyWindow = createGauzyWindow(gauzyWindow, serve);
+			if (!hapWindow)
+				hapWindow = createhapWindow(hapWindow, serve);
 
 			ipcTimer(
 				store,
@@ -283,26 +283,26 @@ ipcMain.on('server_is_ready', () => {
 ipcMain.on('quit', quit);
 
 ipcMain.on('minimize', () => {
-	gauzyWindow.minimize();
+	hapWindow.minimize();
 });
 
 ipcMain.on('maximize', () => {
-	gauzyWindow.maximize();
+	hapWindow.maximize();
 });
 
 ipcMain.on('restore', () => {
-	gauzyWindow.restore();
+	hapWindow.restore();
 });
 
 ipcMain.on('restart_app', (event, arg) => {
 	dialogErr = false;
 	LocalStore.updateConfigSetting(arg);
-	if (serverGauzy) serverGauzy.kill();
-	if (gauzyWindow) gauzyWindow.destroy();
-	gauzyWindow = null;
+	if (serverhap) serverhap.kill();
+	if (hapWindow) hapWindow.destroy();
+	hapWindow = null;
 	isAlreadyRun = false;
 	setTimeout(() => {
-		if (!gauzyWindow) {
+		if (!hapWindow) {
 			const configs = LocalStore.getStore('configs');
 			global.variableGlobal = {
 				API_BASE_URL: getApiBaseUrl(configs)
@@ -316,8 +316,8 @@ ipcMain.on('restart_app', (event, arg) => {
 });
 
 ipcMain.on('server_already_start', () => {
-	if (!gauzyWindow && !isAlreadyRun) {
-		gauzyWindow = createGauzyWindow(gauzyWindow, serve);
+	if (!hapWindow && !isAlreadyRun) {
+		hapWindow = createhapWindow(hapWindow, serve);
 		isAlreadyRun = true;
 	}
 });
@@ -326,9 +326,9 @@ ipcMain.on('open_browser', (event, arg) => {
 	shell.openExternal(arg.url);
 });
 app.on('activate', () => {
-	if (gauzyWindow) {
-		if (LocalStore.getStore('configs').gauzyWindow) {
-			gauzyWindow.show();
+	if (hapWindow) {
+		if (LocalStore.getStore('configs').hapWindow) {
+			hapWindow.show();
 		}
 	} else if (
 		!onWaitingServer &&
@@ -337,7 +337,7 @@ app.on('activate', () => {
 	) {
 		// On macOS it's common to re-create a window in the app when the
 		// dock icon is clicked and there are no other windows open.
-		createGauzyWindow(gauzyWindow, serve);
+		createhapWindow(hapWindow, serve);
 	} else {
 		if (setupWindow) {
 			setupWindow.show();
@@ -359,7 +359,7 @@ app.on('before-quit', (e) => {
 	} else {
 		app.exit(0);
 		if (serverDesktop) serverDesktop.kill();
-		if (serverGauzy) serverGauzy.kill();
+		if (serverhap) serverhap.kill();
 	}
 });
 

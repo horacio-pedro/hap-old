@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IUserRegistrationInput, LanguagesEnum } from '@gauzy/models';
+import { IUserRegistrationInput, LanguagesEnum } from '@hap/models';
 
 export class AuthRegisterCommand implements ICommand {
 	static readonly type = '[Auth] Register';

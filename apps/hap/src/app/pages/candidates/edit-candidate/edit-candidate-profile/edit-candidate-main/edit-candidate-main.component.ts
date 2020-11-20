@@ -1,12 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Params } from '@angular/router';
-import { IOrganization, ICandidate } from '@gauzy/models';
+import { IOrganization, ICandidate } from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 
 /**
  * This component contains the properties stored within the User Entity of an candidate.

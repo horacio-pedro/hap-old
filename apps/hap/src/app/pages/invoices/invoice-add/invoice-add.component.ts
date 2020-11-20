@@ -20,9 +20,9 @@ import {
 	ExpenseStatusesEnum,
 	ContactType,
 	InvoiceStatusTypesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationsService } from '../../../@core/services/organizations.service';
-import { OrganizationSelectInput } from '@gauzy/models';
+import { OrganizationSelectInput } from '@hap/models';
 import { filter, first } from 'rxjs/operators';
 import { InvoicesService } from '../../../@core/services/invoices.service';
 import { InvoiceItemService } from '../../../@core/services/invoice-item.service';

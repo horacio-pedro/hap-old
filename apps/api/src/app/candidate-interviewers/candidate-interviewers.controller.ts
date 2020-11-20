@@ -21,7 +21,7 @@ import {
 	PermissionsEnum,
 	ICandidateInterviewersCreateInput,
 	ICandidateInterviewers
-} from '@gauzy/models';
+} from '@hap/models';
 import { ParseJsonPipe } from '../shared';
 import { CommandBus } from '@nestjs/cqrs';
 import {

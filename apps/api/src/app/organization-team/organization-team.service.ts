@@ -11,7 +11,7 @@ import {
 	IOrganizationTeamCreateInput,
 	IOrganizationTeam,
 	RolesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { IPagination } from '../core';
 import { Employee } from '../employee/employee.entity';
 import { User } from '../user/user.entity';

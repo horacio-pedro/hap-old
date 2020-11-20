@@ -4,7 +4,7 @@ import { OrganizationProjectsService } from '../../organization-projects.service
 import {
 	IOrganizationProject,
 	IOrganizationProjectsUpdateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @CommandHandler(OrganizationProjectUpdateCommand)
 export class OrganizationProjectUpdateHandler

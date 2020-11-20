@@ -1,14 +1,14 @@
 import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { TitleCasePipe } from '@angular/common';
-import { UpworkStoreService } from 'apps/gauzy/src/app/@core/services/upwork-store.service';
-import { IEngagement } from '@gauzy/models';
+import { UpworkStoreService } from 'apps/hap/src/app/@core/services/upwork-store.service';
+import { IEngagement } from '@hap/models';
 import { Observable, of, EMPTY, Subject } from 'rxjs';
-import { DateViewComponent } from 'apps/gauzy/src/app/@shared/table-components/date-view/date-view.component';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { DateViewComponent } from 'apps/hap/src/app/@shared/table-components/date-view/date-view.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { NbToastrService, NbDialogService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { catchError, tap, takeUntil, first } from 'rxjs/operators';
-import { ErrorHandlingService } from 'apps/gauzy/src/app/@core/services/error-handling.service';
+import { ErrorHandlingService } from 'apps/hap/src/app/@core/services/error-handling.service';
 import { SyncDataSelectionComponent } from '../sync-data-selection/sync-data-selection.component';
 import { ActivatedRoute } from '@angular/router';
 

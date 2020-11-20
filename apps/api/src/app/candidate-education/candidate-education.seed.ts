@@ -1,4 +1,4 @@
-import { ICandidateEducation, ICandidate } from '@gauzy/models';
+import { ICandidateEducation, ICandidate } from '@hap/models';
 import { Connection } from 'typeorm';
 import { CandidateEducation } from './candidate-education.entity';
 import { Tenant } from '../tenant/tenant.entity';

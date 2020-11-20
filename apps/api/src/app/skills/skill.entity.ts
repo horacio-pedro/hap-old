@@ -1,5 +1,5 @@
 import { Entity, Column, Unique, ManyToMany, JoinTable } from 'typeorm';
-import { IEmployee, ISkill } from '@gauzy/models';
+import { IEmployee, ISkill } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { Employee } from '../employee/employee.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

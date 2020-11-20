@@ -1,4 +1,4 @@
-import { ISkill, ICandidate } from '@gauzy/models';
+import { ISkill, ICandidate } from '@hap/models';
 import { Connection } from 'typeorm';
 import * as faker from 'faker';
 import { CandidateSkill } from './candidate-skill.entity';

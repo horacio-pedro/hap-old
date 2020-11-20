@@ -1,4 +1,4 @@
-import { ICountry } from '@gauzy/models';
+import { ICountry } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString } from 'class-validator';
 import { Column, Entity, Index } from 'typeorm';

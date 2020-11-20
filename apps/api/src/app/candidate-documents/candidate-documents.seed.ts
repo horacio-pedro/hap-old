@@ -1,4 +1,4 @@
-import { ICandidateDocument, ICandidate } from '@gauzy/models';
+import { ICandidateDocument, ICandidate } from '@hap/models';
 import * as faker from 'faker';
 import { Connection } from 'typeorm';
 import { Organization } from '../organization/organization.entity';

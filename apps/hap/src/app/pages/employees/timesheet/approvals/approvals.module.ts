@@ -17,15 +17,15 @@ import {
 	NbSpinnerModule
 } from '@nebular/theme';
 import { TranslateModule } from '@ngx-translate/core';
-import { SharedModule } from 'apps/gauzy/src/app/@shared/shared.module';
+import { SharedModule } from 'apps/hap/src/app/@shared/shared.module';
 import { FormsModule } from '@angular/forms';
-import { TimerPickerModule } from 'apps/gauzy/src/app/@shared/timer-picker/timer-picker.module';
-import { ProjectSelectModule } from 'apps/gauzy/src/app/@shared/project-select/project-select.module';
-import { EmployeeSelectorsModule } from 'apps/gauzy/src/app/@theme/components/header/selectors/employee/employee.module';
+import { TimerPickerModule } from 'apps/hap/src/app/@shared/timer-picker/timer-picker.module';
+import { ProjectSelectModule } from 'apps/hap/src/app/@shared/project-select/project-select.module';
+import { EmployeeSelectorsModule } from 'apps/hap/src/app/@theme/components/header/selectors/employee/employee.module';
 import { MomentModule } from 'ngx-moment';
-import { FiltersModule } from 'apps/gauzy/src/app/@shared/timesheet/filters/filters.module';
-import { TaskSelectModule } from 'apps/gauzy/src/app/@shared/tasks/task-select/task-select.module';
-import { DialogsModule } from 'apps/gauzy/src/app/@shared/dialogs';
+import { FiltersModule } from 'apps/hap/src/app/@shared/timesheet/filters/filters.module';
+import { TaskSelectModule } from 'apps/hap/src/app/@shared/tasks/task-select/task-select.module';
+import { DialogsModule } from 'apps/hap/src/app/@shared/dialogs';
 
 @NgModule({
 	declarations: [ApprovalsComponent],

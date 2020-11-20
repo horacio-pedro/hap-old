@@ -15,7 +15,7 @@ import {
 	IScreenshot,
 	IEmployee,
 	ITimeLog
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNumber, IsDateString } from 'class-validator';
 import { Employee } from '../employee/employee.entity';

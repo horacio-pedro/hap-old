@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { OrganizationProjectCreateCommand } from '../organization-project.create.command';
 import { OrganizationProjectsService } from '../../organization-projects.service';
-import { IOrganizationProject } from '@gauzy/models';
+import { IOrganizationProject } from '@hap/models';
 
 @CommandHandler(OrganizationProjectCreateCommand)
 export class OrganizationProjectCreateHandler

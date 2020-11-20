@@ -7,7 +7,7 @@ import { IPagination } from '../core';
 import { AuthGuard } from '@nestjs/passport';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
 import { Permissions } from '../shared/decorators/permissions';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('CandidateDocument')

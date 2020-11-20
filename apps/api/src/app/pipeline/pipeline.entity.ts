@@ -1,4 +1,4 @@
-import { IPipeline } from '@gauzy/models';
+import { IPipeline } from '@hap/models';
 import {
 	AfterInsert,
 	AfterLoad,

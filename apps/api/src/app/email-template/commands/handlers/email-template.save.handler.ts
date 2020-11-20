@@ -2,7 +2,7 @@ import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { EmailTemplateSaveCommand } from '../email-template.save.command';
 import { EmailTemplateService } from '../../email-template.service';
 import { EmailTemplate } from '../../email-template.entity';
-import { LanguagesEnum, EmailTemplateNameEnum } from '@gauzy/models';
+import { LanguagesEnum, EmailTemplateNameEnum } from '@hap/models';
 import * as mjml2html from 'mjml';
 import { Organization } from '../../../organization/organization.entity';
 import { BadRequestException } from '@nestjs/common';

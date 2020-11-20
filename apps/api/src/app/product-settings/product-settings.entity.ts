@@ -1,5 +1,5 @@
 import { Entity, Column, OneToOne } from 'typeorm';
-import { IProductVariantSetting } from '@gauzy/models';
+import { IProductVariantSetting } from '@hap/models';
 import { ApiPropertyOptional } from '@nestjs/swagger';
 import { ProductVariant } from '../product-variant/product-variant.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

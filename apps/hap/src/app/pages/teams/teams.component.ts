@@ -7,7 +7,7 @@ import {
 	ITag,
 	RolesEnum,
 	ComponentLayoutStyleEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { first, tap } from 'rxjs/operators';

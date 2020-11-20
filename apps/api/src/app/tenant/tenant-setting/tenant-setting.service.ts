@@ -1,4 +1,4 @@
-import { ITenantSetting } from '@gauzy/models';
+import { ITenantSetting } from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, In, Repository } from 'typeorm';

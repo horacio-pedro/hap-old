@@ -8,7 +8,7 @@ import {
 	CreateDateColumn
 } from 'typeorm';
 import { ApiPropertyOptional, ApiProperty } from '@nestjs/swagger';
-import { BaseEntityModel as IBaseEntityModel } from '@gauzy/models';
+import { BaseEntityModel as IBaseEntityModel } from '@hap/models';
 
 export abstract class Model {
 	constructor(input?: any) {

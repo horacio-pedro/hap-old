@@ -10,13 +10,13 @@ import {
 	IJobSearchOccupation,
 	IMatchingCriterions,
 	JobPostTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { JobPresetService } from 'apps/gauzy/src/app/@core/services/job-preset.service';
-import { JobSearchCategoryService } from 'apps/gauzy/src/app/@core/services/job-search-category.service';
-import { JobSearchOccupationService } from 'apps/gauzy/src/app/@core/services/job-search-occupation.service';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { ToastrService } from 'apps/gauzy/src/app/@core/services/toastr.service';
+import { JobPresetService } from 'apps/hap/src/app/@core/services/job-preset.service';
+import { JobSearchCategoryService } from 'apps/hap/src/app/@core/services/job-search-category.service';
+import { JobSearchOccupationService } from 'apps/hap/src/app/@core/services/job-search-occupation.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { ToastrService } from 'apps/hap/src/app/@core/services/toastr.service';
 import { debounceTime, filter, tap } from 'rxjs/operators';
 import * as _ from 'underscore';
 

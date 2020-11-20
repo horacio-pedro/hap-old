@@ -1,5 +1,5 @@
 import { StorageEngine } from 'multer';
-import { FileStorageOption, FileSystem, UploadedFile } from '@gauzy/models';
+import { FileStorageOption, FileSystem, UploadedFile } from '@hap/models';
 
 export abstract class Provider<T> {
 	static instance: any;

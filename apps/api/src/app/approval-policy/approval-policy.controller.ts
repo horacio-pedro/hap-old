@@ -5,7 +5,7 @@ import {
 	PermissionsEnum,
 	IApprovalPolicyCreateInput,
 	IApprovalPolicyUpdateInput
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	Query,
 	HttpStatus,

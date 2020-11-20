@@ -2,14 +2,14 @@ import { OnInit, OnDestroy, Component } from '@angular/core';
 import { Subject } from 'rxjs';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 import { takeUntil } from 'rxjs/operators';
 import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
-import { CandidateSkillsService } from 'apps/gauzy/src/app/@core/services/candidate-skills.service';
-import { ISkill, ComponentLayoutStyleEnum, IOrganization } from '@gauzy/models';
-import { ComponentEnum } from 'apps/gauzy/src/app/@core/constants/layout.constants';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { CandidateSkillsService } from 'apps/hap/src/app/@core/services/candidate-skills.service';
+import { ISkill, ComponentLayoutStyleEnum, IOrganization } from '@hap/models';
+import { ComponentEnum } from 'apps/hap/src/app/@core/constants/layout.constants';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { LocalDataSource } from 'ng2-smart-table';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IOrganization, PermissionsEnum } from '@gauzy/models';
+import { IOrganization, PermissionsEnum } from '@hap/models';
 import { Subject } from 'rxjs';
 import { first, takeUntil, switchMap, tap } from 'rxjs/operators';
 import { EmployeesService } from '../../../@core/services';

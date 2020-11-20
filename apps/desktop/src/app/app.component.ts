@@ -4,7 +4,7 @@ import { ElectronService } from 'ngx-electron';
 import { AppService } from './app.service';
 
 @Component({
-	selector: 'gauzy-root',
+	selector: 'hap-root',
 	template: '<router-outlet></router-outlet>'
 })
 export class AppComponent implements OnInit {

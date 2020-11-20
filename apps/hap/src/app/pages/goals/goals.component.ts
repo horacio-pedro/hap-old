@@ -17,7 +17,7 @@ import {
 	IKeyResult,
 	IGoalGeneralSetting,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { SelectedEmployee } from '../../@theme/components/header/selectors/employee/employee.component';
 import { KeyResultUpdateComponent } from './keyresult-update/keyresult-update.component';
 import { GoalService } from '../../@core/services/goal.service';
@@ -25,7 +25,7 @@ import { KeyResultService } from '../../@core/services/keyresult.service';
 import { ErrorHandlingService } from '../../@core/services/error-handling.service';
 import { KeyResultDetailsComponent } from './keyresult-details/keyresult-details.component';
 import { KeyResultParametersComponent } from './key-result-parameters/key-result-parameters.component';
-import { GoalLevelEnum } from '@gauzy/models';
+import { GoalLevelEnum } from '@hap/models';
 import { GoalSettingsService } from '../../@core/services/goal-settings.service';
 import { GoalTemplateSelectComponent } from '../../@shared/goal/goal-template-select/goal-template-select.component';
 

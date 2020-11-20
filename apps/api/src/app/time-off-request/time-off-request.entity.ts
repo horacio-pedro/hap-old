@@ -11,7 +11,7 @@ import {
 	ITimeOff as ITimeOffRequest,
 	ITimeOffPolicy,
 	StatusTypesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import {
 	IsString,

@@ -1,5 +1,5 @@
 import { Entity, Index, Column, ManyToMany, JoinTable } from 'typeorm';
-import { ITimeOffPolicy } from '@gauzy/models';
+import { ITimeOffPolicy } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsNotEmpty, IsBoolean } from 'class-validator';
 import { Employee } from '../employee/employee.entity';

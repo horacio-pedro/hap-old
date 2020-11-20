@@ -7,7 +7,7 @@ import {
 	RecurringExpenseDeletionEnum,
 	IEmployeeRecurringExpense,
 	IEmployee
-} from '@gauzy/models';
+} from '@hap/models';
 import { Subject } from 'rxjs';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';

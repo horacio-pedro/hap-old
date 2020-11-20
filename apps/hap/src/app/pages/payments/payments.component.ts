@@ -14,7 +14,7 @@ import {
 	IOrganizationContact,
 	IOrganizationProject,
 	ISelectedPayment
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationContactService } from '../../@core/services/organization-contact.service';
 import { ComponentEnum } from '../../@core/constants/layout.constants';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';

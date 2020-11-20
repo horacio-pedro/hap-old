@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NgxPermissionsService } from 'ngx-permissions';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 
 @UntilDestroy({ checkProperties: true })

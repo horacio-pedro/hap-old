@@ -9,7 +9,7 @@ import {
 	JoinTable
 } from 'typeorm';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { IProductVariant, BillingInvoicingPolicyEnum } from '@gauzy/models';
+import { IProductVariant, BillingInvoicingPolicyEnum } from '@hap/models';
 import { ProductVariantPrice } from '../product-variant-price/product-variant-price.entity';
 import { ProductOption } from '../product-option/product-option.entity';
 import { ProductVariantSettings } from '../product-settings/product-settings.entity';

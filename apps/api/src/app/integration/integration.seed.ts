@@ -1,5 +1,5 @@
 import { Connection } from 'typeorm';
-import { IIntegration, DEFAULT_INTEGRATIONS } from '@gauzy/models';
+import { IIntegration, DEFAULT_INTEGRATIONS } from '@hap/models';
 import { IntegrationType } from './integration-type.entity';
 import { Integration } from './integration.entity';
 

@@ -10,12 +10,12 @@ import { Observable, Subject } from 'rxjs';
 import { tap } from 'rxjs/internal/operators/tap';
 import { debounceTime, filter, takeUntil } from 'rxjs/operators';
 import * as moment from 'moment';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { IncomeExpenseAmountComponent } from 'apps/gauzy/src/app/@shared/table-components/income-amount/income-amount.component';
-import { DateViewComponent } from 'apps/gauzy/src/app/@shared/table-components/date-view/date-view.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { IncomeExpenseAmountComponent } from 'apps/hap/src/app/@shared/table-components/income-amount/income-amount.component';
+import { DateViewComponent } from 'apps/hap/src/app/@shared/table-components/date-view/date-view.component';
 import { UpworkStoreService } from '../../../../@core/services/upwork-store.service';
-import { IncomeTypeEnum, IOrganization, IUpworkDateRange } from '@gauzy/models';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { IncomeTypeEnum, IOrganization, IUpworkDateRange } from '@hap/models';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 
 @Component({
 	selector: 'ngx-reports',

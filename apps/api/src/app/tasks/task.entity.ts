@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsOptional } from 'class-validator';
-import { ITask, TaskStatusEnum } from '@gauzy/models';
+import { ITask, TaskStatusEnum } from '@hap/models';
 import { OrganizationProject } from '../organization-projects/organization-projects.entity';
 import { InvoiceItem } from '../invoice-item/invoice-item.entity';
 import { Tag } from '../tags/tag.entity';

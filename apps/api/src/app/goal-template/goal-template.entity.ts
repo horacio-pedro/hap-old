@@ -3,7 +3,7 @@ import {
 	GoalLevelEnum,
 	GoalTemplateCategoriesEnum,
 	IKeyResultTemplate
-} from '@gauzy/models';
+} from '@hap/models';
 import { Entity, Column, OneToMany } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsEnum } from 'class-validator';

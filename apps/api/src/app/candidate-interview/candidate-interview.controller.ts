@@ -15,7 +15,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { IPagination } from '../core';
 import { CandidateInterview } from './candidate-interview.entity';
 import { CandidateInterviewService } from './candidate-interview.service';
-import { ICandidateInterviewCreateInput, PermissionsEnum } from '@gauzy/models';
+import { ICandidateInterviewCreateInput, PermissionsEnum } from '@hap/models';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
 import { Permissions } from '../shared/decorators/permissions';
 import { ParseJsonPipe } from '../shared';

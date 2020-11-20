@@ -16,7 +16,7 @@ import {
 	IApplyJobPostInput,
 	IGetEmployeeJobPostInput,
 	IVisibilityJobPostInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @ApiTags('EmployeeJobPost')
 @UseGuards(AuthGuard('jwt'))

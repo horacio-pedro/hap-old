@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CrudService } from '../core';
 import { OrganizationTeamEmployee } from './organization-team-employee.entity';
 import { Role } from '../role/role.entity';
-import { IEmployee } from '@gauzy/models';
+import { IEmployee } from '@hap/models';
 
 @Injectable()
 export class OrganizationTeamEmployeeService extends CrudService<

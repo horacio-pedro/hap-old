@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { KeyResultTypeEnum } from '@gauzy/models';
+import { KeyResultTypeEnum } from '@hap/models';
 import { KeyResultTemplate } from './keyresult-template.entity';
 import { GoalTemplate } from '../goal-template/goal-template.entity';
 import { GoalKPITemplate } from '../goal-kpi-template/goal-kpi-template.entity';

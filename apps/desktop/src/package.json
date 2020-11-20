@@ -1,27 +1,27 @@
 {
-	"name": "gauzy-desktop",
-	"productName": "gauzy",
+	"name": "hap-desktop",
+	"productName": "hap",
 	"version": "0.1.0",
-	"description": "Gauzy Desktop",
+	"description": "hap Desktop",
 	"license": "AGPL-3.0",
-	"homepage": "https://gauzy.co",
+	"homepage": "https://hap.ao",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ever-co/gauzy.git"
+		"url": "git+https://github.com/conexoesinfinito/hap.git"
 	},
 	"bugs": {
-		"url": "https://github.com/ever-co/gauzy/issues"
+		"url": "https://github.com/conexoesinfinito/hap/issues"
 	},
 	"main": "index.js",
 	"author": {
-		"name": "Ever Co. LTD",
+		"name": "Conexões Infinito. LTD",
 		"email": "ever@ever.co",
 		"url": "https://ever.co"
 	},
 	"build": {
-		"appId": "com.company.gauzydesktop",
-		"productName": "Gauzy Desktop",
-		"copyright": "Copyright © 2019-Present. Ever Co. LTD",
+		"appId": "com.company.hapdesktop",
+		"productName": "hap Desktop",
+		"copyright": "Copyright © 2020-Present. Conexões Infinito, LDA",
 		"asar": true,
 		"npmRebuild": true,
 		"directories": {
@@ -59,8 +59,8 @@
 				"deb",
 				"tar.gz"
 			],
-			"executableName": "gauzy",
-			"artifactName": "gauzy-${version}.${ext}",
+			"executableName": "hap",
+			"artifactName": "hap-${version}.${ext}",
 			"synopsis": "Desktop",
 			"category": "Development"
 		},
@@ -72,7 +72,7 @@
 			"allowToChangeInstallationDirectory": true,
 			"allowElevation": true,
 			"installerIcon": "icon.ico",
-			"artifactName": "Gauzy-${version}.${ext}",
+			"artifactName": "hap-${version}.${ext}",
 			"deleteAppDataOnUninstall": true,
 			"menuCategory": true
 		},

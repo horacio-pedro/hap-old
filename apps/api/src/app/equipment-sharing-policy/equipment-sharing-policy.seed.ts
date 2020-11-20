@@ -1,5 +1,5 @@
 import { Connection } from 'typeorm';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { EquipmentSharingPolicy } from './equipment-sharing-policy.entity';
 import { Tenant } from '../tenant/tenant.entity';
 

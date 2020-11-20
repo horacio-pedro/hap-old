@@ -1,9 +1,9 @@
 import { Component, Input, OnDestroy, OnInit, OnChanges } from '@angular/core';
-import { IMonthAggregatedEmployeeStatistics } from '@gauzy/models';
+import { IMonthAggregatedEmployeeStatistics } from '@hap/models';
 import { NbThemeService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { monthNames } from 'apps/gauzy/src/app/@core/utils/date';
+import { monthNames } from 'apps/hap/src/app/@core/utils/date';
 
 @Component({
 	selector: 'ga-employee-horizontal-bar-chart',

@@ -1,4 +1,4 @@
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import {
 	Body,
 	Controller,

@@ -9,7 +9,7 @@ import {
 	ComponentLayoutStyleEnum,
 	ITag,
 	IEmployee
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import {
 	IsAscii,

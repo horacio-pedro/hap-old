@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IIncome } from '@gauzy/models';
+import { IIncome } from '@hap/models';
 
 export class IncomeUpdateCommand implements ICommand {
 	static readonly type = '[Income] Update';

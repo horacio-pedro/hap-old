@@ -3,7 +3,7 @@ import {
 	IUser,
 	IPipelineStage,
 	IOrganizationContact
-} from '@gauzy/models';
+} from '@hap/models';
 import { User } from '../user/user.entity';
 import {
 	Column,

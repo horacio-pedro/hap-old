@@ -27,7 +27,7 @@ import {
 	ContactType,
 	TimeLogSourceEnum,
 	IUpworkClientSecretPair
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	IntegrationTenantCreateCommand,
 	IntegrationTenantGetCommand
@@ -70,7 +70,7 @@ import {
 	UpworkJobService,
 	UpworkOffersService,
 	UpworkReportService
-} from '@gauzy/integration-upwork';
+} from '@hap/integration-upwork';
 import { TimesheetFirstOrCreateCommand } from '../timesheet/timesheet/commands/timesheet-first-or-create.command';
 import { TimeLogCreateCommand } from '../timesheet/time-log/commands/time-log-create.command';
 import { OrganizationContact } from '../organization-contact/organization-contact.entity';
@@ -305,7 +305,7 @@ export class UpworkService {
 		return { accessToken, consumerKey, consumerSecret, accessSecret };
 	}
 
-	// engagement has access to contract ID, this is a project in gauzy
+	// engagement has access to contract ID, this is a project in hap
 	async getContractsForFreelancer(
 		getEngagementsDto: IGetContractsDto
 	): Promise<IEngagement[]> {
@@ -420,7 +420,7 @@ export class UpworkService {
 						await this.commandBus.execute(
 							new OrganizationProjectUpdateCommand(
 								Object.assign(payload, {
-									id: integrationMap.gauzyId
+									id: integrationMap.hapId
 								})
 							)
 						);
@@ -433,7 +433,7 @@ export class UpworkService {
 					);
 					return await this.commandBus.execute(
 						new IntegrationMapSyncEntityCommand({
-							gauzyId: project.id,
+							hapId: project.id,
 							integrationId,
 							sourceId,
 							entity: IntegrationEntity.PROJECT,
@@ -490,7 +490,7 @@ export class UpworkService {
 		// 	);
 		// }
 
-		const gauzyTimeLog = await this.commandBus.execute(
+		const hapTimeLog = await this.commandBus.execute(
 			new TimeLogCreateCommand({
 				projectId: timeLog.projectId,
 				employeeId: timeLog.employeeId,
@@ -507,7 +507,7 @@ export class UpworkService {
 
 		await this.commandBus.execute(
 			new IntegrationMapSyncEntityCommand({
-				gauzyId: gauzyTimeLog.id,
+				hapId: hapTimeLog.id,
 				integrationId: timeLog.integrationId,
 				sourceId: timeLog.sourceId,
 				entity: IntegrationEntity.TIME_LOG,
@@ -515,7 +515,7 @@ export class UpworkService {
 			})
 		);
 
-		return gauzyTimeLog;
+		return hapTimeLog;
 	}
 
 	async syncTimeSlots({
@@ -536,7 +536,7 @@ export class UpworkService {
 				cell_time,
 				activity
 			} = timeSlot;
-			const gauzyTimeSlot = await this.commandBus.execute(
+			const hapTimeSlot = await this.commandBus.execute(
 				new TimeSlotCreateCommand({
 					employeeId,
 					startedAt: new Date(
@@ -554,7 +554,7 @@ export class UpworkService {
 			);
 			const integratedSlot = await this.commandBus.execute(
 				new IntegrationMapSyncEntityCommand({
-					gauzyId: gauzyTimeSlot.id,
+					hapId: hapTimeSlot.id,
 					integrationId,
 					sourceId,
 					entity: IntegrationEntity.TIME_SLOT,
@@ -601,7 +601,7 @@ export class UpworkService {
 					employeeId,
 					integrationId,
 					organizationId,
-					projectId: contract.gauzyId,
+					projectId: contract.hapId,
 					startDate: moment
 						.unix(cells[0].cell_time)
 						.format('YYYY-MM-DD HH:mm:ss'),
@@ -681,13 +681,13 @@ export class UpworkService {
 		});
 
 		if (!employeeId) {
-			const employee = await this._getUpworkGauzyEmployee(
+			const employee = await this._getUpworkHapEmployee(
 				providerRefernceId,
 				integrationId,
 				organizationId,
 				config
 			);
-			employeeId = employee.gauzyId;
+			employeeId = employee.hapId;
 		}
 
 		return await Promise.all(
@@ -757,7 +757,7 @@ export class UpworkService {
 					}
 
 					const { time, mouse, keyboard } = minute;
-					const gauzyTimeSlotMinute = await this.commandBus.execute(
+					const hapTimeSlotMinute = await this.commandBus.execute(
 						new CreateTimeSlotMinutesCommand({
 							mouse,
 							keyboard,
@@ -768,7 +768,7 @@ export class UpworkService {
 							organizationId
 						})
 					);
-					return gauzyTimeSlotMinute;
+					return hapTimeSlotMinute;
 				})
 			);
 
@@ -863,7 +863,7 @@ export class UpworkService {
 					.unix(cell_time)
 					.format('YYYY-MM-DD HH:mm:ss');
 
-				const gauzyScreenshot = await this.commandBus.execute(
+				const hapScreenshot = await this.commandBus.execute(
 					new ScreenshotCreateCommand({
 						file: screenshot_img,
 						thumb: screenshot_img_thmb,
@@ -875,7 +875,7 @@ export class UpworkService {
 				);
 
 				return await this._integrationMapService.create({
-					gauzyId: gauzyScreenshot.id,
+					hapId: hapScreenshot.id,
 					integrationId,
 					sourceId,
 					entity: IntegrationEntity.SCREENSHOT,
@@ -931,7 +931,7 @@ export class UpworkService {
 		});
 	}
 
-	private async _getUpworkGauzyEmployee(
+	private async _getUpworkHapEmployee(
 		providerRefernceId,
 		integrationId,
 		organizationId,
@@ -1003,7 +1003,7 @@ export class UpworkService {
 			);
 		}
 		return await this._integrationMapService.create({
-			gauzyId: employee.id,
+			hapId: employee.id,
 			integrationId,
 			sourceId: userId,
 			entity: IntegrationEntity.EMPLOYEE,
@@ -1030,7 +1030,7 @@ export class UpworkService {
 			return record;
 		}
 
-		const gauzyClient = await this.commandBus.execute(
+		const hapClient = await this.commandBus.execute(
 			new OrganizationContactCreateCommand({
 				name,
 				organizationId,
@@ -1038,14 +1038,14 @@ export class UpworkService {
 			})
 		);
 		await this._integrationMapService.create({
-			gauzyId: gauzyClient.id,
+			hapId: hapClient.id,
 			integrationId,
 			sourceId,
 			entity: IntegrationEntity.CLIENT,
 			organizationId
 		});
 
-		return gauzyClient;
+		return hapClient;
 	}
 
 	/*
@@ -1168,7 +1168,7 @@ export class UpworkService {
 						return integrationMap;
 					}
 
-					const gauzyExpense = await this.commandBus.execute(
+					const hapExpense = await this.commandBus.execute(
 						new ExpenseCreateCommand({
 							employeeId,
 							organizationId,
@@ -1186,7 +1186,7 @@ export class UpworkService {
 					);
 
 					return await this._integrationMapService.create({
-						gauzyId: gauzyExpense.id,
+						hapId: hapExpense.id,
 						integrationId,
 						sourceId: reference,
 						entity: IntegrationEntity.EXPENSE,
@@ -1263,7 +1263,7 @@ export class UpworkService {
 				const findIntegration = await this._integrationMapService.findOneOrFail(
 					{
 						where: {
-							gauzyId: income.id,
+							hapId: income.id,
 							integrationId,
 							entity: IntegrationEntity.INCOME,
 							organizationId
@@ -1275,7 +1275,7 @@ export class UpworkService {
 				const amount = parseFloat(
 					(parseFloat(hours) * parseFloat(assignment_rate)).toFixed(2)
 				);
-				const gauzyIncome = await this.commandBus.execute(
+				const hapIncome = await this.commandBus.execute(
 					new IncomeCreateCommand({
 						employeeId,
 						organizationId,
@@ -1292,7 +1292,7 @@ export class UpworkService {
 					})
 				);
 				integratedIncome = await this._integrationMapService.create({
-					gauzyId: gauzyIncome.id,
+					hapId: hapIncome.id,
 					integrationId,
 					sourceId: contractId,
 					entity: IntegrationEntity.INCOME,
@@ -1337,13 +1337,13 @@ export class UpworkService {
 			return reports;
 		}
 
-		const gauzyIds = _.pluck(items, 'gauzyId');
+		const hapIds = _.pluck(items, 'hapId');
 		const {
 			dateRange: { start, end }
 		} = filter;
 
 		const whereClause = {
-			id: In(gauzyIds),
+			id: In(hapIds),
 			valueDate: Between(
 				moment(start).format('YYYY-MM-DD hh:mm:ss'),
 				moment(end).format('YYYY-MM-DD hh:mm:ss')
@@ -1521,7 +1521,7 @@ export class UpworkService {
 						) {
 							integratedOffer = integrationMap.record;
 						} else {
-							const gauzyOffer = await this.commandBus.execute(
+							const hapOffer = await this.commandBus.execute(
 								new ProposalCreateCommand({
 									employeeId,
 									organizationId,
@@ -1541,7 +1541,7 @@ export class UpworkService {
 
 							integratedOffer = await this._integrationMapService.create(
 								{
-									gauzyId: gauzyOffer.id,
+									hapId: hapOffer.id,
 									integrationId,
 									sourceId,
 									entity: IntegrationEntity.PROPOSAL,

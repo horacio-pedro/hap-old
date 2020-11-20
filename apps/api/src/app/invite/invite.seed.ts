@@ -3,7 +3,7 @@ import { Invite } from './invite.entity';
 import { Tenant } from '../tenant/tenant.entity';
 import { Organization } from '../organization/organization.entity';
 import * as faker from 'faker';
-import { InviteStatusEnum, RolesEnum } from '@gauzy/models';
+import { InviteStatusEnum, RolesEnum } from '@hap/models';
 import { Role } from '../role/role.entity';
 import { sign } from 'jsonwebtoken';
 import { environment as env } from '@env-api/environment';

@@ -9,13 +9,13 @@ import {
 	IOrganizationPosition,
 	ITag,
 	ISkill
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
-import { EmployeeLevelService } from 'apps/gauzy/src/app/@core/services/employee-level.service';
-import { OrganizationDepartmentsService } from 'apps/gauzy/src/app/@core/services/organization-departments.service';
-import { OrganizationEmploymentTypesService } from 'apps/gauzy/src/app/@core/services/organization-employment-types.service';
-import { OrganizationPositionsService } from 'apps/gauzy/src/app/@core/services/organization-positions';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { EmployeeLevelService } from 'apps/hap/src/app/@core/services/employee-level.service';
+import { OrganizationDepartmentsService } from 'apps/hap/src/app/@core/services/organization-departments.service';
+import { OrganizationEmploymentTypesService } from 'apps/hap/src/app/@core/services/organization-employment-types.service';
+import { OrganizationPositionsService } from 'apps/hap/src/app/@core/services/organization-positions';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { EmployeeStore } from '../../../../../@core/services/employee-store.service';

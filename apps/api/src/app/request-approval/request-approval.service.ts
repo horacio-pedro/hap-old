@@ -13,7 +13,7 @@ import {
 	RequestApprovalStatusTypesEnum,
 	IRequestApprovalCreateInput,
 	IRequestApprovalFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { RequestApprovalEmployee } from '../request-approval-employee/request-approval-employee.entity';
 import { RequestContext } from '../core/context';

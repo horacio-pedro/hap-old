@@ -1,4 +1,4 @@
-import { IIncomeCreateInput, PermissionsEnum } from '@gauzy/models';
+import { IIncomeCreateInput, PermissionsEnum } from '@hap/models';
 import {
 	Body,
 	Controller,

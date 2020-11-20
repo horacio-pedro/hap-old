@@ -2,7 +2,7 @@ import {
 	IStartUpdateTypeInfo,
 	PermissionsEnum,
 	IRecurringExpenseEditInput
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	Body,
 	Controller,

@@ -2,7 +2,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { ICandidate, IEmployee } from '@gauzy/models';
+import { ICandidate, IEmployee } from '@hap/models';
 
 @Component({
 	selector: 'ga-overall-rating-chart',

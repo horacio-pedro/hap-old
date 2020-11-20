@@ -4,7 +4,7 @@ import { EquipmentSharing } from './equipment-sharing.entity';
 import * as faker from 'faker';
 import { Tenant } from '../tenant/tenant.entity';
 import { addDays } from 'date-fns';
-import { IEmployee } from '@gauzy/models';
+import { IEmployee } from '@hap/models';
 import { OrganizationTeam } from '../organization-team/organization-team.entity';
 import { Organization } from '../organization/organization.entity';
 

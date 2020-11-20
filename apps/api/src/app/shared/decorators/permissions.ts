@@ -1,5 +1,5 @@
 import { SetMetadata, createParamDecorator } from '@nestjs/common';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { RequestContext } from '../../core/context/request-context';
 import { verify } from 'jsonwebtoken';
 import { environment as env } from '@env-api/environment';

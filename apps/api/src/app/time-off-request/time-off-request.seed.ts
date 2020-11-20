@@ -6,7 +6,7 @@ import { Organization } from '../organization/organization.entity';
 import { Employee } from '../employee/employee.entity';
 import { TimeOffPolicy } from '../time-off-policy/time-off-policy.entity';
 import { addDays } from 'date-fns';
-import { StatusTypesEnum } from '@gauzy/models';
+import { StatusTypesEnum } from '@hap/models';
 import * as _ from 'underscore';
 
 const status = Object.values(StatusTypesEnum);

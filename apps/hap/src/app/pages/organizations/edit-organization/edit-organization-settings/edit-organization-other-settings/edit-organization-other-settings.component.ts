@@ -11,14 +11,14 @@ import {
 	CurrenciesEnum,
 	BonusTypeEnum,
 	CurrencyPosition
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
-import { OrganizationEditStore } from 'apps/gauzy/src/app/@core/services/organization-edit-store.service';
+import { OrganizationEditStore } from 'apps/hap/src/app/@core/services/organization-edit-store.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { OrganizationsService } from '../../../../../@core/services/organizations.service';
 import { formatDate } from '@angular/common';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

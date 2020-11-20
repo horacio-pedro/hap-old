@@ -16,7 +16,7 @@ import { CrudController } from '../core';
 import { AuthGuard } from '@nestjs/passport';
 import { KeyResultUpdate } from './keyresult-update.entity';
 import { KeyResultUpdateService } from './keyresult-update.service';
-import { IKeyResultUpdate } from '@gauzy/models';
+import { IKeyResultUpdate } from '@hap/models';
 import { ParseJsonPipe } from '../shared';
 import { CommandBus } from '@nestjs/cqrs';
 import { KeyResultUpdateBulkDeleteCommand } from './commands';

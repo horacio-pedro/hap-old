@@ -1,4 +1,4 @@
-import { IRole, ITenant, RolesEnum } from '@gauzy/models';
+import { IRole, ITenant, RolesEnum } from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';

@@ -2,15 +2,15 @@ import { Connection } from 'typeorm';
 import * as faker from 'faker';
 import { Tag } from '../tags/tag.entity';
 import { OrganizationProject } from './organization-projects.entity';
-import { IOrganization, TaskListTypeEnum } from '@gauzy/models';
+import { IOrganization, TaskListTypeEnum } from '@hap/models';
 import { Tenant } from '../tenant/tenant.entity';
 import { OrganizationContact } from '../organization-contact/organization-contact.entity';
 
 const defaultProjects = [
-	'Gauzy Platform (Open-Source)',
-	'Gauzy Web Site',
-	'Gauzy Platform SaaS',
-	'Gauzy Platform DevOps'
+	'HAP Platform',
+	'HAP Web Site',
+	'HAP Platform SaaS',
+	'HAP Platform DevOps'
 ];
 
 export const createDefaultOrganizationProjects = async (

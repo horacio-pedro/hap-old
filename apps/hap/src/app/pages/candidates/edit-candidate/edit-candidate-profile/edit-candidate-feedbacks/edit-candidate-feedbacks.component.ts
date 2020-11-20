@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { Subject } from 'rxjs';
 import {
 	FormBuilder,
@@ -10,9 +10,9 @@ import {
 } from '@angular/forms';
 import { NbToastrService, NbDialogService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 import { takeUntil, first } from 'rxjs/operators';
-import { CandidateFeedbacksService } from 'apps/gauzy/src/app/@core/services/candidate-feedbacks.service';
+import { CandidateFeedbacksService } from 'apps/hap/src/app/@core/services/candidate-feedbacks.service';
 import {
 	ICandidateFeedback,
 	CandidateStatus,
@@ -23,15 +23,15 @@ import {
 	IEmployee,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
-import { CandidateInterviewService } from 'apps/gauzy/src/app/@core/services/candidate-interview.service';
-import { EmployeesService } from 'apps/gauzy/src/app/@core/services';
-import { CandidatesService } from 'apps/gauzy/src/app/@core/services/candidates.service';
-import { CandidateCriterionsRatingService } from 'apps/gauzy/src/app/@core/services/candidate-criterions-rating.service';
-import { DeleteFeedbackComponent } from 'apps/gauzy/src/app/@shared/candidate/candidate-confirmation/delete-feedback/delete-feedback.component';
+} from '@hap/models';
+import { CandidateInterviewService } from 'apps/hap/src/app/@core/services/candidate-interview.service';
+import { EmployeesService } from 'apps/hap/src/app/@core/services';
+import { CandidatesService } from 'apps/hap/src/app/@core/services/candidates.service';
+import { CandidateCriterionsRatingService } from 'apps/hap/src/app/@core/services/candidate-criterions-rating.service';
+import { DeleteFeedbackComponent } from 'apps/hap/src/app/@shared/candidate/candidate-confirmation/delete-feedback/delete-feedback.component';
 import { LocalDataSource } from 'ng2-smart-table';
-import { ComponentEnum } from 'apps/gauzy/src/app/@core/constants/layout.constants';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { ComponentEnum } from 'apps/hap/src/app/@core/constants/layout.constants';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { InterviewersTableComponent } from '../../../manage-candidate-interviews/interview-panel/table-components/interviewers/interviewers.component';
 import { InterviewStarRatingComponent } from '../../../manage-candidate-interviews/interview-panel/table-components/rating/rating.component';
 import { FeedbackStatusTableComponent } from './table-components/status/status.component';

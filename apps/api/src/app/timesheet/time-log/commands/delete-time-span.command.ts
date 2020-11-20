@@ -1,6 +1,6 @@
 import { ICommand } from '@nestjs/cqrs';
 import { TimeLog } from '../../time-log.entity';
-import { IDateRange } from '@gauzy/models';
+import { IDateRange } from '@hap/models';
 
 export class DeleteTimeSpanCommand implements ICommand {
 	static readonly type = '[TimeLog] delete time span';

@@ -1,4 +1,4 @@
-import { IStartUpdateTypeInfo } from '@gauzy/models';
+import { IStartUpdateTypeInfo } from '@hap/models';
 import { CommandHandler, ICommandHandler, QueryBus } from '@nestjs/cqrs';
 import { RecurringExpenseEditHandler } from '../../../shared';
 import { OrganizationRecurringExpense } from '../../organization-recurring-expense.entity';

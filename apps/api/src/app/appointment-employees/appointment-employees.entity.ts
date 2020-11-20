@@ -1,4 +1,4 @@
-import { IAppointmentEmployee, IEmployeeAppointment } from '@gauzy/models';
+import { IAppointmentEmployee, IEmployeeAppointment } from '@hap/models';
 import { Entity, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsNotEmpty } from 'class-validator';

@@ -1,5 +1,5 @@
 import { IBasePerTenantAndOrganizationEntityModel } from './base-entity.model';
-import { IOrganizationProject, ITask } from '@gauzy/models';
+import { IOrganizationProject, ITask } from '@hap/models';
 
 export interface IOrganizationSprint
 	extends IBasePerTenantAndOrganizationEntityModel {

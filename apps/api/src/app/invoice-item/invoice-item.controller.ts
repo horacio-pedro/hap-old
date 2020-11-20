@@ -4,7 +4,7 @@ import { InvoiceItemService } from './invoice-item.service';
 import { ApiTags } from '@nestjs/swagger';
 import { Controller, UseGuards, Get, Query } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { IInvoiceItem } from '@gauzy/models';
+import { IInvoiceItem } from '@hap/models';
 import { ParseJsonPipe } from '../shared';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 

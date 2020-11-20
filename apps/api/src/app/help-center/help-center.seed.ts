@@ -1,12 +1,12 @@
 import { HelpCenter } from './help-center.entity';
-import { IHelpCenter } from '@gauzy/models';
+import { IHelpCenter } from '@hap/models';
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
 import { Organization } from '../organization/organization.entity';
 
 const helpCenterMenuList: IHelpCenter[] = [
 	{
-		name: 'Gauzy Platform',
+		name: 'HAP Platform',
 		icon: 'book-open-outline',
 		flag: 'base',
 		privacy: 'eye-outline',
@@ -42,7 +42,7 @@ const helpCenterMenuList: IHelpCenter[] = [
 				icon: 'book-open-outline',
 				privacy: 'eye-off-outline',
 				name: 'Privacy',
-				description: 'Gauzy Privacy Statement',
+				description: 'HAP Privacy Statement',
 				data: 'Usage Information',
 				language: 'en',
 				color: '#d53636',
@@ -54,7 +54,7 @@ const helpCenterMenuList: IHelpCenter[] = [
 				icon: 'book-open-outline',
 				privacy: 'eye-off-outline',
 				name: 'Testing',
-				description: 'Gauzy Testing',
+				description: 'HAP Testing',
 				language: 'en',
 				color: '#d53636',
 				tenant: {},

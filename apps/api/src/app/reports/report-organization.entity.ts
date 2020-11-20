@@ -1,6 +1,6 @@
 import { Entity, Column, RelationId, ManyToOne, JoinColumn } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
-import { IOrganization, IReport, IReportOrganization } from '@gauzy/models';
+import { IOrganization, IReport, IReportOrganization } from '@hap/models';
 import { Base } from '../core/entities/base';
 import { Organization } from '../organization/organization.entity';
 import { Report } from './report.entity';

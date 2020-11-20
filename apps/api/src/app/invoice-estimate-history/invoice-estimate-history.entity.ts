@@ -1,4 +1,4 @@
-import { IInvoiceEstimateHistory } from '@gauzy/models';
+import { IInvoiceEstimateHistory } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString } from 'class-validator';
 import { Entity, Column, JoinColumn, ManyToOne } from 'typeorm';

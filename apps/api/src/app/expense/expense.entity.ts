@@ -26,7 +26,7 @@ import {
 	IExpenseCategory,
 	ITag,
 	IEmployee
-} from '@gauzy/models';
+} from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { Tag } from '../tags/tag.entity';
 import { ExpenseCategory } from '../expense-categories/expense-category.entity';

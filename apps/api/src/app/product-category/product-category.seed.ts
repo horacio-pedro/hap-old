@@ -1,5 +1,5 @@
 import { Connection } from 'typeorm';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { ProductCategory } from './product-category.entity';
 import * as seed from './product-category.seed.json';
 import * as faker from 'faker';

@@ -3,7 +3,7 @@ import {
 	CurrenciesEnum,
 	IEquipmentSharing,
 	ITag
-} from '@gauzy/models';
+} from '@hap/models';
 import { Entity, Column, OneToMany, ManyToMany, JoinTable } from 'typeorm';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import {

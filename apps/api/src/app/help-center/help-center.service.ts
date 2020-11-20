@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { HelpCenter } from './help-center.entity';
-import { IHelpCenter } from '@gauzy/models';
+import { IHelpCenter } from '@hap/models';
 import { TenantAwareCrudService } from '../core/crud/tenant-aware-crud.service';
 
 @Injectable()

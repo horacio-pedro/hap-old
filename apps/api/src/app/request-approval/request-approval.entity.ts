@@ -16,7 +16,7 @@ import {
 	ManyToMany,
 	JoinTable
 } from 'typeorm';
-import { IRequestApproval, ApprovalPolicyTypesStringEnum } from '@gauzy/models';
+import { IRequestApproval, ApprovalPolicyTypesStringEnum } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsNotEmpty, IsNumber, IsEnum } from 'class-validator';
 import { RequestApprovalEmployee } from '../request-approval-employee/request-approval-employee.entity';

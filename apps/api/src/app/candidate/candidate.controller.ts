@@ -22,7 +22,7 @@ import {
 	PermissionsEnum,
 	ICandidateCreateInput,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { CommandBus } from '@nestjs/cqrs';
 import { CandidateCreateCommand, CandidateBulkCreateCommand } from './commands';
 import { I18nLang } from 'nestjs-i18n';

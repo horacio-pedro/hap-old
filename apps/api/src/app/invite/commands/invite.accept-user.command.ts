@@ -1,4 +1,4 @@
-import { IInviteAcceptInput, LanguagesEnum } from '@gauzy/models';
+import { IInviteAcceptInput, LanguagesEnum } from '@hap/models';
 import { ICommand } from '@nestjs/cqrs';
 
 export class InviteAcceptUserCommand implements ICommand {

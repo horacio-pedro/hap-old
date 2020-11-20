@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, FindManyOptions } from 'typeorm';
 import { Proposal } from './proposal.entity';
 import { IPagination } from '../core';
-import { IProposalCreateInput, IProposal } from '@gauzy/models';
+import { IProposalCreateInput, IProposal } from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { TenantAwareCrudService } from '../core/crud/tenant-aware-crud.service';
 

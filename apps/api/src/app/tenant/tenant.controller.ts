@@ -1,4 +1,4 @@
-import { ITenant, ITenantCreateInput, RolesEnum } from '@gauzy/models';
+import { ITenant, ITenantCreateInput, RolesEnum } from '@hap/models';
 import {
 	BadRequestException,
 	Body,

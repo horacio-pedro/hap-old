@@ -1,4 +1,4 @@
-import { IOrganizationRecurringExpenseByMonthFindInput } from '@gauzy/models';
+import { IOrganizationRecurringExpenseByMonthFindInput } from '@hap/models';
 import { IQuery } from '@nestjs/cqrs';
 
 export class OrganizationRecurringExpenseByMonthQuery implements IQuery {

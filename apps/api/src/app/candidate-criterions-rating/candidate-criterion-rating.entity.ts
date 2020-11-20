@@ -1,7 +1,7 @@
 import { Column, Entity, ManyToOne } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString } from 'class-validator';
-import { ICandidateCriterionsRating } from '@gauzy/models';
+import { ICandidateCriterionsRating } from '@hap/models';
 import { CandidateFeedback } from '../candidate-feedbacks/candidate-feedbacks.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 

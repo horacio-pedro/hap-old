@@ -12,7 +12,7 @@ import {
 	IAvailabilitySlotsView,
 	IOrganization,
 	IRolePermission
-} from '@gauzy/models';
+} from '@hap/models';
 import { Store } from '../../../../@core/services/store.service';
 import { AvailabilitySlotsService } from '../../../../@core/services/availability-slots.service';
 import { first, filter } from 'rxjs/operators';
@@ -44,8 +44,8 @@ export class AvailabilitySlotsComponent
 	calendarEvents: EventInput[] = [];
 	calendarOptions: CalendarOptions;
 
-	private firstLoad: boolean = true;
-	recurringAvailabilityMode: boolean = false;
+	private firstLoad = true;
+	recurringAvailabilityMode = false;
 	_selectedOrganizationId: string;
 	selectedEmployeeId: string;
 	dateSelected: boolean;
@@ -61,7 +61,7 @@ export class AvailabilitySlotsComponent
 	};
 	removedEvents: EventInput[] = [];
 	timeOff: ITimeOff[];
-	public loading: boolean = true;
+	public loading = true;
 	organization: IOrganization;
 
 	constructor(

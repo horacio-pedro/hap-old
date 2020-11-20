@@ -8,7 +8,7 @@ import {
 	KeyResultUpdateStatusEnum,
 	IKPI,
 	KpiOperatorEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationBaseComponent } from '../../../@shared/language-base/translation-base.component';
 import { KeyResultUpdateService } from '../../../@core/services/keyresult-update.service';

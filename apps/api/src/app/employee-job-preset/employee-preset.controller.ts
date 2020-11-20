@@ -15,7 +15,7 @@ import {
 	IEmployeePresetInput,
 	IGetMatchingCriterions,
 	IMatchingCriterions
-} from '@gauzy/models';
+} from '@hap/models';
 import { JobPresetService } from './job-preset.service';
 import { JobPreset } from './job-preset.entity';
 

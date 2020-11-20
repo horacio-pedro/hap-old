@@ -2,8 +2,8 @@ import { Connection } from 'typeorm';
 import { Candidate } from './candidate.entity';
 import { Organization } from '../organization/organization.entity';
 import { Tenant } from '../tenant/tenant.entity';
-import { IUser, ISeedUsers } from '@gauzy/models';
-// import { LanguagesEnum } from '@gauzy/models';
+import { IUser, ISeedUsers } from '@hap/models';
+// import { LanguagesEnum } from '@hap/models';
 // import { CandidateSource } from '../candidate-source/candidate-source.entity';
 
 export const createDefaultCandidates = async (

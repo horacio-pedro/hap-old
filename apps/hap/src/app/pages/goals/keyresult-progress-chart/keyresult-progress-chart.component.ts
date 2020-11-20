@@ -4,7 +4,7 @@ import {
 	KeyResultDeadlineEnum,
 	IKPI,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { GoalSettingsService } from '../../../@core/services/goal-settings.service';
 import {
 	differenceInCalendarDays,

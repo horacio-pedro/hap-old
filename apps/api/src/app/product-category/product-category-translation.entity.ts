@@ -2,7 +2,7 @@ import { Entity, Column, ManyToOne, JoinColumn } from 'typeorm';
 import {
 	IProductTypeTranslation as IProductCategoryTranslation,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsOptional, IsEnum } from 'class-validator';
 import { TranslationBase } from '../core/entities/translate-base';

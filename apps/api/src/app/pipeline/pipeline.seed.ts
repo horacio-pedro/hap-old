@@ -2,7 +2,7 @@ import { Connection } from 'typeorm';
 import { Pipeline } from './pipeline.entity';
 import * as faker from 'faker';
 import { Tenant } from '../tenant/tenant.entity';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 
 export const createDefaultPipeline = async (
 	connection: Connection,

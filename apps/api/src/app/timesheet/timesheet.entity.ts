@@ -6,7 +6,7 @@ import {
 	JoinColumn,
 	OneToMany
 } from 'typeorm';
-import { ITimesheet, TimesheetStatus } from '@gauzy/models';
+import { ITimesheet, TimesheetStatus } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import {
 	IsString,

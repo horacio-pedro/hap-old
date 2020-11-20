@@ -6,7 +6,7 @@ import { CandidateCriterionsRating } from './candidate-criterion-rating.entity';
 import {
 	ICandidateCriterionsRating,
 	ICandidateCriterionsRatingCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class CandidateCriterionsRatingService extends CrudService<

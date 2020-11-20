@@ -17,7 +17,7 @@ import {
 import { AuthGuard } from '@nestjs/passport';
 import { Permissions } from '../shared/decorators/permissions';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
-import { PermissionsEnum, IInvoice, LanguagesEnum } from '@gauzy/models';
+import { PermissionsEnum, IInvoice, LanguagesEnum } from '@hap/models';
 import { ParseJsonPipe } from '../shared';
 import { I18nLang } from 'nestjs-i18n';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';

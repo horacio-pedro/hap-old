@@ -15,7 +15,7 @@ import { CrudController } from '../core/crud/crud.controller';
 import { AuthGuard } from '@nestjs/passport';
 import { RoleGuard } from '../shared/guards/auth/role.guard';
 import { Roles } from '../shared/decorators/roles';
-import { RolesEnum, ICandidateTechnologies } from '@gauzy/models';
+import { RolesEnum, ICandidateTechnologies } from '@hap/models';
 import { CandidateTechnologiesService } from './candidate-technologies.service';
 import { CandidateTechnologies } from './candidate-technologies.entity';
 import { CommandBus } from '@nestjs/cqrs';

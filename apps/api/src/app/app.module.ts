@@ -83,7 +83,7 @@ import { RequestApprovalEmployeeModule } from './request-approval-employee/reque
 import { RequestApprovalModule } from './request-approval/request-approval.module';
 import * as path from 'path';
 import { HeaderResolver, I18nJsonParser, I18nModule } from 'nestjs-i18n';
-import { LanguagesEnum } from '@gauzy/models';
+import { LanguagesEnum } from '@hap/models';
 import { EventTypeModule } from './event-types/event-type.module';
 import { AvailabilitySlotsModule } from './availability-slots/availability-slots.module';
 import { HelpCenterModule } from './help-center/help-center.module';
@@ -125,7 +125,7 @@ import { EmployeeProposalTemplateModule } from './employee-proposal-template/emp
 	imports: [
 		ServeStaticModule.forRoot({
 			rootPath: environment.isElectron
-				? path.resolve(environment.gauzyUserPath, 'public')
+				? path.resolve(environment.hapUserPath, 'public')
 				: path.resolve(process.cwd(), 'apps', 'api', 'public'),
 			serveRoot: '/public/'
 		}),

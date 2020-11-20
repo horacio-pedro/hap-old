@@ -1,4 +1,4 @@
-import { ITimeLog } from '@gauzy/models';
+import { ITimeLog } from '@hap/models';
 import { ICommand } from '@nestjs/cqrs';
 
 export class GetTimeLogGroupByEmployeeCommand implements ICommand {

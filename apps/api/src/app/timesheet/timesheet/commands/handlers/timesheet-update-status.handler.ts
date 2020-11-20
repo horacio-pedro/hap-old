@@ -1,5 +1,5 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
-import { TimesheetStatus } from '@gauzy/models';
+import { TimesheetStatus } from '@hap/models';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, In } from 'typeorm';
 import { TimesheetUpdateStatusCommand } from '../timesheet-update-status.command';

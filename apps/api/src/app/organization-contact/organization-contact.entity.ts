@@ -27,7 +27,7 @@ import {
 	IInvoice,
 	IEmployee,
 	IPayment
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationProject } from '../organization-projects/organization-projects.entity';
 import { Employee } from '../employee/employee.entity';
 import { Invoice } from '../invoice/invoice.entity';

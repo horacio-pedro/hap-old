@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CrudService } from '../core/crud/crud.service';
 import { UserOrganization } from './user-organization.entity';
 import { User } from '../user/user.entity';
-import { RolesEnum } from '@gauzy/models';
+import { RolesEnum } from '@hap/models';
 import { Organization } from '../organization/organization.entity';
 
 @Injectable()

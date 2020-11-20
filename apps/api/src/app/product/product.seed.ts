@@ -3,7 +3,7 @@ import { Product } from './product.entity';
 import { ProductType } from '../product-type/product-type.entity';
 import { ProductCategory } from '../product-category/product-category.entity';
 import * as faker from 'faker';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { Tenant } from '../tenant/tenant.entity';
 
 export const createDefaultProducts = async (

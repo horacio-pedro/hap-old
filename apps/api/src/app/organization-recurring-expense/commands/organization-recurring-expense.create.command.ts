@@ -1,4 +1,4 @@
-import { IOrganizationRecurringExpense } from '@gauzy/models';
+import { IOrganizationRecurringExpense } from '@hap/models';
 import { ICommand } from '@nestjs/cqrs';
 
 export class OrganizationRecurringExpenseCreateCommand implements ICommand {

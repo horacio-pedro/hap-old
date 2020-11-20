@@ -1,19 +1,19 @@
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 import { NbToastrService } from '@nebular/theme';
-import { CandidateExperienceService } from 'apps/gauzy/src/app/@core/services/candidate-experience.service';
+import { CandidateExperienceService } from 'apps/hap/src/app/@core/services/candidate-experience.service';
 import {
 	ICandidateExperience,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
-import { ComponentEnum } from 'apps/gauzy/src/app/@core/constants/layout.constants';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+} from '@hap/models';
+import { ComponentEnum } from 'apps/hap/src/app/@core/constants/layout.constants';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { LocalDataSource } from 'ng2-smart-table';
 
 @Component({

@@ -1,17 +1,17 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { IEmployeeProposalTemplate } from '@gauzy/models';
+import { IEmployeeProposalTemplate } from '@hap/models';
 import { NbDialogService } from '@nebular/theme';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { TranslateService } from '@ngx-translate/core';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { ToastrService } from 'apps/gauzy/src/app/@core/services/toastr.service';
-import { AvatarComponent } from 'apps/gauzy/src/app/@shared/components/avatar/avatar.component';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { ToastrService } from 'apps/hap/src/app/@core/services/toastr.service';
+import { AvatarComponent } from 'apps/hap/src/app/@shared/components/avatar/avatar.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import {
 	Nl2BrPipe,
 	TruncatePipe
-} from 'apps/gauzy/src/app/@shared/pipes/text.pipe';
-import { SelectedEmployee } from 'apps/gauzy/src/app/@theme/components/header/selectors/employee/employee.component';
+} from 'apps/hap/src/app/@shared/pipes/text.pipe';
+import { SelectedEmployee } from 'apps/hap/src/app/@theme/components/header/selectors/employee/employee.component';
 import { LocalDataSource } from 'ng2-smart-table';
 import { Subject } from 'rxjs';
 import { debounceTime, filter } from 'rxjs/operators';

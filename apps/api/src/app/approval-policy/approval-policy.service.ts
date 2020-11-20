@@ -8,7 +8,7 @@ import {
 	IApprovalPolicyCreateInput,
 	ApprovalPolicyTypesStringEnum,
 	IRequestApprovalFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { RequestContext } from '../core/context';
 
 @Injectable()

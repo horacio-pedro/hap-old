@@ -8,7 +8,7 @@ import {
 	RolesEnum,
 	ITenant,
 	IRolePermission
-} from '@gauzy/models';
+} from '@hap/models';
 import { Connection } from 'typeorm';
 import { RolePermissions } from './role-permissions.entity';
 

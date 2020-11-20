@@ -7,7 +7,7 @@ import {
 	JobPostSourceEnum,
 	JobPostStatusEnum,
 	JobPostTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { IPagination } from '../core';
 
 export const getRandomEmployeeJobPosts = async (

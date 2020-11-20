@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { CurrenciesEnum, IOrganization } from '@gauzy/models';
+import { CurrenciesEnum, IOrganization } from '@hap/models';
 import { ProductVariantPrice } from './product-variant-price.entity';
 import * as faker from 'faker';
 import { ProductCategory } from '../product-category/product-category.entity';

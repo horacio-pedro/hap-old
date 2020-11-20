@@ -1,4 +1,4 @@
-import { IMatchingCriterions } from '@gauzy/models';
+import { IMatchingCriterions } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';

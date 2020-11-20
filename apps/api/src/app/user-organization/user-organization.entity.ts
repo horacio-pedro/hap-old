@@ -6,7 +6,7 @@ import {
 	RelationId,
 	ManyToOne
 } from 'typeorm';
-import { IUserOrganization } from '@gauzy/models';
+import { IUserOrganization } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsNotEmpty } from 'class-validator';
 import { User } from '../user/user.entity';

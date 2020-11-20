@@ -19,11 +19,11 @@ import {
 	ITasksStatistics,
 	IGetManualTimesStatistics,
 	IManualTimesStatistics
-} from '@gauzy/models';
+} from '@hap/models';
 import { Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import _ from 'underscore';
-import { progressStatus } from '@gauzy/utils';
+import { progressStatus } from '@hap/utils';
 import * as moment from 'moment';
 @UntilDestroy({ checkProperties: true })
 @Component({

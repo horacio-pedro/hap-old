@@ -1,23 +1,23 @@
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { Subject } from 'rxjs';
 import { FormBuilder, Validators, FormGroup, FormArray } from '@angular/forms';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 import { takeUntil } from 'rxjs/operators';
-import { CandidateDocumentsService } from 'apps/gauzy/src/app/@core/services/candidate-documents.service';
-import { CandidateCvComponent } from 'apps/gauzy/src/app/@shared/candidate/candidate-cv/candidate-cv.component';
+import { CandidateDocumentsService } from 'apps/hap/src/app/@core/services/candidate-documents.service';
+import { CandidateCvComponent } from 'apps/hap/src/app/@shared/candidate/candidate-cv/candidate-cv.component';
 import {
 	ICandidateDocument,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
-import { ComponentEnum } from 'apps/gauzy/src/app/@core/constants/layout.constants';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+} from '@hap/models';
+import { ComponentEnum } from 'apps/hap/src/app/@core/constants/layout.constants';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { LocalDataSource } from 'ng2-smart-table';
-import { DocumentUrlTableComponent } from 'apps/gauzy/src/app/@shared/table-components/document-url/document-url.component';
-import { DocumentDateTableComponent } from 'apps/gauzy/src/app/@shared/table-components/document-date/document-date.component';
+import { DocumentUrlTableComponent } from 'apps/hap/src/app/@shared/table-components/document-url/document-url.component';
+import { DocumentDateTableComponent } from 'apps/hap/src/app/@shared/table-components/document-date/document-date.component';
 
 @Component({
 	selector: 'ga-edit-candidate-documents',

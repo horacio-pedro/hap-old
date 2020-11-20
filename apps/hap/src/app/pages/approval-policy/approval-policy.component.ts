@@ -5,7 +5,7 @@ import {
 	IApprovalPolicy,
 	ComponentLayoutStyleEnum,
 	IRolePermission
-} from '@gauzy/models';
+} from '@hap/models';
 import { LocalDataSource, Ng2SmartTableComponent } from 'ng2-smart-table';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
 import { first, filter, tap } from 'rxjs/operators';

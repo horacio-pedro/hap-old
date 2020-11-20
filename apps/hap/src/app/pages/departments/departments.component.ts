@@ -5,13 +5,13 @@ import {
 	IOrganizationDepartmentCreateInput,
 	ITag,
 	ComponentLayoutStyleEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService, NbDialogService } from '@nebular/theme';
-import { EmployeesService } from 'apps/gauzy/src/app/@core/services';
-import { OrganizationDepartmentsService } from 'apps/gauzy/src/app/@core/services/organization-departments.service';
+import { EmployeesService } from 'apps/hap/src/app/@core/services';
+import { OrganizationDepartmentsService } from 'apps/hap/src/app/@core/services/organization-departments.service';
 import { TranslateService } from '@ngx-translate/core';
 import { filter, first, tap } from 'rxjs/operators';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { Store } from '../../@core/services/store.service';
 import { ComponentEnum } from '../../@core/constants/layout.constants';
 import { LocalDataSource, Ng2SmartTableComponent } from 'ng2-smart-table';

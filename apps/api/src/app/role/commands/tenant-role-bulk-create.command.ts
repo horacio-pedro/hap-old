@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { ITenant } from '@gauzy/models';
+import { ITenant } from '@hap/models';
 
 export class TenantRoleBulkCreateCommand implements ICommand {
 	static readonly type = '[Role] Bulk Create';

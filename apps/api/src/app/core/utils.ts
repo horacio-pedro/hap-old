@@ -1,5 +1,5 @@
 import { sample } from 'lodash';
-import { IUser } from '@gauzy/models';
+import { IUser } from '@hap/models';
 import * as moment from 'moment';
 import * as path from 'path';
 import * as fs from 'fs';

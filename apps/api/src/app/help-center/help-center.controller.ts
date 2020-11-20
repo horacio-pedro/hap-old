@@ -1,4 +1,4 @@
-import { IHelpCenter, PermissionsEnum } from '@gauzy/models';
+import { IHelpCenter, PermissionsEnum } from '@hap/models';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import {
 	Controller,

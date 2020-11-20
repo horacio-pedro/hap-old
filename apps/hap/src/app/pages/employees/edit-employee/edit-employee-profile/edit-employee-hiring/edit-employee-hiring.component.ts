@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { EmployeeStore } from 'apps/gauzy/src/app/@core/services/employee-store.service';
+import { EmployeeStore } from 'apps/hap/src/app/@core/services/employee-store.service';
 import { Subject } from 'rxjs';
-import { IEmployee } from '@gauzy/models';
+import { IEmployee } from '@hap/models';
 import { takeUntil } from 'rxjs/operators';
-import { ValidationService } from 'apps/gauzy/src/app/@core/services/validation.service';
+import { ValidationService } from 'apps/hap/src/app/@core/services/validation.service';
 
 @Component({
 	selector: 'ga-edit-employee-hiring',

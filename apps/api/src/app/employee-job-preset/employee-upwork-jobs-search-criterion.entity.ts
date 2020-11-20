@@ -8,7 +8,7 @@ import {
 	IJobSearchCategory,
 	IJobSearchOccupation,
 	JobPostTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 import { JobPreset } from './job-preset.entity';
 import { Employee } from '../employee/employee.entity';

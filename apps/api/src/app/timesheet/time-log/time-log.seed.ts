@@ -6,7 +6,7 @@ import {
 	TimeLogType,
 	ITimeSlot,
 	IOrganizationProject
-} from '@gauzy/models';
+} from '@hap/models';
 import * as moment from 'moment';
 import { TimeLog } from '../time-log.entity';
 import { Timesheet } from '../timesheet.entity';

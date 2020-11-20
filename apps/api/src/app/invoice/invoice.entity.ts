@@ -3,7 +3,7 @@ import {
 	CurrenciesEnum,
 	InvoiceTypeEnum,
 	DiscountTaxTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import {
 	IsString,

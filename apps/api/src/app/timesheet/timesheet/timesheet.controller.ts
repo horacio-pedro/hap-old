@@ -17,7 +17,7 @@ import {
 	IGetTimesheetInput,
 	ISubmitTimesheetInput,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { I18nLang } from 'nestjs-i18n';
 import { TenantPermissionGuard } from '../../shared/guards/auth/tenant-permission.guard';
 

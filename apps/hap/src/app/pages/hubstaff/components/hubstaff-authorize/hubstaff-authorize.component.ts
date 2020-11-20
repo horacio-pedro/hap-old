@@ -3,13 +3,13 @@ import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { filter, tap, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
-import { HubstaffService } from 'apps/gauzy/src/app/@core/services/hubstaff.service';
+import { HubstaffService } from 'apps/hap/src/app/@core/services/hubstaff.service';
 import {
 	PersistQuery,
 	PersistStore,
 	Store
-} from 'apps/gauzy/src/app/@core/services/store.service';
-import { IOrganization } from '@gauzy/models';
+} from 'apps/hap/src/app/@core/services/store.service';
+import { IOrganization } from '@hap/models';
 
 @Component({
 	selector: 'ngx-hubstaff-authorize',

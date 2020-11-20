@@ -10,7 +10,7 @@ import {
 	ITenant,
 	IUser,
 	IRole
-} from '@gauzy/models';
+} from '@hap/models';
 import { UserService } from '../user/user.service';
 import { TenantRoleBulkCreateCommand } from '../role/commands/tenant-role-bulk-create.command';
 

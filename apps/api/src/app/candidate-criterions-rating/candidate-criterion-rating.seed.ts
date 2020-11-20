@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { ICandidate } from '@gauzy/models';
+import { ICandidate } from '@hap/models';
 import { CandidateCriterionsRating } from './candidate-criterion-rating.entity';
 import { CandidateFeedback } from '../candidate-feedbacks/candidate-feedbacks.entity';
 import { CandidatePersonalQualities } from '../candidate-personal-qualities/candidate-personal-qualities.entity';

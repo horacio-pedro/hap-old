@@ -4,7 +4,7 @@ import {
 	Component,
 	OnInit
 } from '@angular/core';
-import { HubstaffService } from 'apps/gauzy/src/app/@core/services/hubstaff.service';
+import { HubstaffService } from 'apps/hap/src/app/@core/services/hubstaff.service';
 import { NbDialogRef } from '@nebular/theme';
 import { Observable } from 'rxjs';
 import * as moment from 'moment';

@@ -1,5 +1,5 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
-import { ICandidate } from '@gauzy/models';
+import { ICandidate } from '@hap/models';
 import { CandidateCreateCommand } from '../candidate.create.command';
 import { CandidateService } from '../../candidate.service';
 

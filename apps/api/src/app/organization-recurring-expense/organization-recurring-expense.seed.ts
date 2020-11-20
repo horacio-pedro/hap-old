@@ -6,7 +6,7 @@ import {
 	CurrenciesEnum,
 	IOrganization,
 	RecurringExpenseDefaultCategoriesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import * as moment from 'moment';
 import { Organization } from '../organization/organization.entity';
 

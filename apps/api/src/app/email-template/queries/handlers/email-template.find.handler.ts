@@ -6,7 +6,7 @@ import {
 	LanguagesEnum,
 	EmailTemplateNameEnum,
 	IEmailTemplate
-} from '@gauzy/models';
+} from '@hap/models';
 import { IsNull } from 'typeorm';
 
 @QueryHandler(FindEmailTemplateQuery)

@@ -30,7 +30,7 @@ import {
 	IEmployee,
 	IOrganizationSprint,
 	IPayment
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationContact } from '../organization-contact/organization-contact.entity';
 import { Employee } from '../employee/employee.entity';
 import { InvoiceItem } from '../invoice-item/invoice-item.entity';

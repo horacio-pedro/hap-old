@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subject } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { CandidateInterviewService } from 'apps/gauzy/src/app/@core/services/candidate-interview.service';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { CandidateInterviewService } from 'apps/hap/src/app/@core/services/candidate-interview.service';
 import {
 	ICandidateInterview,
 	ICandidate,
@@ -11,28 +11,28 @@ import {
 	ICandidateInterviewers,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { takeUntil, first } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
-import { CandidateInterviewMutationComponent } from 'apps/gauzy/src/app/@shared/candidate/candidate-interview-mutation/candidate-interview-mutation.component';
-import { DeleteInterviewComponent } from 'apps/gauzy/src/app/@shared/candidate/candidate-confirmation/delete-interview/delete-interview.component';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { CandidateInterviewMutationComponent } from 'apps/hap/src/app/@shared/candidate/candidate-interview-mutation/candidate-interview-mutation.component';
+import { DeleteInterviewComponent } from 'apps/hap/src/app/@shared/candidate/candidate-confirmation/delete-interview/delete-interview.component';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 import { LocalDataSource } from 'ng2-smart-table';
 import { InterviewStarRatingComponent } from './table-components/rating/rating.component';
 import { InterviewCriterionsTableComponent } from './table-components/criterions/criterions.component';
 import { InterviewDateTableComponent } from './table-components/date/date.component';
 import { InterviewersTableComponent } from './table-components/interviewers/interviewers.component';
 import { InterviewActionsTableComponent } from './table-components/actions/actions.component';
-import { CandidatesService } from 'apps/gauzy/src/app/@core/services/candidates.service';
-import { PictureNameTagsComponent } from 'apps/gauzy/src/app/@shared/table-components/picture-name-tags/picture-name-tags.component';
-import { EmployeesService } from 'apps/gauzy/src/app/@core/services';
-import { CandidateFeedbacksService } from 'apps/gauzy/src/app/@core/services/candidate-feedbacks.service';
-import { ComponentEnum } from 'apps/gauzy/src/app/@core/constants/layout.constants';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { ArchiveConfirmationComponent } from 'apps/gauzy/src/app/@shared/user/forms/archive-confirmation/archive-confirmation.component';
-import { ErrorHandlingService } from 'apps/gauzy/src/app/@core/services/error-handling.service';
-import { CandidateInterviewFeedbackComponent } from 'apps/gauzy/src/app/@shared/candidate/candidate-interview-feedback/candidate-interview-feedback.component';
+import { CandidatesService } from 'apps/hap/src/app/@core/services/candidates.service';
+import { PictureNameTagsComponent } from 'apps/hap/src/app/@shared/table-components/picture-name-tags/picture-name-tags.component';
+import { EmployeesService } from 'apps/hap/src/app/@core/services';
+import { CandidateFeedbacksService } from 'apps/hap/src/app/@core/services/candidate-feedbacks.service';
+import { ComponentEnum } from 'apps/hap/src/app/@core/constants/layout.constants';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { ArchiveConfirmationComponent } from 'apps/hap/src/app/@shared/user/forms/archive-confirmation/archive-confirmation.component';
+import { ErrorHandlingService } from 'apps/hap/src/app/@core/services/error-handling.service';
+import { CandidateInterviewFeedbackComponent } from 'apps/hap/src/app/@shared/candidate/candidate-interview-feedback/candidate-interview-feedback.component';
 
 @Component({
 	selector: 'ga-interview-panel',

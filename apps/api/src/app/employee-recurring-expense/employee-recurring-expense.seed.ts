@@ -4,7 +4,7 @@ import {
 	CurrenciesEnum,
 	IEmployee,
 	RecurringExpenseDefaultCategoriesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { EmployeeRecurringExpense } from './employee-recurring-expense.entity';
 import * as faker from 'faker';
 import * as moment from 'moment';

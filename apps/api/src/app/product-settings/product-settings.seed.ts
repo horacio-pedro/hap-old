@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { ProductVariantSettings } from './product-settings.entity';
 import * as faker from 'faker';
 import { ProductCategory } from '../product-category/product-category.entity';

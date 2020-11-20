@@ -1,17 +1,17 @@
 import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import {
 	IOrganizationDocument,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
-import { ToastrService } from 'apps/gauzy/src/app/@core/services/toastr.service';
-import { OrganizationDocumentsService } from 'apps/gauzy/src/app/@core/services/organization-documents.service';
+} from '@hap/models';
+import { ToastrService } from 'apps/hap/src/app/@core/services/toastr.service';
+import { OrganizationDocumentsService } from 'apps/hap/src/app/@core/services/organization-documents.service';
 import { Subject } from 'rxjs';
 import { first, takeUntil } from 'rxjs/operators';
 import { NbDialogService } from '@nebular/theme';
-import { DeleteConfirmationComponent } from 'apps/gauzy/src/app/@shared/user/forms/delete-confirmation/delete-confirmation.component';
+import { DeleteConfirmationComponent } from 'apps/hap/src/app/@shared/user/forms/delete-confirmation/delete-confirmation.component';
 import { UploadDocumentComponent } from './upload-document/upload-document.component';
 import { ComponentEnum } from '../../@core/constants/layout.constants';
 import { TranslationBaseComponent } from '../../@shared/language-base/translation-base.component';

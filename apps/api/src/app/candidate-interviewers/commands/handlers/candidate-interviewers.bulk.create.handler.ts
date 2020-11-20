@@ -2,7 +2,7 @@ import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { CandidateInterviewersBulkCreateCommand } from '../candidate-interviewers.bulk.create.command';
 import { CandidateInterviewersService } from '../../candidate-interviewers.service';
 import { CandidateInterviewers } from '../../candidate-interviewers.entity';
-import { ICandidateInterviewersCreateInput } from '@gauzy/models';
+import { ICandidateInterviewersCreateInput } from '@hap/models';
 
 @CommandHandler(CandidateInterviewersBulkCreateCommand)
 export class CandidateInterviewersBulkCreateHandler

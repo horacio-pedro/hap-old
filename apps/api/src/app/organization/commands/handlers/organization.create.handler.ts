@@ -1,4 +1,4 @@
-import { IOrganization, RolesEnum } from '@gauzy/models';
+import { IOrganization, RolesEnum } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { RoleService } from '../../../role/role.service';
 import { UserService } from '../../../user/user.service';

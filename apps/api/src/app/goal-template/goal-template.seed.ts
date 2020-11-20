@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { GoalTemplate } from './goal-template.entity';
-import { GoalTemplateCategoriesEnum } from '@gauzy/models';
+import { GoalTemplateCategoriesEnum } from '@hap/models';
 import { Organization } from '../organization/organization.entity';
 import { Tenant } from '../tenant/tenant.entity';
 

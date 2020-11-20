@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ViewCell } from 'ng2-smart-table';
-import { IDeal } from '@gauzy/models';
+import { IDeal } from '@hap/models';
 
 @Component({
 	selector: 'ga-pipeline-deal-created-by',

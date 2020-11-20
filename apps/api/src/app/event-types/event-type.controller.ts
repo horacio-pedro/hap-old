@@ -1,4 +1,4 @@
-import { IEventTypeCreateInput } from '@gauzy/models';
+import { IEventTypeCreateInput } from '@hap/models';
 import {
 	Body,
 	Controller,

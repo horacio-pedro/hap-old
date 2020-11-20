@@ -32,7 +32,7 @@ async function bootstrap() {
 	app.setGlobalPrefix(globalPrefix);
 
 	const options = new DocumentBuilder()
-		.setTitle('Gauzy API')
+		.setTitle('HAP API')
 		.setVersion('1.0')
 		.addBearerAuth()
 		// .setBasePath('api/')

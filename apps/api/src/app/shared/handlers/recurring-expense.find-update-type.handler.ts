@@ -3,7 +3,7 @@ import {
 	IStartUpdateTypeInfo,
 	IRecurringExpenseModel,
 	StartDateUpdateTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { Between, Not } from 'typeorm';
 import { CrudService, getLastDayOfMonth } from '../../core';
 

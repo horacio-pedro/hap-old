@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { ICandidateCreateInput } from '@gauzy/models';
+import { ICandidateCreateInput } from '@hap/models';
 
 export class CandidateCreateCommand implements ICommand {
 	static readonly type = '[Candidate] Register';

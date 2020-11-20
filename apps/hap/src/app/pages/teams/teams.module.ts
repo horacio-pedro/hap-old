@@ -1,4 +1,4 @@
-import { SharedModule } from 'apps/gauzy/src/app/@shared/shared.module';
+import { SharedModule } from 'apps/hap/src/app/@shared/shared.module';
 import { NgModule } from '@angular/core';
 import { ThemeModule } from '../../@theme/theme.module';
 import {

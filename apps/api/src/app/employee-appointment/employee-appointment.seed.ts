@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { IEmployee, IOrganization } from '@gauzy/models';
+import { IEmployee, IOrganization } from '@hap/models';
 import { EmployeeAppointment } from './employee-appointment.entity';
 import * as faker from 'faker';
 import * as moment from 'moment';

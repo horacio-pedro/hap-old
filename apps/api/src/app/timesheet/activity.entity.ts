@@ -16,7 +16,7 @@ import {
 	ITask,
 	ITimeSlot,
 	IOrganizationProject
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import {
 	IsString,

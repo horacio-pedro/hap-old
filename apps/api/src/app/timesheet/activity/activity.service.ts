@@ -10,7 +10,7 @@ import {
 	IGetActivitiesInput,
 	IDailyActivity,
 	IBulkActivitiesInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { CommandBus } from '@nestjs/cqrs';
 import { BulkActivitiesSaveCommand } from './commands/bulk-activities-save.command';
 

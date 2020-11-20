@@ -3,7 +3,7 @@ import { IntegrationType } from './integration-type.entity';
 import {
 	IntegrationTypeGroupEnum,
 	IntegrationTypeNameEnum
-} from '@gauzy/models';
+} from '@hap/models';
 
 const DEFAULT_INTEGRATION_TYPES = [
 	{

@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IIntegrationFilter } from '@gauzy/models';
+import { IIntegrationFilter } from '@hap/models';
 
 export class IntegrationGetCommand implements ICommand {
 	static readonly type = '[Integration] Get Integrations';

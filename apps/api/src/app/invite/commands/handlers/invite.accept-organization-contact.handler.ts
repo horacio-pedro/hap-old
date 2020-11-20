@@ -1,4 +1,4 @@
-import { InviteStatusEnum, IOrganization, RolesEnum } from '@gauzy/models';
+import { InviteStatusEnum, IOrganization, RolesEnum } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { UpdateResult } from 'typeorm';
 import { AuthService } from '../../../auth/auth.service';

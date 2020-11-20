@@ -1,4 +1,4 @@
-import { GoalOwnershipEnum } from '@gauzy/models';
+import { GoalOwnershipEnum } from '@hap/models';
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
 import { Organization } from '../organization/organization.entity';

@@ -1,5 +1,5 @@
 import { Entity, Column, OneToMany } from 'typeorm';
-import { ProductTypesIconsEnum } from '@gauzy/models';
+import { ProductTypesIconsEnum } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsEnum } from 'class-validator';
 import { Product } from '../product/product.entity';

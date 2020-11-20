@@ -1,21 +1,21 @@
 {
-	"name": "@gauzy/desktop",
+	"name": "@hap/desktop",
 	"version": "0.1.0",
-	"description": "Gauzy Desktop",
+	"description": "hap Desktop",
 	"license": "AGPL-3.0",
-	"homepage": "https://gauzy.co",
+	"homepage": "https://hap.co",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ever-co/gauzy.git"
+		"url": "git+https://github.com/horacio-pedro/hap.git"
 	},
 	"bugs": {
-		"url": "https://github.com/ever-co/gauzy/issues"
+		"url": "https://github.com/horacio-pedro/hap/issues"
 	},
 	"private": true,
 	"author": {
-		"name": "Ever Co. LTD",
-		"email": "ever@ever.co",
-		"url": "https://ever.co"
+		"name": "Conexões Infinito, Lda",
+		"email": "info@conexoesinfinito.com",
+		"url": "https://hap.onexoesinfinito.com"
 	},
 	"scripts": {},
 	"devDependencies": {

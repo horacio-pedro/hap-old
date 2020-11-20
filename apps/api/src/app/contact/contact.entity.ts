@@ -2,7 +2,7 @@ import { Column, Entity } from 'typeorm';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsString, IsOptional, IsNumber } from 'class-validator';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
-import { IContact } from '@gauzy/models';
+import { IContact } from '@hap/models';
 
 @Entity('contact')
 export class Contact extends TenantOrganizationBase implements IContact {

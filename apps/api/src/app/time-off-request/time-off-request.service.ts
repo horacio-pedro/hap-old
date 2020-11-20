@@ -15,7 +15,7 @@ import {
 	StatusTypesEnum,
 	StatusTypesMapRequestApprovalEnum,
 	ApprovalPolicyTypesStringEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { RequestApproval } from '../request-approval/request-approval.entity';
 import { RequestContext } from '../core/context';
 import * as moment from 'moment';

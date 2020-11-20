@@ -4,7 +4,7 @@ import { IsNotEmpty, IsString } from 'class-validator';
 import {
 	IJobPresetUpworkJobSearchCriterion,
 	JobPostTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 import { JobPreset } from './job-preset.entity';
 import { JobSearchCategory } from './job-search-category/job-search-category.entity';

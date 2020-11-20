@@ -1,7 +1,7 @@
 import { BadRequestException } from '@nestjs/common';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import * as moment from 'moment';
-import { ITimeSlot } from '@gauzy/models';
+import { ITimeSlot } from '@hap/models';
 import { TimeSlotCreateCommand } from '../time-slot-create.command';
 import { TimeSlotService } from '../../time-slot/time-slot.service';
 

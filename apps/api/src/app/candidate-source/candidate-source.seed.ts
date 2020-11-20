@@ -1,5 +1,5 @@
 import { Connection } from 'typeorm';
-import { ICandidate, ICandidateSource } from '@gauzy/models';
+import { ICandidate, ICandidateSource } from '@hap/models';
 import { CandidateSource } from './candidate-source.entity';
 import { Tenant } from '../tenant/tenant.entity';
 import { Organization } from '../organization/organization.entity';

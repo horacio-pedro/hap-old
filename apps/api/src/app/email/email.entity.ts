@@ -1,4 +1,4 @@
-import { IEmail, IEmailTemplate, IUser } from '@gauzy/models';
+import { IEmail, IEmailTemplate, IUser } from '@hap/models';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsNotEmpty, IsString } from 'class-validator';
 import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';

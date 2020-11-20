@@ -1,4 +1,4 @@
-import { IRole } from '@gauzy/models';
+import { IRole } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { RolePermissionsService } from '../../../role-permissions/role-permissions.service';
 import { RoleService } from '../../role.service';

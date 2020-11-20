@@ -15,7 +15,7 @@ import { ProductCategory } from './product-category.entity';
 import { ProductCategoryService } from './product-category.service';
 import { AuthGuard } from '@nestjs/passport';
 import { ParseJsonPipe } from '../shared';
-import { LanguagesEnum, IProductCategoryTranslated } from '@gauzy/models';
+import { LanguagesEnum, IProductCategoryTranslated } from '@hap/models';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('ProductCategories')

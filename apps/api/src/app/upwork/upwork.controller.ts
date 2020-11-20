@@ -24,7 +24,7 @@ import {
 	IEngagement,
 	IUpworkApiConfig,
 	IUpworkClientSecretPair
-} from '@gauzy/models';
+} from '@hap/models';
 import { Expense } from '../expense/expense.entity';
 import { Income } from '../income/income.entity';
 import { IPagination } from '../core';

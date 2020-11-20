@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Column, Entity } from 'typeorm';
-import { IIntegrationType } from '@gauzy/models';
+import { IIntegrationType } from '@hap/models';
 import { Base } from '../core/entities/base';
 @Entity('integration_type')
 export class IntegrationType extends Base implements IIntegrationType {

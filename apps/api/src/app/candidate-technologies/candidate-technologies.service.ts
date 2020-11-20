@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CrudService } from '../core/crud/crud.service';
 import { CandidateTechnologies } from './candidate-technologies.entity';
-import { ICandidateTechnologiesCreateInput } from '@gauzy/models';
+import { ICandidateTechnologiesCreateInput } from '@hap/models';
 
 @Injectable()
 export class CandidateTechnologiesService extends CrudService<

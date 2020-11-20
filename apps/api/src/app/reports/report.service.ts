@@ -3,7 +3,7 @@ import {
 	IGetReport,
 	IPagination,
 	UpdateReportMenuInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';

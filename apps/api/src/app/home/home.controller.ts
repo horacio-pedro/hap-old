@@ -4,6 +4,6 @@ import { Controller, Get } from '@nestjs/common';
 export class HomeController {
 	@Get('/')
 	home() {
-		return `Gauzy API`;
+		return `HAP API`;
 	}
 }

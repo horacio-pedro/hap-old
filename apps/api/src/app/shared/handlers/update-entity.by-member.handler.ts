@@ -1,4 +1,4 @@
-import { IEditEntityByMemberInput } from '@gauzy/models';
+import { IEditEntityByMemberInput } from '@hap/models';
 import { In } from 'typeorm';
 import { CrudService } from '../../core/crud';
 

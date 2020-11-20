@@ -12,9 +12,9 @@ import {
 	FormGroup,
 	Validators
 } from '@angular/forms';
-import { IInvite, IUserRegistrationInput, ITag, ITenant } from '@gauzy/models';
-import { InviteService } from 'apps/gauzy/src/app/@core/services/invite.service';
-import { RoleService } from 'apps/gauzy/src/app/@core/services/role.service';
+import { IInvite, IUserRegistrationInput, ITag, ITenant } from '@hap/models';
+import { InviteService } from 'apps/hap/src/app/@core/services/invite.service';
+import { RoleService } from 'apps/hap/src/app/@core/services/role.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 

@@ -5,8 +5,8 @@ import { IntegrationTenant } from '../integration-tenant/integration-tenant.enti
 import { IntegrationEntitySetting } from '../integration-entity-setting/integration-entity-setting.entity';
 import { IntegrationEntitySettingTiedEntity } from './integration-entity-setting-tied-entity.entity';
 import { Organization } from '../organization/organization.entity';
-import { IntegrationEntity } from '@gauzy/models';
-import { PROJECT_TIED_ENTITIES } from '@gauzy/integration-hubstaff';
+import { IntegrationEntity } from '@hap/models';
+import { PROJECT_TIED_ENTITIES } from '@hap/integration-hubstaff';
 
 export const createRandomIntegrationEntitySettingTiedEntity = async (
 	connection: Connection,

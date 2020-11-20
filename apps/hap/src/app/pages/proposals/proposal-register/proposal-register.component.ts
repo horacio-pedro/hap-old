@@ -15,7 +15,7 @@ import {
 	IOrganization,
 	IEmployee,
 	IEmployeeProposalTemplate
-} from '@gauzy/models';
+} from '@hap/models';
 import { ProposalsService } from '../../../@core/services/proposals.service';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';

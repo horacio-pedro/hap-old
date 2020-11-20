@@ -6,9 +6,9 @@ import {
 	IReportCategory,
 	ITimeLogFilters,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import * as moment from 'moment';
 import { chain } from 'underscore';
 import { ReportService } from '../report.server';

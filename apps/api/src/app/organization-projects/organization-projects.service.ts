@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { OrganizationProject } from './organization-projects.entity';
 import { TenantAwareCrudService } from '../core/crud/tenant-aware-crud.service';
-import { IOrganizationProjectsFindInput } from '@gauzy/models';
+import { IOrganizationProjectsFindInput } from '@hap/models';
 import { RequestContext } from '../core/context';
 
 @Injectable()

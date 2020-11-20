@@ -3,7 +3,7 @@ import { Column, Entity, JoinColumn, RelationId, ManyToOne } from 'typeorm';
 import {
 	IIntegrationEntitySetting,
 	IIntegrationEntitySettingTied
-} from '@gauzy/models';
+} from '@hap/models';
 import { IntegrationEntitySetting } from '../integration-entity-setting/integration-entity-setting.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 @Entity('integration_entity_setting_tied_entity')

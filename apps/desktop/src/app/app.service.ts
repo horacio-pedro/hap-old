@@ -113,7 +113,7 @@ export class AppService {
 			.toPromise();
 	}
 
-	pushActivityCollectionToGauzy() {
+	pushActivityCollectionToHap() {
 		return true;
 	}
 	collectFromAW(tpURL, start, end) {

@@ -1,5 +1,5 @@
 import { Connection } from 'typeorm';
-import { IEmployeeLevelInput } from '@gauzy/models';
+import { IEmployeeLevelInput } from '@hap/models';
 import { EmployeeLevel } from './organization-employee-level.entity';
 import { Organization } from '../organization/organization.entity';
 

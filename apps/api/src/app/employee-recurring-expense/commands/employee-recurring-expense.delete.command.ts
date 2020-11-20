@@ -1,4 +1,4 @@
-import { IRecurringExpenseDeleteInput } from '@gauzy/models';
+import { IRecurringExpenseDeleteInput } from '@hap/models';
 import { ICommand } from '@nestjs/cqrs';
 
 export class EmployeeRecurringExpenseDeleteCommand implements ICommand {

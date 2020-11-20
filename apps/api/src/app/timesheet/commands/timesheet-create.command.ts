@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { ITimesheetCreateInput } from '@gauzy/models';
+import { ITimesheetCreateInput } from '@hap/models';
 
 export class TimesheetCreateCommand implements ICommand {
 	static readonly type = '[Timesheet] Create Timesheet';

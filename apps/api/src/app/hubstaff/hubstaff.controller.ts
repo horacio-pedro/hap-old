@@ -5,7 +5,7 @@ import {
 	IHubstaffOrganization,
 	IHubstaffProject,
 	IIntegrationMap
-} from '@gauzy/models';
+} from '@hap/models';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiTags } from '@nestjs/swagger';
 

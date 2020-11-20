@@ -10,7 +10,7 @@ import {
 	IGetActivitiesStatistics,
 	IGetCountsStatistics,
 	IGetManualTimesStatistics
-} from '@gauzy/models';
+} from '@hap/models';
 import { TenantPermissionGuard } from '../../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('TimesheetStatistic')

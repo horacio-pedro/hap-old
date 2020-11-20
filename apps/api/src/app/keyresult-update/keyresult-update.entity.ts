@@ -1,5 +1,5 @@
 import { Entity, Column, ManyToOne, RelationId, JoinColumn } from 'typeorm';
-import { IKeyResultUpdate, KeyResultUpdateStatusEnum } from '@gauzy/models';
+import { IKeyResultUpdate, KeyResultUpdateStatusEnum } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEnum } from 'class-validator';
 import { KeyResult } from '../keyresult/keyresult.entity';

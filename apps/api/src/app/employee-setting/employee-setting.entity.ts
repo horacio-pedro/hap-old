@@ -8,7 +8,7 @@ import {
 	Max,
 	IsEnum
 } from 'class-validator';
-import { IEmployeeSetting, CurrenciesEnum } from '@gauzy/models';
+import { IEmployeeSetting, CurrenciesEnum } from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 

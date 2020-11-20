@@ -38,13 +38,13 @@ export const environment: Environment = {
   production:  ${isProd},
 
   API_BASE_URL: API_BASE_URL,
-  COMPANY_NAME: 'Ever Co. LTD',
-  COMPANY_SITE: 'Gauzy',
+  COMPANY_NAME: 'Conexões Infinito, Lda',
+  COMPANY_SITE: 'HAP',
   COMPANY_LINK: 'https://ever.co/',
-  COMPANY_SITE_LINK: 'https://gauzy.co',
+  COMPANY_SITE_LINK: 'https://hap.ao',
   COMPANY_GITHUB_LINK: 'https://github.com/ever-co',
-  COMPANY_FACEBOOK_LINK: 'https://www.facebook.com/gauzyplatform',
-  COMPANY_TWITTER_LINK: 'https://twitter.com/gauzyplatform',
+  COMPANY_FACEBOOK_LINK: 'https://www.facebook.com/happlatform',
+  COMPANY_TWITTER_LINK: 'https://twitter.com/happlatform',
   COMPANY_LINKEDIN_LINK: 'https://www.linkedin.com/company/ever-co.',
   CLOUDINARY_CLOUD_NAME: 'dv6ezkfxg',
   CLOUDINARY_API_KEY: '256868982483961',
@@ -55,7 +55,7 @@ export const environment: Environment = {
   TWITTER_AUTH_LINK: 'http://localhost:3000/api/auth/twitter',
   MICROSOFT_AUTH_LINK: 'http://localhost:3000/api/auth/microsoft',
   AUTH0_AUTH_LINK: 'http://localhost:3000/api/auth/auth0',
-  NO_INTERNET_LOGO: 'assets/images/logos/logo_Gauzy.svg',
+  NO_INTERNET_LOGO: 'assets/images/logos/logo_HAP.svg',
   SENTRY_DNS: 'https://19293d39eaa14d03aac4d3c156c4d30e@sentry.io/4397292',
   HUBSTAFF_REDIRECT_URI: 'http://localhost:4200/pages/integrations/hubstaff',
   IS_ELECTRON: IS_ELECTRON
@@ -78,10 +78,10 @@ export const cloudinaryConfiguration: CloudinaryConfiguration = {
 
 // we always want first to remove old generated files (one of them is not needed for current build)
 try {
-	unlinkSync(`./apps/gauzy/src/environments/environment.ts`);
+	unlinkSync(`./apps/hap/src/environments/environment.ts`);
 } catch {}
 try {
-	unlinkSync(`./apps/gauzy/src/environments/environment.prod.ts`);
+	unlinkSync(`./apps/hap/src/environments/environment.prod.ts`);
 } catch {}
 
 const envFileDest: string = isProd ? 'environment.prod.ts' : 'environment.ts';
@@ -90,7 +90,7 @@ const envFileDestOther: string = !isProd
 	: 'environment.ts';
 
 writeFile(
-	`./apps/gauzy/src/environments/${envFileDest}`,
+	`./apps/hap/src/environments/${envFileDest}`,
 	envFileContent,
 	function (err) {
 		if (err) {
@@ -101,7 +101,7 @@ writeFile(
 	}
 );
 
-writeFile(`./apps/gauzy/src/environments/${envFileDestOther}`, '', function (
+writeFile(`./apps/hap/src/environments/${envFileDestOther}`, '', function (
 	err
 ) {
 	if (err) {

@@ -1,7 +1,7 @@
 {
-	"name": "@gauzy/api",
+	"name": "@hap/api",
 	"version": "0.1.0",
-	"description": "Gauzy API",
+	"description": "HAP API",
 	"license": "AGPL-3.0",
 	"scripts": {
 		"typeorm": "yarn ts-node -r tsconfig-paths/register --project apps/api/tsconfig.app.json node_modules/.bin/typeorm",

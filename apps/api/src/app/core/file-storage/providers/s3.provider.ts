@@ -1,4 +1,4 @@
-import { FileStorageOption, UploadedFile } from '@gauzy/models';
+import { FileStorageOption, UploadedFile } from '@hap/models';
 import * as multerS3 from 'multer-s3';
 import { basename, join } from 'path';
 import * as moment from 'moment';
@@ -103,7 +103,7 @@ export class S3Provider extends Provider<S3Provider> {
 						fileNameString = filename(file, ext);
 					}
 				} else {
-					fileNameString = `gauzy-${prefix}-${moment().unix()}-${parseInt(
+					fileNameString = `hap-${prefix}-${moment().unix()}-${parseInt(
 						'' + Math.random() * 1000,
 						10
 					)}.${ext}`;

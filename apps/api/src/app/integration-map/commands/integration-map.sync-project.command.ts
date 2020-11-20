@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IIntegrationMapSyncProject } from '@gauzy/models';
+import { IIntegrationMapSyncProject } from '@hap/models';
 
 export class IntegrationMapSyncProjectCommand implements ICommand {
 	static readonly type = '[Integration Map] Sync Project';

@@ -7,7 +7,7 @@ import { ipcMain } from 'electron';
 import { TimerData } from '../local-data/timer';
 import { createSettingsWindow } from '../window/settings';
 import { loginPage, timeTrackerPage } from '../window/timeTracker';
-import { getApiBaseUrl } from '../window/gauzy';
+import { getApiBaseUrl } from '../window/hap';
 export default class TrayIcon {
 	tray: Tray;
 	constructor(setupWindow, knex, timeTrackerWindow, auth, settingsWindow) {
@@ -229,7 +229,7 @@ export default class TrayIcon {
 			const appConfig = LocalStore.getStore('configs');
 			//check last auth
 			const lastUser = store.get('auth');
-			if (appConfig.gauzyWindow) {
+			if (appConfig.hapWindow) {
 				timeTrackerWindow.webContents.send(
 					'get_user_detail',
 					LocalStore.beforeRequestParams()
@@ -251,7 +251,7 @@ export default class TrayIcon {
 				this.tray.setContextMenu(Menu.buildFromTemplate(contextMenu));
 			}
 
-			if (!appConfig.gauzyWindow) {
+			if (!appConfig.hapWindow) {
 				timeTrackerWindow.loadURL(timeTrackerPage());
 				timeTrackerWindow.show();
 				setTimeout(async () => {
@@ -280,7 +280,7 @@ export default class TrayIcon {
 					timeTrackerWindow.webContents.send('stop_from_tray');
 				}, 1000);
 			}
-			if (LocalStore.getStore('configs').gauzyWindow) {
+			if (LocalStore.getStore('configs').hapWindow) {
 				timeTrackerWindow.hide();
 			} else {
 				if (!loginPageAlreadyShow) {

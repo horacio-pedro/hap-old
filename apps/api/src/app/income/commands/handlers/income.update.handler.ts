@@ -3,7 +3,7 @@ import { IncomeService } from '../../income.service';
 import { EmployeeService } from '../../../employee/employee.service';
 import { EmployeeStatisticsService } from '../../../employee-statistics';
 import { IncomeUpdateCommand } from '../income.update.command';
-import { IIncome } from '@gauzy/models';
+import { IIncome } from '@hap/models';
 
 @CommandHandler(IncomeUpdateCommand)
 export class IncomeUpdateHandler

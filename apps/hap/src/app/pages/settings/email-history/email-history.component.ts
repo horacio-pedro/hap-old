@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { EmailService } from '../../../@core/services/email.service';
-import { IEmail, IOrganization } from '@gauzy/models';
+import { IEmail, IOrganization } from '@hap/models';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Store } from '../../../@core/services/store.service';
 import { takeUntil, first } from 'rxjs/operators';

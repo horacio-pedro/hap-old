@@ -35,7 +35,7 @@ export interface IIntegrationMap
 	extends IBasePerTenantAndOrganizationEntityModel {
 	integration: IIntegrationTenant;
 	sourceId: string;
-	gauzyId: string;
+	hapId: string;
 }
 
 export interface IIntegrationViewModel {
@@ -86,7 +86,7 @@ export interface IIntegrationMapSyncEntityInput
 	extends IBasePerTenantAndOrganizationEntityModel {
 	integrationId: string;
 	sourceId: string;
-	gauzyId: string;
+	hapId: string;
 	entity: string;
 }
 

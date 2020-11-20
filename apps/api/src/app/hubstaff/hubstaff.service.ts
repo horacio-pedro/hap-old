@@ -21,7 +21,7 @@ import {
 	TimeLogSourceEnum,
 	IHubstaffOrganization,
 	IHubstaffProject
-} from '@gauzy/models';
+} from '@hap/models';
 import { IntegrationTenantService } from '../integration-tenant/integration-tenant.service';
 import { IntegrationSettingService } from '../integration-setting/integration-setting.service';
 import { IntegrationMapService } from '../integration-map/integration-map.service';
@@ -29,7 +29,7 @@ import { IntegrationEntitySettingService } from '../integration-entity-setting/i
 import {
 	DEFAULT_ENTITY_SETTINGS,
 	PROJECT_TIED_ENTITIES
-} from '@gauzy/integration-hubstaff';
+} from '@hap/integration-hubstaff';
 import {
 	OrganizationCreateCommand,
 	OrganizationUpdateCommand
@@ -329,16 +329,16 @@ export class HubstaffService {
 				if (record) {
 					await this.commandBus.execute(
 						new OrganizationProjectUpdateCommand(
-							Object.assign(payload, { id: record.gauzyId })
+							Object.assign(payload, { id: record.hapId })
 						)
 					);
 					return record;
 				}
-				const gauzyProject = await this.commandBus.execute(
+				const hapProject = await this.commandBus.execute(
 					new OrganizationProjectCreateCommand(payload)
 				);
 				return await this._integrationMapService.create({
-					gauzyId: gauzyProject.id,
+					hapId: hapProject.id,
 					integrationId,
 					sourceId,
 					entity: IntegrationEntity.PROJECT,
@@ -374,7 +374,7 @@ export class HubstaffService {
 					await this.commandBus.execute(
 						new OrganizationUpdateCommand(
 							Object.assign(organization, {
-								gauzyId: record.gauzyId,
+								hapId: record.hapId,
 								imageUrl:
 									organization.imageUrl ||
 									getDummyImage(
@@ -389,7 +389,7 @@ export class HubstaffService {
 					);
 					return record;
 				}
-				const gauzyOrganization = await this.commandBus.execute(
+				const hapOrganization = await this.commandBus.execute(
 					new OrganizationCreateCommand({
 						...organization,
 						imageUrl:
@@ -402,11 +402,11 @@ export class HubstaffService {
 					})
 				);
 				return await this._integrationMapService.create({
-					gauzyId: gauzyOrganization.id,
+					hapId: hapOrganization.id,
 					integrationId,
 					sourceId,
 					entity: IntegrationEntity.ORGANIZATION,
-					organizationId: gauzyOrganization.id
+					organizationId: hapOrganization.id
 				});
 			}
 		);
@@ -421,7 +421,7 @@ export class HubstaffService {
 	}): Promise<IIntegrationMap[]> {
 		const integrationMaps = await clients.map(
 			async ({ name, id, emails }) => {
-				const gauzyClient = await this.commandBus.execute(
+				const hapClient = await this.commandBus.execute(
 					new OrganizationContactCreateCommand({
 						name,
 						organizationId,
@@ -431,7 +431,7 @@ export class HubstaffService {
 				);
 
 				return await this._integrationMapService.create({
-					gauzyId: gauzyClient.id,
+					hapId: hapClient.id,
 					integrationId,
 					sourceId: id,
 					entity: IntegrationEntity.CLIENT,
@@ -469,19 +469,19 @@ export class HubstaffService {
 				integrationId,
 				organizationId
 			);
-			const gauzyScreenshot = await this.commandBus.execute(
+			const hapScreenshot = await this.commandBus.execute(
 				new ScreenshotCreateCommand({
 					file: full_url,
 					thumb: thumb_url,
 					recordedAt: recorded_at,
 					activityTimestamp: time_slot,
-					employeeId: employee.gauzyId,
+					employeeId: employee.hapId,
 					organizationId
 				})
 			);
 			const integratedScreenshot = await this._integrationMapService.create(
 				{
-					gauzyId: gauzyScreenshot.id,
+					hapId: hapScreenshot.id,
 					integrationId,
 					sourceId: id,
 					entity: IntegrationEntity.SCREENSHOT,
@@ -533,16 +533,16 @@ export class HubstaffService {
 				if (record) {
 					await this.commandBus.execute(
 						new TaskUpdateCommand(
-							Object.assign(payload, { id: record.gauzyId })
+							Object.assign(payload, { id: record.hapId })
 						)
 					);
 					return record;
 				}
-				const gauzyTask = await this.commandBus.execute(
+				const hapTask = await this.commandBus.execute(
 					new TaskCreateCommand(payload)
 				);
 				return await this._integrationMapService.create({
-					gauzyId: gauzyTask.id,
+					hapId: hapTask.id,
 					integrationId,
 					sourceId: id,
 					entity: IntegrationEntity.TASK,
@@ -591,9 +591,9 @@ export class HubstaffService {
 				organizationId
 			);
 
-			const gauzyTimeSlot = await this.commandBus.execute(
+			const hapTimeSlot = await this.commandBus.execute(
 				new TimeSlotCreateCommand({
-					employeeId: employee.gauzyId,
+					employeeId: employee.hapId,
 					startedAt: timeSlot.starts_at,
 					keyboard: timeSlot.keyboard,
 					mouse: timeSlot.mouse,
@@ -605,7 +605,7 @@ export class HubstaffService {
 			);
 
 			const integratedSlots = await this._integrationMapService.create({
-				gauzyId: gauzyTimeSlot.id,
+				hapId: hapTimeSlot.id,
 				integrationId,
 				sourceId: timeSlot.id,
 				entity: IntegrationEntity.TIME_SLOT,
@@ -639,7 +639,7 @@ export class HubstaffService {
 			let timesheet = await this.commandBus.execute(
 				new TimesheetGetCommand({
 					where: {
-						employeeId: employee.gauzyId,
+						employeeId: employee.hapId,
 						organizationId,
 						tenantId
 					}
@@ -651,7 +651,7 @@ export class HubstaffService {
 					new TimesheetCreateCommand({
 						startedAt: start,
 						stoppedAt: end,
-						employeeId: employee.gauzyId,
+						employeeId: employee.hapId,
 						// to be get from formatedLogs, filtered by user and get totals
 						mouse: 0,
 						keyboard: 0,
@@ -661,10 +661,10 @@ export class HubstaffService {
 				);
 			}
 
-			const gauzyTimeLog = await this.commandBus.execute(
+			const hapTimeLog = await this.commandBus.execute(
 				new TimeLogCreateCommand({
 					projectId,
-					employeeId: employee.gauzyId,
+					employeeId: employee.hapId,
 					logType: timeLog.logType,
 					duration: timeLog.tracked,
 					startedAt: timeLog.starts_at,
@@ -675,7 +675,7 @@ export class HubstaffService {
 			);
 
 			const integratedLogs = await this._integrationMapService.create({
-				gauzyId: gauzyTimeLog.id,
+				hapId: hapTimeLog.id,
 				integrationId,
 				sourceId: timeLog.id,
 				entity: IntegrationEntity.TIME_LOG,
@@ -729,7 +729,7 @@ export class HubstaffService {
 			);
 		}
 		return await this._integrationMapService.create({
-			gauzyId: employee.id,
+			hapId: employee.id,
 			integrationId,
 			sourceId: user.id,
 			entity: IntegrationEntity.EMPLOYEE,
@@ -755,7 +755,7 @@ export class HubstaffService {
 		});
 	}
 
-	private async _handleProjects(sourceId, integrationId, gauzyId, token) {
+	private async _handleProjects(sourceId, integrationId, hapId, token) {
 		try {
 			const { projects } = await this.fetchIntegration(
 				`https://api.hubstaff.com/v2/organizations/${sourceId}/projects?status=all`,
@@ -771,7 +771,7 @@ export class HubstaffService {
 			);
 			return await this.syncProjects({
 				integrationId,
-				organizationId: gauzyId,
+				organizationId: hapId,
 				projects: projectMap
 			});
 		} catch (error) {
@@ -779,7 +779,7 @@ export class HubstaffService {
 		}
 	}
 
-	private async _handleClients(sourceId, integrationId, gauzyId, token) {
+	private async _handleClients(sourceId, integrationId, hapId, token) {
 		const { clients } = await this.fetchIntegration(
 			`https://api.hubstaff.com/v2/organizations/${sourceId}/clients?status=active`,
 			token
@@ -787,12 +787,12 @@ export class HubstaffService {
 
 		return await this.syncClients({
 			integrationId,
-			organizationId: gauzyId,
+			organizationId: hapId,
 			clients
 		});
 	}
 
-	private async _handleTasks(projectsMap, integrationId, token, gauzyId) {
+	private async _handleTasks(projectsMap, integrationId, token, hapId) {
 		const tasksMap = await Promise.all(
 			projectsMap.map(async (project) => {
 				const { tasks } = await this.fetchIntegration(
@@ -802,8 +802,8 @@ export class HubstaffService {
 				return await this.syncTasks({
 					integrationId,
 					tasks,
-					projectId: project.gauzyId,
-					organizationId: gauzyId
+					projectId: project.hapId,
+					organizationId: hapId
 				});
 			})
 		);
@@ -846,7 +846,7 @@ export class HubstaffService {
 			const time = moment(date).format('HH:mm:ss');
 			date = moment(date).format('YYYY-MM-DD');
 
-			const gauzyActivity = await this.commandBus.execute(
+			const hapActivity = await this.commandBus.execute(
 				new ActivityCreateCommand({
 					title: site,
 					duration: tracked,
@@ -854,11 +854,11 @@ export class HubstaffService {
 					date,
 					time,
 					projectId,
-					employeeId: employee.gauzyId
+					employeeId: employee.hapId
 				})
 			);
 			const integrationMap = await this._integrationMapService.create({
-				gauzyId: gauzyActivity.id,
+				hapId: hapActivity.id,
 				integrationId,
 				sourceId: id,
 				entity: IntegrationEntity.ACTIVITY
@@ -886,7 +886,7 @@ export class HubstaffService {
 
 			const urlActivitiesMapped = await Promise.all(
 				projectsMap.map(async (project) => {
-					const { gauzyId, sourceId } = project;
+					const { hapId, sourceId } = project;
 					const syncedActivities = {
 						urlActivities: []
 					};
@@ -925,7 +925,7 @@ export class HubstaffService {
 					);
 					return await this.syncUrlActivities({
 						integrationId,
-						projectId: gauzyId,
+						projectId: hapId,
 						activities,
 						token,
 						organizationId
@@ -974,7 +974,7 @@ export class HubstaffService {
 			const time = moment(date).format('HH:mm:ss');
 			date = moment(date).format('YYYY-MM-DD');
 
-			const gauzyActivity = await this.commandBus.execute(
+			const hapActivity = await this.commandBus.execute(
 				new ActivityCreateCommand({
 					title: name,
 					duration: tracked,
@@ -982,13 +982,13 @@ export class HubstaffService {
 					time,
 					date,
 					projectId,
-					employeeId: employee.gauzyId,
+					employeeId: employee.hapId,
 					organizationId
 				})
 			);
 			const integartedActivity = await this._integrationMapService.create(
 				{
-					gauzyId: gauzyActivity.id,
+					hapId: hapActivity.id,
 					integrationId,
 					sourceId: id,
 					entity: IntegrationEntity.ACTIVITY,
@@ -1020,7 +1020,7 @@ export class HubstaffService {
 
 			const appActivitiesMapped = await Promise.all(
 				projectsMap.map(async (project) => {
-					const { gauzyId, sourceId } = project;
+					const { hapId, sourceId } = project;
 					const syncedActivities = {
 						applicationActivities: []
 					};
@@ -1061,7 +1061,7 @@ export class HubstaffService {
 					);
 					return await this.syncAppActivities({
 						integrationId,
-						projectId: gauzyId,
+						projectId: hapId,
 						activities,
 						token,
 						organizationId
@@ -1099,7 +1099,7 @@ export class HubstaffService {
 				token,
 				integrationId,
 				organizationId,
-				project.gauzyId,
+				project.hapId,
 				start,
 				end
 			);
@@ -1139,7 +1139,7 @@ export class HubstaffService {
 
 			const screenshotsMapped = await Promise.all(
 				projectsMap.map(async (project) => {
-					const { gauzyId, sourceId } = project;
+					const { hapId, sourceId } = project;
 					const syncedActivities = {
 						screenshots: []
 					};
@@ -1179,7 +1179,7 @@ export class HubstaffService {
 					);
 					return await this.syncScreenshots({
 						integrationId,
-						projectId: gauzyId,
+						projectId: hapId,
 						screenshots,
 						token,
 						organizationId
@@ -1195,7 +1195,7 @@ export class HubstaffService {
 	async autoSync({
 		integrationId,
 		entitiesToSync,
-		gauzyId,
+		hapId,
 		sourceId,
 		token,
 		dateRange
@@ -1209,7 +1209,7 @@ export class HubstaffService {
 						const projectsMap = await this._handleProjects(
 							sourceId,
 							integrationId,
-							gauzyId,
+							hapId,
 							token
 						);
 						const taskSetting = setting.tiedEntities.find(
@@ -1232,7 +1232,7 @@ export class HubstaffService {
 								projectsMap,
 								integrationId,
 								token,
-								gauzyId
+								hapId
 							);
 						}
 
@@ -1244,7 +1244,7 @@ export class HubstaffService {
 								projectsMap,
 								integrationId,
 								token,
-								gauzyId,
+								hapId,
 								dateRange
 							);
 
@@ -1252,7 +1252,7 @@ export class HubstaffService {
 								projectsMap,
 								integrationId,
 								token,
-								gauzyId,
+								hapId,
 								dateRange
 							);
 
@@ -1260,7 +1260,7 @@ export class HubstaffService {
 								projectsMap,
 								integrationId,
 								token,
-								gauzyId,
+								hapId,
 								dateRange
 							);
 						}
@@ -1273,7 +1273,7 @@ export class HubstaffService {
 								projectsMap,
 								integrationId,
 								token,
-								gauzyId,
+								hapId,
 								dateRange
 							);
 						}
@@ -1282,7 +1282,7 @@ export class HubstaffService {
 						const clients = await this._handleClients(
 							sourceId,
 							integrationId,
-							gauzyId,
+							hapId,
 							token
 						);
 						return { clients };

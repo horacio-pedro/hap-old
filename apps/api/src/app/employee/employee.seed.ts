@@ -9,7 +9,7 @@ import {
 	ISeedUsers,
 	LanguagesEnum,
 	PayPeriodEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import * as faker from 'faker';
 
 export const createDefaultEmployees = async (

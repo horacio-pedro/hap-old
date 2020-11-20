@@ -7,7 +7,7 @@ import {
 	PermissionsEnum,
 	LanguagesEnum,
 	IOrganizationContactAcceptInviteInput
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	BadRequestException,
 	Body,

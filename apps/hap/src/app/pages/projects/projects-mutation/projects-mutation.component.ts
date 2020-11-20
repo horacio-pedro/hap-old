@@ -11,7 +11,7 @@ import {
 	ProjectOwnerEnum,
 	TaskListTypeEnum,
 	ContactType
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';

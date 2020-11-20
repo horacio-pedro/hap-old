@@ -14,7 +14,7 @@ import {
 	ITimeLog,
 	ITimerStatus,
 	ITimerStatusInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { TimerService } from './timer.service';
 import { TenantPermissionGuard } from '../../shared/guards/auth/tenant-permission.guard';
 

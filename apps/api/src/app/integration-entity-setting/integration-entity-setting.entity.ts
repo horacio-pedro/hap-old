@@ -11,7 +11,7 @@ import {
 	IIntegrationEntitySetting,
 	IIntegrationEntitySettingTied,
 	IIntegrationTenant
-} from '@gauzy/models';
+} from '@hap/models';
 import { IntegrationTenant } from '../integration-tenant/integration-tenant.entity';
 import { IntegrationEntitySettingTiedEntity } from '../integration-entity-setting-tied-entity/integration-entity-setting-tied-entity.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

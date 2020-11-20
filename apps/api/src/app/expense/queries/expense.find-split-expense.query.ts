@@ -1,4 +1,4 @@
-import { ISplitExpenseFindInput } from '@gauzy/models';
+import { ISplitExpenseFindInput } from '@hap/models';
 import { IQuery } from '@nestjs/cqrs';
 
 export class FindSplitExpenseQuery implements IQuery {

@@ -1,6 +1,6 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { EmployeeService } from '../../employee.service';
-import { IEmployee, IEmployeeCreateInput, LanguagesEnum } from '@gauzy/models';
+import { IEmployee, IEmployeeCreateInput, LanguagesEnum } from '@hap/models';
 import { EmployeeBulkCreateCommand } from '../employee.bulk.create.command';
 import { AuthService } from '../../../auth/auth.service';
 import { EmailService } from '../../../email';

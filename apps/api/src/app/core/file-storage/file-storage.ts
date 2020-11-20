@@ -1,4 +1,4 @@
-import { FileStorageOption, FileStorageProviderEnum } from '@gauzy/models';
+import { FileStorageOption, FileStorageProviderEnum } from '@hap/models';
 import * as Providers from './providers';
 import { environment } from '@env-api/environment';
 import { Provider } from './providers/provider';

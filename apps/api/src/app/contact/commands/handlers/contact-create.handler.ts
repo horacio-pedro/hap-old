@@ -1,4 +1,4 @@
-import { IContact } from '@gauzy/models';
+import { IContact } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { ContactCreateCommand } from '../contact-create.commant';
 import { ContactService } from '../../contact.service';

@@ -8,7 +8,7 @@ import {
 import {
 	IIntegrationViewModel,
 	DEFAULT_INTEGRATION_PAID_FILTERS
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	InitialFilter,
 	IntegrationsStoreService

@@ -8,23 +8,23 @@ import {
 	PermissionsEnum,
 	ITimeLogFilters,
 	OrganizationPermissionsEnum
-} from '@gauzy/models';
-import { toUTC } from '@gauzy/utils';
+} from '@hap/models';
+import { toUTC } from '@hap/utils';
 import {
 	NbCheckboxComponent,
 	NbDialogService,
 	NbMenuService
 } from '@nebular/theme';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { filter, map, debounceTime, tap } from 'rxjs/operators';
 import { Subject } from 'rxjs/internal/Subject';
-import { TimesheetService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet.service';
-import { EditTimeLogModalComponent } from 'apps/gauzy/src/app/@shared/timesheet/edit-time-log-modal/edit-time-log-modal.component';
+import { TimesheetService } from 'apps/hap/src/app/@shared/timesheet/timesheet.service';
+import { EditTimeLogModalComponent } from 'apps/hap/src/app/@shared/timesheet/edit-time-log-modal/edit-time-log-modal.component';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { ViewTimeLogModalComponent } from 'apps/gauzy/src/app/@shared/timesheet/view-time-log-modal/view-time-log-modal/view-time-log-modal.component';
-import { ConfirmComponent } from 'apps/gauzy/src/app/@shared/dialogs';
+import { ViewTimeLogModalComponent } from 'apps/hap/src/app/@shared/timesheet/view-time-log-modal/view-time-log-modal/view-time-log-modal.component';
+import { ConfirmComponent } from 'apps/hap/src/app/@shared/dialogs';
 import { TranslateService } from '@ngx-translate/core';
-import { TimesheetFilterService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet-filter.service';
+import { TimesheetFilterService } from 'apps/hap/src/app/@shared/timesheet/timesheet-filter.service';
 import * as _ from 'underscore';
 
 @UntilDestroy({ checkProperties: true })

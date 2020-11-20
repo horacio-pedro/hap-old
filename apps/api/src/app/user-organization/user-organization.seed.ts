@@ -4,7 +4,7 @@ import {
 	IUser,
 	IUserOrganization,
 	ISeedUsers
-} from '@gauzy/models';
+} from '@hap/models';
 import { UserOrganization } from './user-organization.entity';
 import { Tenant } from '../tenant/tenant.entity';
 

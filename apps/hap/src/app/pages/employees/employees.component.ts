@@ -10,7 +10,7 @@ import {
 	ComponentLayoutStyleEnum,
 	IOrganization,
 	EmployeeViewModel
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalDataSource, Ng2SmartTableComponent } from 'ng2-smart-table';

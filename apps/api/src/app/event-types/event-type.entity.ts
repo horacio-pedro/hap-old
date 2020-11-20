@@ -16,7 +16,7 @@ import {
 	IsOptional,
 	IsBoolean
 } from 'class-validator';
-import { IEventType } from '@gauzy/models';
+import { IEventType } from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { Tag } from '../tags/tag.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

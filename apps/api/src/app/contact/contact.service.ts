@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CrudService } from '../core';
 import { Contact } from './contact.entity';
-import { IContactCreateInput } from '@gauzy/models';
+import { IContactCreateInput } from '@hap/models';
 
 @Injectable()
 export class ContactService extends CrudService<Contact> {

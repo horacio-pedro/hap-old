@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { InvoicesService } from '../../@core/services/invoices.service';
-import { IEstimateEmail, EstimateStatusTypesEnum } from '@gauzy/models';
+import { IEstimateEmail, EstimateStatusTypesEnum } from '@hap/models';
 import { EstimateEmailService } from '../../@core/services/estimate-email.service';
 
 @Component({

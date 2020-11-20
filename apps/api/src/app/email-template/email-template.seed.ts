@@ -3,7 +3,7 @@ import { Connection } from 'typeorm';
 import { EmailTemplate } from './email-template.entity';
 import * as mjml2html from 'mjml';
 import * as path from 'path';
-import { IOrganization, ITenant } from '@gauzy/models';
+import { IOrganization, ITenant } from '@hap/models';
 /**
  * Note: This seed file assumes the following directory structure in seeds/data/email/default-email-templates/ folder
  *

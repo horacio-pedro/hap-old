@@ -10,7 +10,7 @@ import {
 	IOrganizationPosition,
 	ITag,
 	IContact
-} from '@gauzy/models';
+} from '@hap/models';
 import { IOrganizationEmploymentType } from './organization-employment-type.model';
 import { ICandidateExperience } from './candidate-experience.model';
 import { ICandidateSkill } from './candidate-skill.model';

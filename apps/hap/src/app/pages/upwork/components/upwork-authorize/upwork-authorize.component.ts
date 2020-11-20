@@ -9,13 +9,13 @@ import {
 	debounceTime
 } from 'rxjs/operators';
 import { EMPTY, Subject } from 'rxjs';
-import { UpworkService } from 'apps/gauzy/src/app/@core/services/upwork.service';
+import { UpworkService } from 'apps/hap/src/app/@core/services/upwork.service';
 import {
 	PersistQuery,
 	PersistStore,
 	Store
-} from 'apps/gauzy/src/app/@core/services/store.service';
-import { IOrganization } from '@gauzy/models';
+} from 'apps/hap/src/app/@core/services/store.service';
+import { IOrganization } from '@hap/models';
 
 @Component({
 	selector: 'ngx-upwork-authorize',

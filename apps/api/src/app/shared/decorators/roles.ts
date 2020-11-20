@@ -2,7 +2,7 @@ import { SetMetadata, createParamDecorator } from '@nestjs/common';
 import { RequestContext } from '../../core/context';
 import { environment as env } from '@env-api/environment';
 import { verify } from 'jsonwebtoken';
-import { RolesEnum } from '@gauzy/models';
+import { RolesEnum } from '@hap/models';
 
 export const Roles = (...roles: string[]) => SetMetadata('roles', roles);
 

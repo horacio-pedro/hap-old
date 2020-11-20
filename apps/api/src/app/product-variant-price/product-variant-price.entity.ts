@@ -1,5 +1,5 @@
 import { Entity, Column, OneToOne } from 'typeorm';
-import { IProductVariantPrice, CurrenciesEnum } from '@gauzy/models';
+import { IProductVariantPrice, CurrenciesEnum } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNumber, IsEnum } from 'class-validator';
 import { ProductVariant } from '../product-variant/product-variant.entity';

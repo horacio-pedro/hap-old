@@ -12,7 +12,7 @@ import {
 	IGetTimeLogReportInput,
 	ITimeLog,
 	TimeLogType
-} from '@gauzy/models';
+} from '@hap/models';
 import * as moment from 'moment';
 import { CrudService } from '../../core';
 import { Organization } from '../../organization/organization.entity';

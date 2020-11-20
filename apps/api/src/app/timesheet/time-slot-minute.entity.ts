@@ -6,7 +6,7 @@ import {
 	JoinColumn,
 	Unique
 } from 'typeorm';
-import { ITimeSlotMinute } from '@gauzy/models';
+import { ITimeSlotMinute } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNumber, IsDateString } from 'class-validator';
 import { TimeSlot } from './time-slot.entity';

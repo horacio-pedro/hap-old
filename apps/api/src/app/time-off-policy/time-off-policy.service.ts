@@ -9,7 +9,7 @@ import {
 	ITimeOffPolicyCreateInput,
 	ITimeOffPolicyUpdateInput,
 	ITimeOffPolicy
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class TimeOffPolicyService extends CrudService<TimeOffPolicy> {

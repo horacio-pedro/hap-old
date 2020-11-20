@@ -4,7 +4,7 @@ import { CrudController } from '../core';
 import { Language } from './language.entity';
 import { LanguageService } from './language.service';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { Permissions } from '../shared/decorators/permissions';
 @ApiTags('Languages')
 @Controller()

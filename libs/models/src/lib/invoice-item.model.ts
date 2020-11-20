@@ -6,7 +6,7 @@ import {
 	ITask,
 	IInvoice,
 	IExpense
-} from '@gauzy/models';
+} from '@hap/models';
 
 export interface IInvoiceItem extends IBasePerTenantAndOrganizationEntityModel {
 	name?: string;

@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IUserCreateInput } from '@gauzy/models';
+import { IUserCreateInput } from '@hap/models';
 
 export class UserCreateCommand implements ICommand {
 	static readonly type = '[User] Register';

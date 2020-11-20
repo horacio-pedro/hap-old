@@ -1,4 +1,4 @@
-import { IOrganizationCreateInput, PermissionsEnum } from '@gauzy/models';
+import { IOrganizationCreateInput, PermissionsEnum } from '@hap/models';
 import {
 	Body,
 	Controller,

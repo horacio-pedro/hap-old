@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { RouteUtil } from 'apps/gauzy/src/app/@core/services/route-utils';
+import { RouteUtil } from 'apps/hap/src/app/@core/services/route-utils';
 
 @UntilDestroy({ checkProperties: true })
 @Component({

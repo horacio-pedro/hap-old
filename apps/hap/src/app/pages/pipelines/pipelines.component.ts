@@ -3,7 +3,7 @@ import {
 	IPipeline,
 	ComponentLayoutStyleEnum,
 	IRolePermission
-} from '@gauzy/models';
+} from '@hap/models';
 import { Store } from '../../@core/services/store.service';
 import { PipelinesService } from '../../@core/services/pipelines.service';
 import { LocalDataSource, Ng2SmartTableComponent } from 'ng2-smart-table';

@@ -3,7 +3,7 @@ import { Injectable, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { ProductCategory } from './product-category.entity';
 import { Repository } from 'typeorm';
-import { IProductCategoryTranslated } from '@gauzy/models';
+import { IProductCategoryTranslated } from '@hap/models';
 
 @Injectable()
 export class ProductCategoryService extends CrudService<ProductCategory> {

@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Column, Entity, ManyToMany, JoinTable } from 'typeorm';
-import { IIntegration, IIntegrationType, ITag } from '@gauzy/models';
+import { IIntegration, IIntegrationType, ITag } from '@hap/models';
 import { IntegrationType } from './integration-type.entity';
 import { IsNumber } from 'class-validator';
 import { Tag } from '../tags/tag.entity';

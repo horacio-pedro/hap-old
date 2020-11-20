@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { ICreateScreenshotInput } from '@gauzy/models';
+import { ICreateScreenshotInput } from '@hap/models';
 
 export class ScreenshotCreateCommand implements ICommand {
 	static readonly type = '[Screenshot] Create Screenshot';

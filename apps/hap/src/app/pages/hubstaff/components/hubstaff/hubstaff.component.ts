@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { TitleCasePipe } from '@angular/common';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { TranslateService } from '@ngx-translate/core';
-import { HubstaffService } from 'apps/gauzy/src/app/@core/services/hubstaff.service';
+import { HubstaffService } from 'apps/hap/src/app/@core/services/hubstaff.service';
 import { ActivatedRoute } from '@angular/router';
 import {
 	switchMap,
@@ -12,13 +12,13 @@ import {
 	first,
 	map
 } from 'rxjs/operators';
-import { IHubstaffOrganization, IHubstaffProject } from '@gauzy/models';
+import { IHubstaffOrganization, IHubstaffProject } from '@hap/models';
 import { Observable, of } from 'rxjs';
-import { ErrorHandlingService } from 'apps/gauzy/src/app/@core/services/error-handling.service';
-import { ToastrService } from 'apps/gauzy/src/app/@core/services/toastr.service';
+import { ErrorHandlingService } from 'apps/hap/src/app/@core/services/error-handling.service';
+import { ToastrService } from 'apps/hap/src/app/@core/services/toastr.service';
 import { NbDialogService, NbMenuItem, NbMenuService } from '@nebular/theme';
 import { SettingsDialogComponent } from '../settings-dialog/settings-dialog.component';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 
 @UntilDestroy({ checkProperties: true })

@@ -1,4 +1,4 @@
-import { IOrganization, ITenant } from '@gauzy/models';
+import { IOrganization, ITenant } from '@hap/models';
 import { Connection } from 'typeorm';
 import { Skill } from './skill.entity';
 

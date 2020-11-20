@@ -19,7 +19,7 @@ import { TaskService } from './task.service';
 import { AuthGuard } from '@nestjs/passport';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
 import { Permissions } from '../shared/decorators/permissions';
-import { PermissionsEnum, IGetTaskByEmployeeOptions } from '@gauzy/models';
+import { PermissionsEnum, IGetTaskByEmployeeOptions } from '@hap/models';
 import { EmployeeService } from '../employee/employee.service';
 import { RequestContext } from '../core/context';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';

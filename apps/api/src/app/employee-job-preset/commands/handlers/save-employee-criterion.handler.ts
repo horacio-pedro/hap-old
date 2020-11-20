@@ -1,5 +1,5 @@
-import { GauzyAIService } from '@gauzy/integration-ai';
-import { IMatchingCriterions } from '@gauzy/models';
+import { HapAIService } from '@hap/integration-ai';
+import { IMatchingCriterions } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -23,7 +23,7 @@ export class SaveEmployeeCriterionHandler
 		private readonly jobPresetUpworkJobSearchCriterionRepository: Repository<
 			JobPresetUpworkJobSearchCriterion
 		>,
-		private gauzyAIService: GauzyAIService
+		private hapAIService: HapAIService
 	) {}
 
 	public async execute(
@@ -56,7 +56,7 @@ export class SaveEmployeeCriterionHandler
 			}
 		);
 
-		this.gauzyAIService.syncGauzyEmployeeJobSearchCriteria(
+		this.hapAIService.syncHapEmployeeJobSearchCriteria(
 			employee,
 			criteria
 		);

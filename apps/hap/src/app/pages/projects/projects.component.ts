@@ -7,7 +7,7 @@ import {
 	IOrganizationProjectsCreateInput,
 	PermissionsEnum,
 	ComponentLayoutStyleEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService, NbDialogService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { filter, first, tap } from 'rxjs/operators';

@@ -1,4 +1,4 @@
-import { ICandidateFeedback } from '@gauzy/models';
+import { ICandidateFeedback } from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';

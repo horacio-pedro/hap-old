@@ -6,7 +6,7 @@ import {
 	JoinTable,
 	ManyToMany
 } from 'typeorm';
-import { IPayment, CurrenciesEnum, PaymentMethodEnum } from '@gauzy/models';
+import { IPayment, CurrenciesEnum, PaymentMethodEnum } from '@hap/models';
 import { ApiPropertyOptional } from '@nestjs/swagger';
 import {
 	IsEnum,

@@ -9,7 +9,7 @@ import {
 	IInvoice,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
 import { InvoicePaidComponent } from '../table-components/invoice-paid.component';
 import { ComponentEnum } from '../../../@core/constants/layout.constants';

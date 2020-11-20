@@ -3,7 +3,7 @@ import { HelpCenterAuthor } from './help-center-author.entity';
 import { HelpCenterArticle } from '../help-center-article/help-center-article.entity';
 import * as faker from 'faker';
 import { Tenant } from '../tenant/tenant.entity';
-import { IEmployee } from '@gauzy/models';
+import { IEmployee } from '@hap/models';
 
 export const createDefaultHelpCenterAuthor = async (
 	connection: Connection,

@@ -1,6 +1,6 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { TimeSheetService } from '../../timesheet.service';
-import { ITimesheet } from '@gauzy/models';
+import { ITimesheet } from '@hap/models';
 import { InjectRepository } from '@nestjs/typeorm';
 import { TimeSlot } from '../../../time-slot.entity';
 import { Between, Repository } from 'typeorm';

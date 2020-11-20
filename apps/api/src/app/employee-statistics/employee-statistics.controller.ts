@@ -3,7 +3,7 @@ import {
 	IEmployeeStatistics,
 	IMonthAggregatedEmployeeStatistics,
 	IEmployeeStatisticsHistory
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	Controller,
 	Get,

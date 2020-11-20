@@ -10,7 +10,7 @@ import {
 import {
 	IEquipmentSharing,
 	RequestApprovalStatusTypesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsDate, IsEnum, IsNotEmpty, IsString } from 'class-validator';
 import { Equipment } from '../equipment/equipment.entity';

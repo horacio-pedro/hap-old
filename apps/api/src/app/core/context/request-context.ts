@@ -9,7 +9,7 @@ import {
 	PermissionsEnum,
 	LanguagesEnum,
 	RolesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { ExtractJwt } from 'passport-jwt';
 import { JsonWebTokenError, verify } from 'jsonwebtoken';
 import { environment as env } from '@env-api/environment';

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ViewCell } from 'ng2-smart-table';
-import { ApprovalPolicyTypesEnum } from '@gauzy/models';
+import { ApprovalPolicyTypesEnum } from '@hap/models';
 
 @Component({
 	selector: 'ngx-request-approval-status',

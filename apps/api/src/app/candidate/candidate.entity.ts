@@ -16,8 +16,8 @@ import {
 	IOrganizationDepartment,
 	IContact,
 	ITag
-} from '@gauzy/models';
-import { avarage } from '@gauzy/utils';
+} from '@hap/models';
+import { avarage } from '@hap/utils';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsDate, IsOptional, IsEnum } from 'class-validator';
 import {

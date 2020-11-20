@@ -1,4 +1,4 @@
-import { ICandidateSource } from '@gauzy/models';
+import { ICandidateSource } from '@hap/models';
 import { CurrenciesEnum, DefaultValueDateTypeEnum, IUser } from '..';
 import { LanguagesEnum } from './user.model';
 

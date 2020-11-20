@@ -4,7 +4,7 @@ import {
 	IEquipment,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { LocalDataSource, Ng2SmartTableComponent } from 'ng2-smart-table';
 import { FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';

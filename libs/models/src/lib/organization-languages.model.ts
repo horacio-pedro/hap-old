@@ -4,7 +4,7 @@ import {
 	ILanguageFindInput,
 	IOrganization,
 	IOrganizationFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 export interface IOrganizationLanguages
 	extends IBasePerTenantAndOrganizationEntityModel {

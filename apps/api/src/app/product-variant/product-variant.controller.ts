@@ -22,7 +22,7 @@ import { CommandBus } from '@nestjs/cqrs';
 import { Product } from '../product/product.entity';
 import { AuthGuard } from '@nestjs/passport';
 import { DeleteResult } from 'typeorm';
-import { IVariantCreateInput } from '@gauzy/models';
+import { IVariantCreateInput } from '@hap/models';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('ProductVariant')

@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { UpworkStoreService } from 'apps/gauzy/src/app/@core/services/upwork-store.service';
+import { UpworkStoreService } from 'apps/hap/src/app/@core/services/upwork-store.service';
 import { Observable, Subject, of } from 'rxjs';
 import { NbDialogRef, NbToastrService } from '@nebular/theme';
-import { IEngagement } from '@gauzy/models';
+import { IEngagement } from '@hap/models';
 import { takeUntil, tap, catchError } from 'rxjs/operators';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { TranslateService } from '@ngx-translate/core';
-import { ErrorHandlingService } from 'apps/gauzy/src/app/@core/services/error-handling.service';
+import { ErrorHandlingService } from 'apps/hap/src/app/@core/services/error-handling.service';
 
 @Component({
 	selector: 'ngx-sync-data-selection',

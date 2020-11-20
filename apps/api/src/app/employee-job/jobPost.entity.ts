@@ -3,7 +3,7 @@ import {
 	JobPostSourceEnum,
 	JobPostStatusEnum,
 	JobPostTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { Model } from '../core/entities/base';
 
 export class JobPost extends Model implements IJobPost {

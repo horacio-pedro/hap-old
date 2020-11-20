@@ -1,4 +1,4 @@
-import { IEmployeeCreateInput } from '@gauzy/models';
+import { IEmployeeCreateInput } from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as moment from 'moment';

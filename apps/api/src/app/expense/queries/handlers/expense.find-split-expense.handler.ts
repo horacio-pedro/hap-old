@@ -1,4 +1,4 @@
-import { ISplitExpenseOutput } from '@gauzy/models';
+import { ISplitExpenseOutput } from '@hap/models';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { IPagination } from '../../../core';
 import { EmployeeService } from '../../../employee/employee.service';

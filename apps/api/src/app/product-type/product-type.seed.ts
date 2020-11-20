@@ -1,7 +1,7 @@
 import * as seed from './product-type.seed.json';
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { IOrganization, ProductTypesIconsEnum } from '@gauzy/models';
+import { IOrganization, ProductTypesIconsEnum } from '@hap/models';
 import { ProductType } from './product-type.entity';
 import * as faker from 'faker';
 import { ProductCategory } from '../product-category/product-category.entity';

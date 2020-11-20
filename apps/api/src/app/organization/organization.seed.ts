@@ -11,7 +11,7 @@ import {
 	BonusTypeEnum,
 	WeekDaysEnum,
 	AlignmentOptions
-} from '@gauzy/models';
+} from '@hap/models';
 import { Tenant } from './../tenant/tenant.entity';
 import { Skill } from '../skills/skill.entity';
 import { Contact } from '../contact/contact.entity';

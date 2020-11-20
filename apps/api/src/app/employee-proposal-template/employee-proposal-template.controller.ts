@@ -1,4 +1,4 @@
-import { IPagination } from '@gauzy/models';
+import { IPagination } from '@hap/models';
 import {
 	Controller,
 	Get,

@@ -24,7 +24,7 @@ import {
 	IOrganizationContact,
 	IInvoiceEstimateHistory,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { InvoicesService } from '../../@core/services/invoices.service';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
 import { first, map, filter, tap } from 'rxjs/operators';

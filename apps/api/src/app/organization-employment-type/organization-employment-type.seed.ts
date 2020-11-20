@@ -1,4 +1,4 @@
-import { GenericEmploymentTypes } from '@gauzy/models';
+import { GenericEmploymentTypes } from '@hap/models';
 import { Connection } from 'typeorm';
 import { OrganizationEmploymentType } from './organization-employment-type.entity';
 import { Organization } from '../organization/organization.entity';

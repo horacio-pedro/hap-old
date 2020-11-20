@@ -7,7 +7,7 @@ import {
 	IOrganizationProject,
 	IProduct,
 	ITask
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsNumber, IsString, IsOptional, IsBoolean } from 'class-validator';
 import { Invoice } from '../invoice/invoice.entity';

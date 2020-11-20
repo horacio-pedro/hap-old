@@ -1,4 +1,4 @@
-gauzy desktop with nstudio electron
+hap desktop with nstudio electron
 
 how to:
 
@@ -49,9 +49,9 @@ build execute app
 build:desktop:windows:quick
 ```
 
-uninstall gauzy desktop macOS
+uninstall hap desktop macOS
 
 ```bash
 - delete app data
-$ rm -rf ~/Library/Application Support/gauzy-desktop
+$ rm -rf ~/Library/Application Support/hap-desktop
 ```

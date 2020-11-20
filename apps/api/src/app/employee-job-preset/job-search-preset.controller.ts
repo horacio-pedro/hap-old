@@ -16,12 +16,12 @@ import {
 	IGetJobPresetInput,
 	IJobPreset,
 	IMatchingCriterions
-} from '@gauzy/models';
+} from '@hap/models';
 import { JobPresetService } from './job-preset.service';
 import { JobPreset } from './job-preset.entity';
 import { JobPresetUpworkJobSearchCriterion } from './job-preset-upwork-job-search-criterion.entity';
 import { EmployeeUpworkJobsSearchCriterion } from './employee-upwork-jobs-search-criterion.entity';
-import { GauzyAIService } from '@gauzy/integration-ai';
+import { HapAIService } from '@hap/integration-ai';
 import { EmployeeService } from '../employee/employee.service';
 
 @ApiTags('JobSearchPreset')
@@ -31,7 +31,7 @@ export class JobSearchPresetController {
 	constructor(
 		private readonly jobPresetService: JobPresetService,
 		private readonly employeeService: EmployeeService,
-		private readonly gauzyAIService: GauzyAIService
+		private readonly hapAIService: HapAIService
 	) {}
 
 	@ApiOperation({ summary: 'Find all employee job posts' })
@@ -52,7 +52,7 @@ export class JobSearchPresetController {
 
 		const employees = await this.employeeService.findAllActive();
 
-		await this.gauzyAIService.syncEmployees(employees);
+		await this.hapAIService.syncEmployees(employees);
 
 		return this.jobPresetService.getAll(data);
 	}

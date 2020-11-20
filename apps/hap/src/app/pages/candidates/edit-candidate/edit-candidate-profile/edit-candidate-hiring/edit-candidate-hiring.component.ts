@@ -1,9 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Subject } from 'rxjs';
-import { ICandidate } from '@gauzy/models';
+import { ICandidate } from '@hap/models';
 import { takeUntil } from 'rxjs/operators';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
 @Component({
 	selector: 'ga-edit-candidate-hiring',
 	templateUrl: './edit-candidate-hiring.component.html'

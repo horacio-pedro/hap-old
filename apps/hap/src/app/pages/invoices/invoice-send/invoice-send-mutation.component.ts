@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NbDialogRef, NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationBaseComponent } from '../../../@shared/language-base/translation-base.component';
-import { IInvoice, ITag, InvoiceStatusTypesEnum } from '@gauzy/models';
+import { IInvoice, ITag, InvoiceStatusTypesEnum } from '@hap/models';
 import { InvoicesService } from '../../../@core/services/invoices.service';
 import { Store } from '../../../@core/services/store.service';
 import { InvoiceEstimateHistoryService } from '../../../@core/services/invoice-estimate-history.service';

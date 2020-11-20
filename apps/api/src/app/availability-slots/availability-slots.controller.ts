@@ -1,4 +1,4 @@
-import { IAvailabilitySlotsCreateInput } from '@gauzy/models';
+import { IAvailabilitySlotsCreateInput } from '@hap/models';
 import {
 	Body,
 	Controller,

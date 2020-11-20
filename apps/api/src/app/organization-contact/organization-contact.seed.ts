@@ -5,7 +5,7 @@ import { Organization } from '../organization/organization.entity';
 import { OrganizationContact } from './organization-contact.entity';
 import { Contact } from '../contact/contact.entity';
 import * as faker from 'faker';
-import { ContactOrganizationInviteStatus, ContactType } from '@gauzy/models';
+import { ContactOrganizationInviteStatus, ContactType } from '@hap/models';
 import { Tag } from '../tags/tag.entity';
 import * as _ from 'underscore';
 

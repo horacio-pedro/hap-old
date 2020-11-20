@@ -7,7 +7,7 @@ import {
 	IEmployee,
 	IExpenseCategory,
 	IOrganizationVendor
-} from '@gauzy/models';
+} from '@hap/models';
 import * as fs from 'fs';
 import * as csv from 'csv-parser';
 import { Tenant } from '../tenant/tenant.entity';

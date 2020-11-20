@@ -6,7 +6,7 @@ import { EquipmentSharingService } from '../../../equipment-sharing';
 import {
 	ApprovalPolicyTypesStringEnum,
 	StatusTypesMapRequestApprovalEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { TimeOffRequestService } from '../../../time-off-request/time-off-request.service';
 
 @CommandHandler(RequestApprovalStatusCommand)

@@ -19,7 +19,7 @@ import {
 	PermissionsEnum,
 	IGetTimeLogConflictInput,
 	IGetTimeLogReportInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { AuthGuard } from '@nestjs/passport';
 import { TimeLogService } from './time-log.service';
 import { Permissions } from '../../shared/decorators/permissions';

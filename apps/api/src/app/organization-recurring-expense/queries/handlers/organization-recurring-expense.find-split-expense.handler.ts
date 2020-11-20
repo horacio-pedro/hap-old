@@ -1,4 +1,4 @@
-import { IOrganizationRecurringExpenseForEmployeeOutput } from '@gauzy/models';
+import { IOrganizationRecurringExpenseForEmployeeOutput } from '@hap/models';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { IPagination } from '../../../core';
 import { EmployeeService } from '../../../employee/employee.service';

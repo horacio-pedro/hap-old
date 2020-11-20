@@ -1,6 +1,6 @@
 import { ICommandHandler, CommandHandler } from '@nestjs/cqrs';
 import { EquipmentSharing } from '../../equipment-sharing.entity';
-import { RequestApprovalStatusTypesEnum } from '@gauzy/models';
+import { RequestApprovalStatusTypesEnum } from '@hap/models';
 import { RequestApproval } from '../../../request-approval/request-approval.entity';
 import { RequestContext } from '../../../core/context';
 import { EquipmentSharingUpdateCommand } from '../equipment-sharing.update.command';

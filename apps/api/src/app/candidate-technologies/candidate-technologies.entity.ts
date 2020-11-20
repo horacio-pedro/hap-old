@@ -1,6 +1,6 @@
 import { Column, Entity, ManyToOne } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
-import { ICandidateTechnologies, ICandidateInterview } from '@gauzy/models';
+import { ICandidateTechnologies, ICandidateInterview } from '@hap/models';
 import { CandidateInterview } from '../candidate-interview/candidate-interview.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 

@@ -5,7 +5,7 @@ import {
 	IEmployee,
 	IEmployeeUpdateInput,
 	IUserUpdateInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { EmployeeStore } from '../../../../@core/services/employee-store.service';

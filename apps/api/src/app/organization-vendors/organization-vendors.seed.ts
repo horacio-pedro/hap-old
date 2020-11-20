@@ -1,4 +1,4 @@
-import { OrganizationVendorEnum, IOrganization } from '@gauzy/models';
+import { OrganizationVendorEnum, IOrganization } from '@hap/models';
 import { Connection } from 'typeorm';
 import { OrganizationVendor } from './organization-vendors.entity';
 import { Tenant } from '../tenant/tenant.entity';

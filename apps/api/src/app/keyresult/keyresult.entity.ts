@@ -10,7 +10,7 @@ import {
 	IKeyResult,
 	KeyResultTypeEnum,
 	KeyResultDeadlineEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsEnum } from 'class-validator';
 import { Goal } from '../goal/goal.entity';

@@ -3,7 +3,7 @@ import {
 	IUserRegistrationInput,
 	LanguagesEnum,
 	IRolePermission
-} from '@gauzy/models';
+} from '@hap/models';
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import * as bcrypt from 'bcryptjs';
 import { JsonWebTokenError, sign, verify } from 'jsonwebtoken';

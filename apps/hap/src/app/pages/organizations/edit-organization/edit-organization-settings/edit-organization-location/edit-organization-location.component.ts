@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ICountry, IOrganization } from '@gauzy/models';
+import { ICountry, IOrganization } from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { OrganizationsService } from '../../../../../@core/services/organizations.service';
 import { OrganizationEditStore } from '../../../../../@core/services/organization-edit-store.service';

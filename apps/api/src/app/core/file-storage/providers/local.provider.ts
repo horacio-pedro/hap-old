@@ -1,4 +1,4 @@
-import { FileStorageOption, UploadedFile } from '@gauzy/models';
+import { FileStorageOption, UploadedFile } from '@hap/models';
 import * as multer from 'multer';
 import * as fs from 'fs';
 import * as moment from 'moment';
@@ -13,7 +13,7 @@ export class LocalProvider extends Provider<LocalProvider> {
 	tenantId = '';
 	config = {
 		rootPath: environment.isElectron
-			? resolve(environment.gauzyUserPath, 'public')
+			? resolve(environment.hapUserPath, 'public')
 			: resolve(process.cwd(), 'apps', 'api', 'public'),
 		baseUrl: environment.baseUrl + '/public'
 	};

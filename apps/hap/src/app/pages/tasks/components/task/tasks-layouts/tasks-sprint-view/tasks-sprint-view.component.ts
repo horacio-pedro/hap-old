@@ -13,7 +13,7 @@ import {
 	IOrganizationSprint,
 	IOrganizationProject,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { Observable } from 'rxjs';
 import { map, tap, filter, take } from 'rxjs/operators';
 import {
@@ -21,11 +21,11 @@ import {
 	moveItemInArray,
 	transferArrayItem
 } from '@angular/cdk/drag-drop';
-import { GauzyEditableGridComponent } from '../../../../../../@shared/components/editable-grid/gauzy-editable-grid.component';
+import { HapEditableGridComponent } from '../../../../../../@shared/components/editable-grid/hap-editable-grid.component';
 import { NbDialogService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { TasksStoreService } from '../../../../../../@core/services/tasks-store.service';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 @UntilDestroy({ checkProperties: true })
 @Component({
@@ -34,7 +34,7 @@ import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 	styleUrls: ['./tasks-sprint-view.component.scss']
 })
 export class TasksSprintViewComponent
-	extends GauzyEditableGridComponent<ITask>
+	extends HapEditableGridComponent<ITask>
 	implements OnInit, OnChanges {
 	@Input() tasks: ITask[] = [];
 	sprints: IOrganizationSprint[] = [];

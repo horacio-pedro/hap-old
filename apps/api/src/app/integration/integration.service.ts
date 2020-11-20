@@ -6,7 +6,7 @@ import { Integration } from './integration.entity';
 import { RequestContext } from '../core/context';
 import { IntegrationTenantService } from '../integration-tenant/integration-tenant.service';
 import { TenantService } from '../tenant/tenant.service';
-import { IntegrationEnum } from '@gauzy/models';
+import { IntegrationEnum } from '@hap/models';
 
 @Injectable()
 export class IntegrationService extends CrudService<Integration> {

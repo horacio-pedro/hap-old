@@ -1,4 +1,4 @@
-import { IGoal, GoalLevelEnum } from '@gauzy/models';
+import { IGoal, GoalLevelEnum } from '@hap/models';
 import { Entity, Column, OneToMany, ManyToOne, JoinColumn } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsEnum } from 'class-validator';

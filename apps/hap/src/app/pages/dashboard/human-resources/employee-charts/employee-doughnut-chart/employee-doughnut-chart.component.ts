@@ -2,10 +2,10 @@ import { Component, OnInit, OnDestroy, Input, OnChanges } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { monthNames } from 'apps/gauzy/src/app/@core/utils/date';
+import { monthNames } from 'apps/hap/src/app/@core/utils/date';
 import { TranslateService } from '@ngx-translate/core';
-import { IMonthAggregatedEmployeeStatistics } from '@gauzy/models';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { IMonthAggregatedEmployeeStatistics } from '@hap/models';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 
 @Component({
 	selector: 'ga-employee-doughnut-chart',

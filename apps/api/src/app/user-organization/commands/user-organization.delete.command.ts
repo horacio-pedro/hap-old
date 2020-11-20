@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IUserOrganizationDeleteInput } from '@gauzy/models';
+import { IUserOrganizationDeleteInput } from '@hap/models';
 
 export class UserOrganizationDeleteCommand implements ICommand {
 	static readonly type = '[UserOrganization] Delete';

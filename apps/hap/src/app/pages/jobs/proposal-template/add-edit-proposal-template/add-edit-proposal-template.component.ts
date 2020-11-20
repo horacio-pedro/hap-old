@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { IEmployeeProposalTemplate, IOrganization } from '@gauzy/models';
+import { IEmployeeProposalTemplate, IOrganization } from '@hap/models';
 import { NbDialogRef } from '@nebular/theme';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { ToastrService } from 'apps/gauzy/src/app/@core/services/toastr.service';
-import { SelectedEmployee } from 'apps/gauzy/src/app/@theme/components/header/selectors/employee/employee.component';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { ToastrService } from 'apps/hap/src/app/@core/services/toastr.service';
+import { SelectedEmployee } from 'apps/hap/src/app/@theme/components/header/selectors/employee/employee.component';
 import { filter } from 'rxjs/operators';
 import { ProposalTemplateService } from '../proposal-template.service';
 

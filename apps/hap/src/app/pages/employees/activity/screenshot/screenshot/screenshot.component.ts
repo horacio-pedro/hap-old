@@ -5,18 +5,18 @@ import {
 	ITimeSlot,
 	IGetTimeSlotInput,
 	IScreenshotMap
-} from '@gauzy/models';
-import { TimesheetService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet.service';
+} from '@hap/models';
+import { TimesheetService } from 'apps/hap/src/app/@shared/timesheet/timesheet.service';
 import { debounceTime, filter } from 'rxjs/operators';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { Subject } from 'rxjs';
-import { toUTC, toLocal } from '@gauzy/utils';
+import { toUTC, toLocal } from '@hap/utils';
 import * as _ from 'underscore';
 import * as moment from 'moment';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { NbDialogService } from '@nebular/theme';
-import { DeleteConfirmationComponent } from 'apps/gauzy/src/app/@shared/user/forms/delete-confirmation/delete-confirmation.component';
-import { TimesheetFilterService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet-filter.service';
+import { DeleteConfirmationComponent } from 'apps/hap/src/app/@shared/user/forms/delete-confirmation/delete-confirmation.component';
+import { TimesheetFilterService } from 'apps/hap/src/app/@shared/timesheet/timesheet-filter.service';
 
 @UntilDestroy({ checkProperties: true })
 @Component({

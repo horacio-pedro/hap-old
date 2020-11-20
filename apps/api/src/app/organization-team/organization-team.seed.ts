@@ -4,7 +4,7 @@ import { OrganizationTeam } from './organization-team.entity';
 import { OrganizationTeamEmployee } from '../organization-team-employee/organization-team-employee.entity';
 import { Organization } from '../organization/organization.entity';
 import { Role } from '../role/role.entity';
-import { RolesEnum } from '@gauzy/models';
+import { RolesEnum } from '@hap/models';
 import { Tenant } from '../tenant/tenant.entity';
 import * as _ from 'underscore';
 import * as faker from 'faker';

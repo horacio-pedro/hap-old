@@ -2,7 +2,7 @@ import { Connection } from 'typeorm';
 import { PipelineStage } from './pipeline-stage.entity';
 import * as faker from 'faker';
 import { Tenant } from '../tenant/tenant.entity';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { Pipeline } from '../pipeline/pipeline.entity';
 
 export const createRandomPipelineStage = async (

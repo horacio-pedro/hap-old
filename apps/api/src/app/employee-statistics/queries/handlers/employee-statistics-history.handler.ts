@@ -6,7 +6,7 @@ import {
 	EmployeeStatisticsHistoryEnum,
 	IEmployeeStatisticsHistoryFindInput,
 	RecurringExpenseDefaultCategoriesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { EmployeeStatisticsHistoryQuery } from '../employee-statistics-history.query';
 
 /**

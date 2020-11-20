@@ -8,7 +8,7 @@ import {
 	ManyToMany,
 	JoinTable
 } from 'typeorm';
-import { IProduct } from '@gauzy/models';
+import { IProduct } from '@hap/models';
 import { ProductVariant } from '../product-variant/product-variant.entity';
 import { ProductType } from '../product-type/product-type.entity';
 import { ProductCategory } from '../product-category/product-category.entity';

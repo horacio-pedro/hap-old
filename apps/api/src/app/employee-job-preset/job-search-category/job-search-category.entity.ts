@@ -6,7 +6,7 @@ import {
 	IJobPreset,
 	IEmployeeUpworkJobsSearchCriterion,
 	IJobPresetUpworkJobSearchCriterion
-} from '@gauzy/models';
+} from '@hap/models';
 import { TenantOrganizationBase } from '../../core/entities/tenant-organization-base';
 import { JobPresetUpworkJobSearchCriterion } from '../job-preset-upwork-job-search-criterion.entity';
 import { EmployeeUpworkJobsSearchCriterion } from '../employee-upwork-jobs-search-criterion.entity';

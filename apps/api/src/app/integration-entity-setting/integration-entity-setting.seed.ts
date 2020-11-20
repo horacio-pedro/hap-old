@@ -5,7 +5,7 @@ import * as faker from 'faker';
 import { IntegrationTenant } from '../integration-tenant/integration-tenant.entity';
 import { IntegrationEntitySettingTiedEntity } from '../integration-entity-setting-tied-entity/integration-entity-setting-tied-entity.entity';
 import { Organization } from '../organization/organization.entity';
-import { DEFAULT_ENTITY_SETTINGS } from '@gauzy/integration-hubstaff';
+import { DEFAULT_ENTITY_SETTINGS } from '@hap/integration-hubstaff';
 
 export const createRandomIntegrationEntitySetting = async (
 	connection: Connection,

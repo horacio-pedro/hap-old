@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { BillingInvoicingPolicyEnum, IOrganization } from '@gauzy/models';
+import { BillingInvoicingPolicyEnum, IOrganization } from '@hap/models';
 import { ProductVariant } from './product-variant.entity';
 import * as faker from 'faker';
 import { ProductCategory } from '../product-category/product-category.entity';

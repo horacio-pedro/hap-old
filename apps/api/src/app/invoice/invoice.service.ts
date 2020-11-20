@@ -5,7 +5,7 @@ import { Repository } from 'typeorm';
 import { Injectable } from '@nestjs/common';
 import { getConnection } from 'typeorm';
 import { EmailService } from '../email';
-import { LanguagesEnum } from '@gauzy/models';
+import { LanguagesEnum } from '@hap/models';
 import { sign } from 'jsonwebtoken';
 import { environment as env } from '@env-api/environment';
 import { EstimateEmailService } from '../estimate-email/estimate-email.service';

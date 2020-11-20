@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IProposalCreateInput } from '@gauzy/models';
+import { IProposalCreateInput } from '@hap/models';
 
 export class ProposalCreateCommand implements ICommand {
 	static readonly type = '[Proposal] Create Proposal';

@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
-import { IEmployee, IOrganization } from '@gauzy/models';
+import { IEmployee, IOrganization } from '@hap/models';
 import { EstimateEmail } from './estimate-email.entity';
 import * as faker from 'faker';
 import { sign } from 'jsonwebtoken';

@@ -8,7 +8,7 @@ import {
 } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString } from 'class-validator';
-import { IOrganizationTeam } from '@gauzy/models';
+import { IOrganizationTeam } from '@hap/models';
 import { OrganizationTeamEmployee } from '../organization-team-employee/organization-team-employee.entity';
 import { Tag } from '../tags/tag.entity';
 import { RequestApprovalTeam } from '../request-approval-team/request-approval-team.entity';

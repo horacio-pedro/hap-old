@@ -4,7 +4,7 @@ import {
 	IEmployee,
 	IOrganization,
 	IOrganizationContact
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { EmployeeStore } from '../../../../../@core/services/employee-store.service';
@@ -12,7 +12,7 @@ import { OrganizationContactService } from '../../../../../@core/services/organi
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { TranslationBaseComponent } from '../../../../../@shared/language-base/translation-base.component';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 
 @Component({
 	selector: 'ga-edit-employee-departments',

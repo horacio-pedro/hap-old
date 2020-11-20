@@ -5,7 +5,7 @@ import {
 	ISkill,
 	IOrganizationSprint,
 	IEmployee
-} from '@gauzy/models';
+} from '@hap/models';
 import { IContact } from './contact.model';
 
 export enum OrganizationPermissionsEnum {
@@ -127,7 +127,7 @@ export interface IOrganizationCreateInput extends IContact {
 }
 
 export interface IOrganizationUpdateInput extends IOrganizationCreateInput {
-	gauzyId?: string;
+	hapId?: string;
 }
 
 export enum OrganizationSelectInput {

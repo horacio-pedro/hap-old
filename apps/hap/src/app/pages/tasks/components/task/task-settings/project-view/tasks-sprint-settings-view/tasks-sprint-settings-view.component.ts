@@ -8,9 +8,9 @@ import {
 	IOrganizationSprint,
 	IOrganizationProject,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { SprintStoreService } from '../../../../../../../@core/services/organization-sprint-store.service';
-import { ItemActionType } from '../../../../../../../@shared/components/editable-grid/gauzy-editable-grid.component';
+import { ItemActionType } from '../../../../../../../@shared/components/editable-grid/hap-editable-grid.component';
 import { Store } from '../../../../../../../@core/services/store.service';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 @UntilDestroy({ checkProperties: true })

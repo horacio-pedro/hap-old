@@ -1,4 +1,4 @@
-import { IFindStartDateUpdateTypeInput } from '@gauzy/models';
+import { IFindStartDateUpdateTypeInput } from '@hap/models';
 import { IQuery } from '@nestjs/cqrs';
 
 export class EmployeeRecurringExpenseStartDateUpdateTypeQuery

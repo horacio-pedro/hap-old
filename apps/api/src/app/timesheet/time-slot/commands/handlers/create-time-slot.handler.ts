@@ -1,7 +1,7 @@
 import { CommandBus, CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { InjectRepository } from '@nestjs/typeorm';
 import { In, Repository } from 'typeorm';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { RequestContext } from 'apps/api/src/app/core/context';
 import * as moment from 'moment';
 import { CreateTimeSlotCommand } from '../create-time-slot.command';

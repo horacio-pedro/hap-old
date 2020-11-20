@@ -1,12 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { takeUntil, tap } from 'rxjs/operators';
-import { ErrorHandlingService } from 'apps/gauzy/src/app/@core/services/error-handling.service';
+import { ErrorHandlingService } from 'apps/hap/src/app/@core/services/error-handling.service';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { UpworkService } from 'apps/gauzy/src/app/@core/services/upwork.service';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { UpworkService } from 'apps/hap/src/app/@core/services/upwork.service';
 
 @Component({
 	selector: 'ngx-transactions',

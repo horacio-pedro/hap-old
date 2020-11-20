@@ -18,7 +18,7 @@ import {
 	IsEnum,
 	IsBoolean
 } from 'class-validator';
-import { IIncome, CurrenciesEnum } from '@gauzy/models';
+import { IIncome, CurrenciesEnum } from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { Tag } from '../tags/tag.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

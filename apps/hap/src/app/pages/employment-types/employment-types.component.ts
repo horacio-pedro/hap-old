@@ -7,11 +7,11 @@ import {
 	IOrganizationEmploymentType,
 	ITag,
 	ComponentLayoutStyleEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { first, takeUntil } from 'rxjs/operators';
 import { NbToastrService, NbDialogService } from '@nebular/theme';
 import { Store } from '../../@core/services/store.service';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { OrganizationEmploymentTypesService } from '../../@core/services/organization-employment-types.service';
 import { ComponentEnum } from '../../@core/constants/layout.constants';
 import { LocalDataSource } from 'ng2-smart-table';

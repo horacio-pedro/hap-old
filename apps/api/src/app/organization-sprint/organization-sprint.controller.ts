@@ -17,7 +17,7 @@ import { OrganizationSprint } from './organization-sprint.entity';
 import { OrganizationSprintService } from './organization-sprint.service';
 import { AuthGuard } from '@nestjs/passport';
 import { OrganizationProject } from '../organization-projects/organization-projects.entity';
-import { IOrganizationSprintUpdateInput } from '@gauzy/models';
+import { IOrganizationSprintUpdateInput } from '@hap/models';
 import { OrganizationSprintUpdateCommand } from './commands/organization-sprint.update.command';
 import { CommandBus } from '@nestjs/cqrs';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';

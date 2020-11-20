@@ -9,7 +9,7 @@ import {
 	IGetMatchingCriterions,
 	IJobPreset,
 	IMatchingCriterions
-} from '@gauzy/models';
+} from '@hap/models';
 import { CrudService } from '../core/crud/crud.service';
 import { JobPresetUpworkJobSearchCriterion } from './job-preset-upwork-job-search-criterion.entity';
 import { EmployeeUpworkJobsSearchCriterion } from './employee-upwork-jobs-search-criterion.entity';

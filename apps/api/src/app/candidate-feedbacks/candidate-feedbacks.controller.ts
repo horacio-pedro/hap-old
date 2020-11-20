@@ -17,7 +17,7 @@ import { CandidateFeedback } from './candidate-feedbacks.entity';
 import { CandidateFeedbacksService } from './candidate-feedbacks.service';
 import { AuthGuard } from '@nestjs/passport';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
-import { PermissionsEnum, ICandidateFeedbackCreateInput } from '@gauzy/models';
+import { PermissionsEnum, ICandidateFeedbackCreateInput } from '@hap/models';
 import { Permissions } from '../shared/decorators/permissions';
 import { ParseJsonPipe } from '../shared';
 import { CommandBus } from '@nestjs/cqrs';

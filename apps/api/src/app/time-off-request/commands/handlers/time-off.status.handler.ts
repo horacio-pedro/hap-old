@@ -2,7 +2,7 @@ import { ICommandHandler, CommandHandler } from '@nestjs/cqrs';
 import {
 	StatusTypesEnum,
 	StatusTypesMapRequestApprovalEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { TimeOffStatusCommand } from '../time-off.status.command';
 import { NotFoundException, ConflictException } from '@nestjs/common';
 import { TimeOffRequest } from '../../time-off-request.entity';

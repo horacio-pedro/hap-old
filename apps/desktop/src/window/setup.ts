@@ -31,7 +31,7 @@ export function createSetupWindow(setupWindow, value) {
 		// in an array if your app supports multi windows, this is the time
 		// when you should delete the corresponding element.
 		e.preventDefault();
-		setupWindow.hide(); // gauzyWindow = null;
+		setupWindow.hide(); // hapWindow = null;
 	});
 	return setupWindow;
 }

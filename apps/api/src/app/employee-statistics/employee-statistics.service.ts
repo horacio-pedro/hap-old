@@ -5,7 +5,7 @@ import {
 	DEFAULT_PROFIT_BASED_BONUS,
 	DEFAULT_REVENUE_BASED_BONUS,
 	IMonthAggregatedSplitExpense
-} from '@gauzy/models';
+} from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { EmployeeService } from '../employee/employee.service';
 import { ExpenseService } from '../expense/expense.service';

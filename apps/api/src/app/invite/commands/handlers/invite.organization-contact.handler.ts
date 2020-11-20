@@ -2,7 +2,7 @@ import {
 	IOrganizationContact,
 	ContactOrganizationInviteStatus,
 	RolesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { User } from '../../../user/user.entity';
 import { UserService } from '../../../user/user.service';

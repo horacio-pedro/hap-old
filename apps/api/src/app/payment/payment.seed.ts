@@ -5,7 +5,7 @@ import {
 	IEmployee,
 	IOrganization,
 	PaymentMethodEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { Payment } from './payment.entity';
 import * as faker from 'faker';
 import { Invoice } from '../invoice/invoice.entity';

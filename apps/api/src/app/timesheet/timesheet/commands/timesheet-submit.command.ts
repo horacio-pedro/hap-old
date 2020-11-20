@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { ISubmitTimesheetInput } from '@gauzy/models';
+import { ISubmitTimesheetInput } from '@hap/models';
 
 export class TimesheetSubmitCommand implements ICommand {
 	static readonly type = '[Timesheet] update-status';

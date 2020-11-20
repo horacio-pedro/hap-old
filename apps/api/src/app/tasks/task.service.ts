@@ -11,7 +11,7 @@ import { CrudService } from '../core';
 import { EmployeeService } from '../employee/employee.service';
 import { RoleService } from '../role/role.service';
 import { RequestContext } from '../core/context';
-import { IGetTaskByEmployeeOptions } from '@gauzy/models';
+import { IGetTaskByEmployeeOptions } from '@hap/models';
 
 @Injectable()
 export class TaskService extends CrudService<Task> {

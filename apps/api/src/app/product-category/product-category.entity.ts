@@ -4,7 +4,7 @@ import { ProductCategoryTranslation } from './product-category-translation.entit
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsOptional } from 'class-validator';
 import { Product } from '../product/product.entity';
-import { IProductCategoryTranslatable } from '@gauzy/models';
+import { IProductCategoryTranslatable } from '@hap/models';
 
 @Entity('product_category')
 export class ProductCategory

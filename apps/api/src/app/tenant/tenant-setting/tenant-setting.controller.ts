@@ -1,4 +1,4 @@
-import { ITenantSetting, RolesEnum } from '@gauzy/models';
+import { ITenantSetting, RolesEnum } from '@hap/models';
 import {
 	Body,
 	Controller,

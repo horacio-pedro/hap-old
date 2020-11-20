@@ -11,7 +11,7 @@ import {
 	RolesEnum,
 	ISeedUsers,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { Role } from '../role/role.entity';
 import { User } from './user.entity';
 import { getUserDummyImage } from '../core';

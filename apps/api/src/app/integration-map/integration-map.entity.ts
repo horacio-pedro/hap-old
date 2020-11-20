@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Column, Entity, JoinColumn, RelationId, ManyToOne } from 'typeorm';
-import { IIntegrationMap } from '@gauzy/models';
+import { IIntegrationMap } from '@hap/models';
 import { IntegrationTenant } from '../integration-tenant/integration-tenant.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 
@@ -32,5 +32,5 @@ export class IntegrationMap
 
 	@ApiProperty({ type: String })
 	@Column({ nullable: false })
-	gauzyId: string;
+	hapId: string;
 }

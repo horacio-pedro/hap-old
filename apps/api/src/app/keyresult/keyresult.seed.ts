@@ -7,7 +7,7 @@ import {
 	KeyResultDeadlineEnum,
 	KeyResultTypeEnum,
 	KeyResultWeightEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { KeyResultUpdate } from '../keyresult-update/keyresult-update.entity';
 import { compareAsc } from 'date-fns';
 import * as moment from 'moment';

@@ -3,7 +3,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString } from 'class-validator';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 import { Employee } from '../employee/employee.entity';
-import { IEmployee, IEmployeeProposalTemplate } from '@gauzy/models';
+import { IEmployee, IEmployeeProposalTemplate } from '@hap/models';
 
 @Entity('employee_proposal_template')
 export class EmployeeProposalTemplate

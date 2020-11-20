@@ -4,7 +4,7 @@ import {
 	IOrganizationDepartment,
 	IOrganizationProject,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as Email from 'email-templates';
@@ -57,7 +57,7 @@ export class EmailService extends CrudService<IEmail> {
 
 	email = new Email({
 		message: {
-			from: 'Gauzy@Ever.co'
+			from: 'hap@Ever.co'
 		},
 		transport: {
 			jsonTransport: true
@@ -544,7 +544,7 @@ export class EmailService extends CrudService<IEmail> {
 		// });
 
 		const info = await transporter.sendMail({
-			from: 'Gauzy',
+			from: 'HAP',
 			to: user.email,
 			subject: 'Forgotten Password',
 			text: 'Forgot Password',

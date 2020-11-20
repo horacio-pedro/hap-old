@@ -4,7 +4,7 @@ import {
 	IEmployee,
 	IOrganization,
 	ICandidate
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString } from 'class-validator';
 import {

@@ -199,7 +199,7 @@ import {
 	UpworkReportService,
 	UpworkJobService,
 	UpworkOffersService
-} from '@gauzy/integration-upwork';
+} from '@hap/integration-upwork';
 
 @Module({
 	imports: [

@@ -4,7 +4,7 @@ import { IntegrationMap } from './integration-map.entity';
 import * as faker from 'faker';
 import { IntegrationTenant } from '../integration-tenant/integration-tenant.entity';
 import { Organization } from '../organization/organization.entity';
-import { IntegrationEntity } from '@gauzy/models';
+import { IntegrationEntity } from '@hap/models';
 
 export const createRandomIntegrationMap = async (
 	connection: Connection,
@@ -41,7 +41,7 @@ export const createRandomIntegrationMap = async (
 				Object.values(IntegrationEntity)
 			);
 			integrationMap.sourceId = 'sourceId-' + faker.random.number(40);
-			integrationMap.gauzyId = 'gauzyId-' + faker.random.number(40);
+			integrationMap.hapId = 'hapId-' + faker.random.number(40);
 			integrationMaps.push(integrationMap);
 		}
 	}

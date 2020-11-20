@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IHelpCenter } from '@gauzy/models';
+import { IHelpCenter } from '@hap/models';
 
 export class HelpCenterUpdateCommand implements ICommand {
 	static readonly type = '[HelpCenter] Update';

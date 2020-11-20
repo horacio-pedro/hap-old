@@ -1,4 +1,4 @@
-import { IEditEntityByMemberInput, PermissionsEnum } from '@gauzy/models';
+import { IEditEntityByMemberInput, PermissionsEnum } from '@hap/models';
 import {
 	Body,
 	Controller,

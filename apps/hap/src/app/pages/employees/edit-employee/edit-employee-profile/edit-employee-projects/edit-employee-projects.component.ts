@@ -4,13 +4,13 @@ import {
 	IEmployee,
 	IOrganization,
 	IOrganizationProject
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
-import { EmployeeStore } from 'apps/gauzy/src/app/@core/services/employee-store.service';
-import { OrganizationProjectsService } from 'apps/gauzy/src/app/@core/services/organization-projects.service';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { EmployeeStore } from 'apps/hap/src/app/@core/services/employee-store.service';
+import { OrganizationProjectsService } from 'apps/hap/src/app/@core/services/organization-projects.service';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

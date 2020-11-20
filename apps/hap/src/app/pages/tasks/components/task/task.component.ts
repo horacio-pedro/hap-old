@@ -20,7 +20,7 @@ import {
 	TaskListTypeEnum,
 	IOrganization,
 	IOrganizationTeam
-} from '@gauzy/models';
+} from '@hap/models';
 import { TasksStoreService } from '../../../../@core/services/tasks-store.service';
 import { TranslationBaseComponent } from '../../../../@shared/language-base/translation-base.component';
 import { DeleteConfirmationComponent } from '../../../../@shared/user/forms/delete-confirmation/delete-confirmation.component';

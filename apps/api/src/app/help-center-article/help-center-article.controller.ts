@@ -1,5 +1,5 @@
 import { HelpCenterArticle } from './help-center-article.entity';
-import { PermissionsEnum, IHelpCenterArticle } from '@gauzy/models';
+import { PermissionsEnum, IHelpCenterArticle } from '@hap/models';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import {
 	Controller,

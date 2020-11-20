@@ -3,7 +3,7 @@ import { Email } from './email.entity';
 import * as faker from 'faker';
 import { EmailTemplate } from '../email-template/email-template.entity';
 import { Tenant } from '../tenant/tenant.entity';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { Organization } from '../organization/organization.entity';
 
 export const createDefaultEmailSent = async (

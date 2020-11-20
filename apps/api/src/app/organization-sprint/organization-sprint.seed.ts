@@ -1,7 +1,7 @@
 import { Connection } from 'typeorm';
 import * as faker from 'faker';
 import { OrganizationSprint } from './organization-sprint.entity';
-import { IOrganization, SprintStartDayEnum } from '@gauzy/models';
+import { IOrganization, SprintStartDayEnum } from '@hap/models';
 import { Tenant } from '../tenant/tenant.entity';
 import { OrganizationProject } from '../organization-projects/organization-projects.entity';
 import * as moment from 'moment';

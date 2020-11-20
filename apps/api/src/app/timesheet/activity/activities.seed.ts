@@ -1,7 +1,7 @@
 import * as faker from 'faker';
 import * as _ from 'underscore';
 import * as moment from 'moment';
-import { ActivityType } from '@gauzy/models';
+import { ActivityType } from '@hap/models';
 import { Activity } from '../activity.entity';
 import { OrganizationProject } from '../../organization-projects/organization-projects.entity';
 import { Connection } from 'typeorm';

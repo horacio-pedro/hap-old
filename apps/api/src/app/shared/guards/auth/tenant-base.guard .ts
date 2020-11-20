@@ -1,6 +1,6 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import { RequestContext } from '../../../core/context';
-import { RequestMethodEnum } from '@gauzy/models';
+import { RequestMethodEnum } from '@hap/models';
 import { isJSON } from 'class-validator';
 import { Reflector } from '@nestjs/core';
 

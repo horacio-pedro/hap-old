@@ -8,7 +8,7 @@ import {
 	IPayment,
 	InvoiceStatusTypesEnum,
 	ISelectedPayment
-} from '@gauzy/models';
+} from '@hap/models';
 import { LocalDataSource, Ng2SmartTableComponent } from 'ng2-smart-table';
 import { PaymentMutationComponent } from './payment-mutation/payment-mutation.component';
 import { NbDialogService, NbToastrService } from '@nebular/theme';

@@ -9,7 +9,7 @@ import {
 	IGetTimesheetInput,
 	ISubmitTimesheetInput,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { RequestContext } from '../../core/context';
 import { CommandBus } from '@nestjs/cqrs';
 import { TimesheetFirstOrCreateCommand } from './commands/timesheet-first-or-create.command';

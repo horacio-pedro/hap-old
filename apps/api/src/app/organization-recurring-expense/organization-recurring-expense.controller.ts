@@ -2,7 +2,7 @@ import {
 	IStartUpdateTypeInfo,
 	IOrganizationRecurringExpenseForEmployeeOutput,
 	IRecurringExpenseEditInput
-} from '@gauzy/models';
+} from '@hap/models';
 import {
 	Body,
 	Controller,

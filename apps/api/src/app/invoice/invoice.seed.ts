@@ -4,7 +4,7 @@ import * as faker from 'faker';
 import { Tenant } from '../tenant/tenant.entity';
 import { Organization } from '../organization/organization.entity';
 import { Tag } from '../tags/tag.entity';
-import { DiscountTaxTypeEnum, InvoiceTypeEnum } from '@gauzy/models';
+import { DiscountTaxTypeEnum, InvoiceTypeEnum } from '@hap/models';
 import { OrganizationContact } from '../organization-contact/organization-contact.entity';
 import * as _ from 'underscore';
 

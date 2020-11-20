@@ -4,7 +4,7 @@ import { Repository, FindConditions, UpdateResult } from 'typeorm';
 import { TenantAwareCrudService } from '../core/crud/tenant-aware-crud.service';
 import { RolePermissions } from './role-permissions.entity';
 import { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
-import { RolesEnum, ITenant, IRole, IRolePermission } from '@gauzy/models';
+import { RolesEnum, ITenant, IRole, IRolePermission } from '@hap/models';
 import { Role } from '../role/role.entity';
 import { defaultRolePermissions } from './role-permissions.seed';
 

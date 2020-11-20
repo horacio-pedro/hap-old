@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IInvite, RolesEnum, IUserRegistrationInput } from '@gauzy/models';
+import { IInvite, RolesEnum, IUserRegistrationInput } from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { InviteService } from '../../@core/services/invite.service';
 import { TranslateService } from '@ngx-translate/core';

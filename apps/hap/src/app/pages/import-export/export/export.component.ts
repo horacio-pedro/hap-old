@@ -4,7 +4,7 @@ import { saveAs } from 'file-saver';
 import { Router } from '@angular/router';
 import * as _ from 'lodash';
 import { Store } from '../../../@core/services/store.service';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
 

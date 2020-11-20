@@ -9,14 +9,14 @@ import {
 	TimesheetStatus,
 	OrganizationPermissionsEnum,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import * as _ from 'underscore';
 import * as moment from 'moment';
 import { ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
-import { TimesheetService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet.service';
+import { TimesheetService } from 'apps/hap/src/app/@shared/timesheet/timesheet.service';
 import { NbDialogService } from '@nebular/theme';
-import { EditTimeLogModalComponent } from 'apps/gauzy/src/app/@shared/timesheet/edit-time-log-modal/edit-time-log-modal.component';
+import { EditTimeLogModalComponent } from 'apps/hap/src/app/@shared/timesheet/edit-time-log-modal/edit-time-log-modal.component';
 
 @UntilDestroy({ checkProperties: true })
 @Component({

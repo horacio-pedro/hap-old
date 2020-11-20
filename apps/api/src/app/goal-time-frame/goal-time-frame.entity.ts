@@ -1,5 +1,5 @@
 import { Entity, Column } from 'typeorm';
-import { IGoalTimeFrame, TimeFrameStatusEnum } from '@gauzy/models';
+import { IGoalTimeFrame, TimeFrameStatusEnum } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEnum } from 'class-validator';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';

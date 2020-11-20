@@ -1,9 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Params } from '@angular/router';
-import { IEmployee, IOrganization, LanguagesEnum } from '@gauzy/models';
+import { IEmployee, IOrganization, LanguagesEnum } from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { EmployeeStore } from '../../../../../@core/services/employee-store.service';

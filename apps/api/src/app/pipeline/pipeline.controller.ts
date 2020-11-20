@@ -19,7 +19,7 @@ import { PipelineService } from './pipeline.service';
 import { ParseJsonPipe } from '../shared/pipes';
 import { DeepPartial } from 'typeorm';
 import { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { Permissions } from '../shared/decorators/permissions';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
 import { Deal } from '../deal/deal.entity';

@@ -14,7 +14,7 @@ import {
 	CurrenciesEnum,
 	KeyResultNumberUnitsEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { Store } from '../../../@core/services/store.service';
 import { GoalSettingsService } from '../../../@core/services/goal-settings.service';
 

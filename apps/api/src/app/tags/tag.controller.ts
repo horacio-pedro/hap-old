@@ -13,7 +13,7 @@ import { CrudController, IPagination } from '../core';
 import { Tag } from './tag.entity';
 import { TagService } from './tag.service';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { Permissions } from '../shared/decorators/permissions';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 import { ParseJsonPipe } from '../shared/pipes/parse-json.pipe';

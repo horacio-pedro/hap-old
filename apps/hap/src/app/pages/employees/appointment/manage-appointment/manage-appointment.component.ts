@@ -24,7 +24,7 @@ import {
 	IEmployee,
 	IEmployeeAppointment,
 	IAvailabilitySlot
-} from '@gauzy/models';
+} from '@hap/models';
 import { TranslationBaseComponent } from '../../../../@shared/language-base/translation-base.component';
 import { TranslateService } from '@ngx-translate/core';
 import { EmployeesService } from '../../../../@core/services';
@@ -52,7 +52,7 @@ export class ManageAppointmentComponent
 	@Input() disabled: boolean;
 	@Input() appointmentID: string;
 	@Input() allowedDuration: number;
-	@Input() hidePrivateFields: boolean = false;
+	@Input() hidePrivateFields = false;
 	@Input() timezone: string;
 
 	@Output() save = new EventEmitter<IEmployeeAppointment>();

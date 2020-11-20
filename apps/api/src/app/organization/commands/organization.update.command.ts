@@ -1,4 +1,4 @@
-import { IOrganizationUpdateInput } from '@gauzy/models';
+import { IOrganizationUpdateInput } from '@hap/models';
 import { ICommand } from '@nestjs/cqrs';
 
 export class OrganizationUpdateCommand implements ICommand {

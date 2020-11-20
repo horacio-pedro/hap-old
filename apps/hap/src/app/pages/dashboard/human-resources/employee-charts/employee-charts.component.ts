@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IMonthAggregatedEmployeeStatistics } from '@gauzy/models';
+import { IMonthAggregatedEmployeeStatistics } from '@hap/models';
 
 @Component({
 	selector: 'ga-employee-charts',

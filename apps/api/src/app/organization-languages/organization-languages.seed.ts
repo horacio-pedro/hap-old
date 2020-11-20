@@ -2,7 +2,7 @@ import { Connection } from 'typeorm';
 import { OrganizationLanguages } from './organization-languages.entity';
 import * as faker from 'faker';
 import { Tenant } from '../tenant/tenant.entity';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { Language } from '../language/language.entity';
 
 const defaultLanguageLevel = {

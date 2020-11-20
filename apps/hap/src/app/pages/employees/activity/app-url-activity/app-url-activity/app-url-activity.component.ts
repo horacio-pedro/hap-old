@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { Subject } from 'rxjs';
 import {
@@ -9,14 +9,14 @@ import {
 	ActivityType,
 	IDailyActivity,
 	IActivity
-} from '@gauzy/models';
+} from '@hap/models';
 import { debounceTime } from 'rxjs/operators';
-import { toUTC, toLocal } from '@gauzy/utils';
-import { ActivityService } from 'apps/gauzy/src/app/@shared/timesheet/activity.service';
+import { toUTC, toLocal } from '@hap/utils';
+import { ActivityService } from 'apps/hap/src/app/@shared/timesheet/activity.service';
 import { ActivatedRoute } from '@angular/router';
 import * as _ from 'underscore';
 import * as moment from 'moment';
-import { TimesheetFilterService } from 'apps/gauzy/src/app/@shared/timesheet/timesheet-filter.service';
+import { TimesheetFilterService } from 'apps/hap/src/app/@shared/timesheet/timesheet-filter.service';
 
 @UntilDestroy({ checkProperties: true })
 @Component({

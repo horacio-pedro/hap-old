@@ -14,7 +14,7 @@ import {
 	IInvoiceItem,
 	IRequestApprovalEmployee,
 	IPayment
-} from '@gauzy/models';
+} from '@hap/models';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import {
 	IsDate,

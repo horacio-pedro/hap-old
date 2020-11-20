@@ -12,7 +12,7 @@ import { CrudController } from '../../core/crud/crud.controller';
 import { ActivityService } from './activity.service';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
-import { IGetActivitiesInput, IBulkActivitiesInput } from '@gauzy/models';
+import { IGetActivitiesInput, IBulkActivitiesInput } from '@hap/models';
 import { TenantPermissionGuard } from '../../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('Activity')

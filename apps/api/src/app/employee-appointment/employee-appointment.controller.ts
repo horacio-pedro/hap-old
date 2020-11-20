@@ -24,7 +24,7 @@ import {
 	LanguagesEnum,
 	IEmployeeAppointmentCreateInput,
 	IEmployeeAppointmentUpdateInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
 
 @ApiTags('EmployeeAppointment')

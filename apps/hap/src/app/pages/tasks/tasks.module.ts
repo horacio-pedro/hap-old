@@ -36,7 +36,7 @@ import { CardGridModule } from '../../@shared/card-grid/card-grid.module';
 import { TaskSettingsComponent } from './components/task/task-settings/task-settings.component';
 import { ProjectViewComponent } from './components/task/task-settings/project-view/project-view.component';
 import { TasksSprintSettingsViewComponent } from './components/task/task-settings/project-view/tasks-sprint-settings-view/tasks-sprint-settings-view.component';
-import { GauzyEditableGridModule } from '../../@shared/components/editable-grid/gauzy-editable-grid.module';
+import { HapEditableGridModule } from '../../@shared/components/editable-grid/hap-editable-grid.module';
 import { SprintDialogComponent } from './components/task/task-settings/project-view/tasks-sprint-settings-view/sprint-dialog/sprint-dialog.component';
 import { TasksSprintViewComponent } from './components/task/tasks-layouts/tasks-sprint-view/tasks-sprint-view.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -95,7 +95,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 		NbSpinnerModule,
 		NbDatepickerModule,
 		EmployeeMultiSelectModule,
-		GauzyEditableGridModule,
+		HapEditableGridModule,
 		DragDropModule,
 		BackNavigationModule
 	],

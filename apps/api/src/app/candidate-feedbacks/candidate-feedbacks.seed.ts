@@ -1,4 +1,4 @@
-import { ICandidate, CandidateStatus, ICandidateFeedback } from '@gauzy/models';
+import { ICandidate, CandidateStatus, ICandidateFeedback } from '@hap/models';
 import { Connection } from 'typeorm';
 import { Tenant } from '../tenant/tenant.entity';
 import { CandidateFeedback } from './candidate-feedbacks.entity';

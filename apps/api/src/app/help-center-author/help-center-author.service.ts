@@ -1,4 +1,4 @@
-import { IHelpCenterAuthor } from '@gauzy/models';
+import { IHelpCenterAuthor } from '@hap/models';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';

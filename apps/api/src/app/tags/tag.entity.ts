@@ -1,5 +1,5 @@
 import { Entity, Column, ManyToMany, JoinTable } from 'typeorm';
-import { ITag } from '@gauzy/models';
+import { ITag } from '@hap/models';
 import { ApiProperty } from '@nestjs/swagger';
 import { Candidate } from '../candidate/candidate.entity';
 import { Employee } from '../employee/employee.entity';

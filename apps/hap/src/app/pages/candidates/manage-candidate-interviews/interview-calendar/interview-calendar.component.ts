@@ -15,17 +15,17 @@ import {
 	IDateRange,
 	ICandidateInterview,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import * as moment from 'moment';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { CandidateInterviewService } from 'apps/gauzy/src/app/@core/services/candidate-interview.service';
-import { CandidateInterviewersService } from 'apps/gauzy/src/app/@core/services/candidate-interviewers.service';
-import { CandidatesService } from 'apps/gauzy/src/app/@core/services/candidates.service';
-import { EmployeesService } from 'apps/gauzy/src/app/@core/services';
-import { CandidateInterviewInfoComponent } from 'apps/gauzy/src/app/@shared/candidate/candidate-interview-info/candidate-interview-info.component';
-import { CandidateInterviewMutationComponent } from 'apps/gauzy/src/app/@shared/candidate/candidate-interview-mutation/candidate-interview-mutation.component';
-import { CandidateStore } from 'apps/gauzy/src/app/@core/services/candidate-store.service';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { CandidateInterviewService } from 'apps/hap/src/app/@core/services/candidate-interview.service';
+import { CandidateInterviewersService } from 'apps/hap/src/app/@core/services/candidate-interviewers.service';
+import { CandidatesService } from 'apps/hap/src/app/@core/services/candidates.service';
+import { EmployeesService } from 'apps/hap/src/app/@core/services';
+import { CandidateInterviewInfoComponent } from 'apps/hap/src/app/@shared/candidate/candidate-interview-info/candidate-interview-info.component';
+import { CandidateInterviewMutationComponent } from 'apps/hap/src/app/@shared/candidate/candidate-interview-mutation/candidate-interview-mutation.component';
+import { CandidateStore } from 'apps/hap/src/app/@core/services/candidate-store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import * as _ from 'underscore';
 @Component({
 	selector: 'ga-interview-calendar',

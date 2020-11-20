@@ -18,7 +18,7 @@ import {
 	ITenant,
 	IOrganizationCreateInput,
 	ITag
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { first, takeUntil } from 'rxjs/operators';

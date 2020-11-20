@@ -31,7 +31,7 @@ export class EmailTemplateGeneratePreviewHandler
 			role: 'USER_ROLE',
 			host: 'Alish Meklyov',
 			hostEmail: '(alish@ever.com)',
-			agenda: 'This booking is for gauzy call',
+			agenda: 'This booking is for hap call',
 			description: 'This is a test appointment booking',
 			participantEmails: 'kdashora@gmail.com,testmail@hotmail.com',
 			location: 'zoom.us',
@@ -42,8 +42,8 @@ export class EmailTemplateGeneratePreviewHandler
 			total_hours: '16',
 			average_activates: '25',
 			log_type: 'tracked',
-			projects: ['Gauzy Web Site', 'Gauzy Platform(open-source)'],
-			project: 'Gauzy Web Site',
+			projects: ['HAP Web Site', 'HAP Platform'],
+			project: 'HAP Web Site',
 			timesheet_action: 'APPROVE/REJECT',
 			equipment_status: 'APPROVE/REJECT',
 			reason: 'reason for this',
@@ -68,9 +68,9 @@ export class EmailTemplateGeneratePreviewHandler
 			task_update_estimate: 'estimate',
 			task_update_due_date: moment(new Date()).add(10, 'days').toDate(),
 			task_status: 'In Progress',
-			task_update_project: 'Gauzy Project',
+			task_update_project: 'HAP Project',
 			task_update_assign_by: 'Ruslan Konviser',
-			task_update_url: 'https://github.com/ever-co/gauzy/issues/1688'
+			task_update_url: 'https://github.com/ever-co/hap/issues/1688'
 		});
 		return { html };
 	}

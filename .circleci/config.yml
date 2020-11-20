@@ -78,7 +78,7 @@ jobs:
                   command: |
                       export SONAR_SCANNER_OPTS="-Xmx2048m"
                       eval ./sonar-scanner-4.3.0.2102/bin/sonar-scanner -Dsonar.host.url=$SONAR_SERVER \
-                      -Dsonar.projectKey=gauzy \
+                      -Dsonar.projectKey=hap \
                       -Dsonar.sources=. \
                       -Dsonar.login=$SONAR_TOKEN
             - save_cache:

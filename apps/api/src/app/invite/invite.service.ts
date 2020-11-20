@@ -10,7 +10,7 @@ import {
 	ICreateOrganizationContactInviteInput,
 	RolesEnum,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { sign } from 'jsonwebtoken';
@@ -70,12 +70,12 @@ export class InviteService extends CrudService<Invite> {
 	// 	});
 
 	// 	const info = await transporter.sendMail({
-	// 		from: 'Gauzy',
+	// 		from: 'hap',
 	// 		to: email,
 	// 		subject: 'Invitation',
-	// 		text: 'Invitation to Gauzy',
+	// 		text: 'Invitation to hap',
 	// 		html:
-	// 			'Hello! <br><br> You have been invited to Gauzy<br><br>To accept your invitation & create your account<br><br>' +
+	// 			'Hello! <br><br> You have been invited to hap<br><br>To accept your invitation & create your account<br><br>' +
 	// 			'<a href=' +
 	// 			url +
 	// 			'>Click here</a>'

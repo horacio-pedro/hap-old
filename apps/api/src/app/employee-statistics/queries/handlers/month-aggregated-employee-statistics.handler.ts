@@ -2,7 +2,7 @@ import {
 	IMonthAggregatedEmployeeStatistics,
 	IMonthAggregatedEmployeeStatisticsFindInput,
 	RecurringExpenseDefaultCategoriesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { EmployeeService } from '../../../employee/employee.service';
 import { EmployeeStatisticsService } from '../../employee-statistics.service';

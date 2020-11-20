@@ -5,7 +5,7 @@ import {
 	ICandidateInterviewers,
 	ICandidateTechnologies,
 	ICandidate
-} from '@gauzy/models';
+} from '@hap/models';
 import { IBasePerTenantAndOrganizationEntityModel } from './base-entity.model';
 
 export interface ICandidateInterview

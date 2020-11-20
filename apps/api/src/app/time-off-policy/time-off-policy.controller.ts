@@ -19,7 +19,7 @@ import {
 	ITimeOffPolicyUpdateInput,
 	ITimeOffPolicy,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { IPagination } from '../core';
 import { TimeOffPolicyService } from './time-off-policy.service';
 import { PermissionGuard } from '../shared/guards/auth/permission.guard';

@@ -12,7 +12,7 @@ import {
 	IDateRange,
 	TimeLogSourceEnum,
 	ITimerStatusInput
-} from '@gauzy/models';
+} from '@hap/models';
 import * as moment from 'moment';
 import { CommandBus } from '@nestjs/cqrs';
 import { IGetConflictTimeLogCommand } from '../time-log/commands/get-conflict-time-log.command';

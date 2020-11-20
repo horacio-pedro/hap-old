@@ -3,7 +3,7 @@ import * as faker from 'faker';
 import * as _ from 'underscore';
 import { HttpService } from '@nestjs/common';
 
-import { TaskStatusEnum } from '@gauzy/models';
+import { TaskStatusEnum } from '@hap/models';
 import { Task } from './task.entity';
 import { Tag } from '../tags/tag.entity';
 import { OrganizationProject } from '../organization-projects/organization-projects.entity';
@@ -33,13 +33,13 @@ export const createDefaultTask = async (
 		.createQueryBuilder()
 		.getMany();
 
-	console.log(`${GITHUB_API_URL}/repos/ever-co/gauzy/issues`);
+	console.log(`${GITHUB_API_URL}/repos/ever-co/hap/issues`);
 	const issues: any[] = await httpService
-		.get(`${GITHUB_API_URL}/repos/ever-co/gauzy/issues`)
+		.get(`${GITHUB_API_URL}/repos/ever-co/hap/issues`)
 		.toPromise()
 		.then((resp) => resp.data);
 
-	console.log(`Done ${GITHUB_API_URL}/repos/ever-co/gauzy/issues`);
+	console.log(`Done ${GITHUB_API_URL}/repos/ever-co/hap/issues`);
 
 	let labels = [];
 	issues.forEach(async (issue) => {
@@ -113,13 +113,13 @@ export const createRandomTask = async (
 		.createQueryBuilder()
 		.getMany();
 
-	console.log(`${GITHUB_API_URL}/repos/ever-co/gauzy/issues`);
+	console.log(`${GITHUB_API_URL}/repos/ever-co/hap/issues`);
 	const issues: any[] = await httpService
-		.get(`${GITHUB_API_URL}/repos/ever-co/gauzy/issues`)
+		.get(`${GITHUB_API_URL}/repos/ever-co/hap/issues`)
 		.toPromise()
 		.then((resp) => resp.data);
 
-	console.log(`Done ${GITHUB_API_URL}/repos/ever-co/gauzy/issues`);
+	console.log(`Done ${GITHUB_API_URL}/repos/ever-co/hap/issues`);
 
 	let labels = [];
 	issues.forEach(async (issue) => {

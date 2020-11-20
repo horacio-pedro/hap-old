@@ -1,4 +1,4 @@
-import { IInviteResendInput } from '@gauzy/models';
+import { IInviteResendInput } from '@hap/models';
 import { ICommand } from '@nestjs/cqrs';
 
 export class InviteResendCommand implements ICommand {

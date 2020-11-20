@@ -1,5 +1,5 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { ITimeLogFilters } from '@gauzy/models';
+import { ITimeLogFilters } from '@hap/models';
 import { NbThemeService } from '@nebular/theme';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { ChartComponent } from 'angular2-chartjs';

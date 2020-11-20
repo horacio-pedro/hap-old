@@ -14,7 +14,7 @@ import { IFiverrConfig } from './IFiverrConfig';
 import { IKeycloakConfig } from './IKeycloakConfig';
 import { IAuth0Config } from './IAuth0Config';
 import { AWSConfig } from './AWSConfig';
-import { FileStorageProviderEnum } from '@gauzy/models';
+import { FileStorageProviderEnum } from '@hap/models';
 
 export type LogLevel = 'debug' | 'info' | 'warn' | 'error';
 
@@ -69,11 +69,11 @@ export interface IEnvironment {
 	defaultHubstaffUserPass?: string;
 	upworkConfig?: IUpworkConfig;
 	isElectron?: boolean;
-	gauzyUserPath?: string;
+	hapUserPath?: string;
 	allowSuperAdminRole?: boolean;
 
 	/**
-	 * Endpoint for Gauzy AI API (optional), e.g.: http://localhost:3005/graphql
+	 * Endpoint for hap AI API (optional), e.g.: http://localhost:3005/graphql
 	 */
-	gauzyAIGraphQLEndpoint?: string;
+	hapAIGraphQLEndpoint?: string;
 }

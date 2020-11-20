@@ -3,7 +3,7 @@ import {
 	ICandidate,
 	ICandidateCreateInput,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { AuthService } from '../../../auth/auth.service';
 import { EmailService } from '../../../email';
 import { CandidateBulkCreateCommand } from '../candidate.bulk.create.command';

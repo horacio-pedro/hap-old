@@ -14,7 +14,7 @@ import {
 	ICandidateCriterionsRating,
 	ICandidate,
 	ICandidateInterview
-} from '@gauzy/models';
+} from '@hap/models';
 import { IsEnum, IsOptional } from 'class-validator';
 import { CandidateInterviewers } from '../candidate-interviewers/candidate-interviewers.entity';
 import { CandidateCriterionsRating } from '../candidate-criterions-rating/candidate-criterion-rating.entity';

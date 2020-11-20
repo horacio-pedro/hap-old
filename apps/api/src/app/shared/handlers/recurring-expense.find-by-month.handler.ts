@@ -1,7 +1,7 @@
 import {
 	IRecurringExpenseByMonthFindInput,
 	IRecurringExpenseModel
-} from '@gauzy/models';
+} from '@hap/models';
 import { IsNull, LessThanOrEqual, MoreThanOrEqual } from 'typeorm';
 import { CrudService, getLastDayOfMonth, IPagination } from '../../core';
 

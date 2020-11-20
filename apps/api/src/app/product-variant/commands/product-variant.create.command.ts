@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { IVariantCreateInput } from '@gauzy/models';
+import { IVariantCreateInput } from '@hap/models';
 
 export class ProductVariantCreateCommand implements ICommand {
 	static readonly type = '[ProductVariant] Register';

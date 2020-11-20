@@ -26,7 +26,7 @@ import {
 	IEmployee,
 	IAvailabilitySlot,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogService } from '@nebular/theme';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Store } from '../../../@core/services/store.service';
@@ -37,7 +37,7 @@ import { AppointmentEmployeesService } from '../../../@core/services/appointment
 import { TimezoneSelectorComponent } from './timezone-selector/timezone-selector.component';
 import { TimeOffService } from '../../../@core/services/time-off.service';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { convertLocalToTimezone } from '@gauzy/utils';
+import { convertLocalToTimezone } from '@hap/utils';
 @UntilDestroy({ checkProperties: true })
 @Component({
 	selector: 'ga-appointment-calendar',
@@ -57,7 +57,7 @@ export class AppointmentComponent
 	organization: IOrganization;
 
 	@Input()
-	showHeader: boolean = true;
+	showHeader = true;
 
 	@Input()
 	appointmentFormURL: string;

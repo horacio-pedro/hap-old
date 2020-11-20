@@ -1,5 +1,5 @@
 import { ICommand } from '@nestjs/cqrs';
-import { ICandidateFeedback } from '@gauzy/models';
+import { ICandidateFeedback } from '@hap/models';
 
 export class FeedbackUpdateCommand implements ICommand {
 	static readonly type = '[Feedback] Update';

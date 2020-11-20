@@ -7,7 +7,7 @@ import {
 	IsBoolean,
 	IsDate
 } from 'class-validator';
-import { IAvailabilitySlot, IEmployee } from '@gauzy/models';
+import { IAvailabilitySlot, IEmployee } from '@hap/models';
 import { Employee } from '../employee/employee.entity';
 import { TenantOrganizationBase } from '../core/entities/tenant-organization-base';
 

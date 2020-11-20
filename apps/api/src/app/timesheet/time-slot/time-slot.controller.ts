@@ -15,7 +15,7 @@ import { CrudController } from '../../core/crud/crud.controller';
 import { TimeSlotService } from './time-slot.service';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
-import { IGetTimeSlotInput } from '@gauzy/models';
+import { IGetTimeSlotInput } from '@hap/models';
 import { FindOneOptions } from 'typeorm';
 import { TenantPermissionGuard } from '../../shared/guards/auth/tenant-permission.guard';
 

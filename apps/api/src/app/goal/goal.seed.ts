@@ -5,7 +5,7 @@ import { Organization } from '../organization/organization.entity';
 import * as faker from 'faker';
 import { Employee } from '../employee/employee.entity';
 import { GoalTimeFrame } from '../goal-time-frame/goal-time-frame.entity';
-import { GoalLevelEnum } from '@gauzy/models';
+import { GoalLevelEnum } from '@hap/models';
 import { OrganizationTeam } from '../organization-team/organization-team.entity';
 
 const defaultGoalData = [

@@ -194,7 +194,7 @@ export default class Timerhandler {
 
 		const allActivities = [...awActivities, ...wakatimeHeartbeats];
 
-		// send Activity to gauzy
+		// send Activity to hap
 		setupWindow.webContents.send('set_time_slot', {
 			...userInfo,
 			duration: now.diff(moment(lastTimeSlot), 'seconds'),

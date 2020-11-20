@@ -6,7 +6,7 @@ import { CandidateInterviewers } from './candidate-interviewers.entity';
 import {
 	ICandidateInterviewersDeleteInput,
 	ICandidateInterviewersCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class CandidateInterviewersService extends CrudService<

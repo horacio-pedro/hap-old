@@ -1,4 +1,4 @@
-import { ITask } from '@gauzy/models';
+import { ITask } from '@hap/models';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { TaskCreateCommand } from '..';
 import { TaskService } from '../../task.service';

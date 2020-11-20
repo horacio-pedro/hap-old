@@ -1,7 +1,7 @@
 import { Connection } from 'typeorm';
 import { Income } from './income.entity';
 import * as faker from 'faker';
-import { CurrenciesEnum, IOrganization, IEmployee } from '@gauzy/models';
+import { CurrenciesEnum, IOrganization, IEmployee } from '@hap/models';
 import * as fs from 'fs';
 import * as csv from 'csv-parser';
 import { Tenant } from '../tenant/tenant.entity';

@@ -17,7 +17,7 @@ import { IPagination } from '../core';
 import {
 	IOrganizationTeamCreateInput,
 	IOrganizationTeam as IIOrganizationTeam
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationTeam } from './organization-team.entity';
 import { AuthGuard } from '@nestjs/passport';
 import { TenantPermissionGuard } from '../shared/guards/auth/tenant-permission.guard';
