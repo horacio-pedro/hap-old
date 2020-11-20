@@ -1,7 +1,7 @@
 {
-	"name": "gauzy",
+	"name": "hap",
 	"version": "0.1.0",
-	"repository": "https://github.com/ever-co/gauzy.git",
+	"repository": "https://github.com/horacio-pedro/hap.git",
 	"private": true,
 	"resolutions": {},
 	"workspaces": ["libs/*", "apps/*", "tools"]

@@ -113,7 +113,7 @@ services:
 
     api:
         container_name: api
-        image: gauzy-api:latest
+        image: hap-api:latest
         build:
             context: .
             dockerfile: .deploy/api/Dockerfile
@@ -130,8 +130,8 @@ services:
         links:
             - db:${DB_HOST:-db}
         volumes:
-            - webapp_node_modules:/srv/gauzy/node_modules
-            - api_node_modules:/srv/gauzy/apps/api/node_modules
+            - webapp_node_modules:/srv/hap/node_modules
+            - api_node_modules:/srv/hap/apps/api/node_modules
         ports:
             - 3000:3000:${API_PORT:-3000}
         networks:
@@ -139,7 +139,7 @@ services:
 
     webapp:
         container_name: webapp
-        image: gauzy-webapp:latest
+        image: hap-webapp:latest
         build:
             context: .
             dockerfile: .deploy/webapp/Dockerfile
@@ -159,7 +159,7 @@ services:
             - db
             - api
         volumes:
-            - webapp_node_modules:/srv/gauzy/node_modules
+            - webapp_node_modules:/srv/hap/node_modules
         ports:
             - 4200:${HOST:-4200}
         networks:

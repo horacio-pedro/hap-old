@@ -5,12 +5,12 @@ pipeline {
 
     environment {
         DOCKER_BUILDKIT = 1 // Experimental faster build system
-        REPO_NAME = "gauzy"
-        IMAGE_API = "gauzy-api"
-        IMAGE_WEBAPP = "gauzy-webapp"
+        REPO_NAME = "hap"
+        IMAGE_API = "hap-api"
+        IMAGE_WEBAPP = "hap-webapp"
         GITHUB_DOCKER_USERNAME = credentials('github-docker-username')
         GITHUB_DOCKER_PASSWORD = credentials('github-docker-password')
-        GITHUB_DOCKER_REPO = "docker.pkg.github.com/ever-co/gauzy"
+        GITHUB_DOCKER_REPO = "docker.pkg.github.com/horacio-pedro/hap"
         GITHUB_DISPATCH_TOKEN = credentials('github-dispatch-token')
         GITHUB_TOKEN = credentials('github-token')
         CI_URL = "ci.ever.co"
@@ -35,10 +35,10 @@ pipeline {
         stage("Clone") {
             steps{
                 git branch: 'develop',
-                    url: 'https://github.com/ever-co/gauzy.git'
+                    url: 'https://github.com/horacio-pedro/hap.git'
                 
                 sh """
-                    curl 'https://api.github.com/repos/ever-co/${REPO_NAME}/statuses/$GIT_COMMIT' -H 'Authorization: token ${GITHUB_TOKEN}' -H 'Content-Type: application/json' -X POST -d '{"state": "pending", "context": "Jenkins", "description": "Jenkins pipeline is running", "target_url": "https://$CI_URL/job/${JOB_NAME}/$BUILD_NUMBER/console"}'
+                    curl 'https://api.github.com/repos/horacio-pedro/${REPO_NAME}/statuses/$GIT_COMMIT' -H 'Authorization: token ${GITHUB_TOKEN}' -H 'Content-Type: application/json' -X POST -d '{"state": "pending", "context": "Jenkins", "description": "Jenkins pipeline is running", "target_url": "https://$CI_URL/job/${JOB_NAME}/$BUILD_NUMBER/console"}'
                 """
             }
             post {
@@ -65,7 +65,7 @@ pipeline {
                         }
                     }
                 }
-                stage("Gauzy WebApp Image") {
+                stage("HAP WebApp Image") {
                     steps {
                         sh "docker build -t ${env.IMAGE_WEBAPP} -f .deploy/webapp/Dockerfile ."
                     }
@@ -165,13 +165,13 @@ pipeline {
     }
     post {
         success {
-            echo "Gauzy CI/CD pipeline executed successfully!"
+            echo "HAP CI/CD pipeline executed successfully!"
             sh """
                 curl 'https://api.github.com/repos/ever-co/${REPO_NAME}/statuses/$GIT_COMMIT' -H 'Authorization: token ${GITHUB_TOKEN}' -H 'Content-Type: application/json' -X POST -d '{"state": "success", "context": "Jenkins", "description": "Jenkins pipeline succeeded", "target_url": "https://$CI_URL/job/${JOB_NAME}/$BUILD_NUMBER/console"}'
             """
 		}
         failure {
-            echo "Gauzy CI/CD pipeline failed..."
+            echo "HAP CI/CD pipeline failed..."
 			sh """
                 curl 'https://api.github.com/repos/ever-co/${REPO_NAME}/statuses/$GIT_COMMIT' -H 'Authorization: token ${GITHUB_TOKEN}' -H 'Content-Type: application/json' -X POST -d '{"state": "failure", "context": "Jenkins", "description": "Jenkins pipeline failed", "target_url": "https://$CI_URL/job/${JOB_NAME}/$BUILD_NUMBER/console"}'
             """

@@ -1,17 +1,17 @@
-# Gauzy Platform
+# HAP Platform
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ever-co/gauzy)
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/gauzy)
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/ever-co/gauzy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/evereq?utm_source=github&utm_medium=button&utm_term=evereq&utm_campaign=github)
 
-Gauzy™ Platform - **Open-Source Business Management Platform** focused on **Fairness** and **Transparency**.
+HAP™ Platform - **Business Management Platform** focused on **Fairness** and **Transparency**.
 
-You are welcome to check more information about the platform at our official website - **<https://ever.co/features-gauzy-platform>**.
+You are welcome to check more information about the platform at our official website - **<https://hap.conexoesinfinito.com>**.
 
 ![overview](https://gauzy.co/wp-content/themes/gauzy/assets/img/home/home-1.png)
 
-Gauzy Platform main features:
+HAP Platform main features:
 
 -   Human Resources Management (HRM), Time Management and Employees Performance Monitoring
 -   Customer Relationship Management (CRM)
@@ -21,7 +21,7 @@ Gauzy Platform main features:
 -   Financial and Cost Management (including _Accounting_, _Invoicing_, etc)
 -   Inventory, Supply Chain Management and Production Management
 
-More detailed list of the features available in the Gauzy Platform:
+More detailed list of the features available in the HAP Platform:
 
 -   Dashboard (provides overview of different metrics, such as company income / expenses, employees bonuses, etc.)
 -   Time Management / Time Tracking / Activity Tracking / Timesheets
@@ -55,7 +55,7 @@ More detailed list of the features available in the Gauzy Platform:
 -   Multi-language
 -   Dark / Light / Corporate and other Themes
 
-Read more [About Gauzy](https://github.com/ever-co/gauzy/wiki/About-Gauzy) and [How to use it](https://github.com/ever-co/gauzy/wiki/How-to-use-Gauzy) at your company, freelance business, agency, studio or in-house teams.
+Read more [About HAP](https://github.com/ever-co/gauzy/wiki/About-Gauzy) and [How to use it](https://github.com/ever-co/gauzy/wiki/How-to-use-Gauzy) at your company, freelance business, agency, studio or in-house teams.
 
 ## Demos, Testing and Production
 
@@ -67,9 +67,9 @@ Read more [About Gauzy](https://github.com/ever-co/gauzy/wiki/About-Gauzy) and [
 
 ### Desktop App
 
--   Download Gauzy Desktop App for your OS from <https://github.com/ever-co/gauzy/releases/tag/v0.1.0>.
--   Setup Gauzy Desktop App with default choices in Setup Wizard and run it
--   Gauzy Desktop App is ready to use.
+-   Download HAP Desktop App for your OS from <https://github.com/ever-co/gauzy/releases/tag/v0.1.0>.
+-   Setup HAP Desktop App with default choices in Setup Wizard and run it
+-   HAP Desktop App is ready to use.
 -   You can login with `admin@ever.co` and password `admin` to check Admin functionality. Note: such Admin user is not an employee, so you will not be able to track time.
 -   You can login with `ruslan@ever.co` and password `admin` to check Desktop Timer and other functionality from "Employee" perspective (such user is an Employee).
 -   You can read more information about Desktop App in our [Wiki](https://github.com/ever-co/gauzy/wiki/Gauzy-Desktop-App)
@@ -86,7 +86,7 @@ Read more [About Gauzy](https://github.com/ever-co/gauzy/wiki/About-Gauzy) and [
 -   [PostgreSQL](https://www.postgresql.org)
 -   For production, we integrate and recommend to use [PM2](https://github.com/Unitech/pm2)
 
-Note: thanks to TypeORM, Gauzy will support lots of DBs: MySql, MariaDb, PostgreSQL, CockroachDb, sqlite, MS SQL, Oracle, MongoDb and others, with minimal changes.
+Note: thanks to TypeORM, HAP will support lots of DBs: MySql, MariaDb, PostgreSQL, CockroachDb, sqlite, MS SQL, Oracle, MongoDb and others, with minimal changes.
 
 #### See also README.md and CREDITS.md files in relevant folders for lists of libraries and software included in the Platform, information about licenses and other details.
 
@@ -144,52 +144,10 @@ Note: it currently supports AWS EKS (Kubernetes) for development and production 
 -   You are more than welcome to submit feature requests
 -   Pull requests are always welcome! Please base pull requests against the _develop_ branch and follow the [contributing guide](.github/CONTRIBUTING.md).
 
-## Collaborators and Contributors
-
-### Development Team
-
-#### Core
-
--   Ruslan Konviser ([Evereq](https://github.com/evereq))
-
-#### Developers (alphabetical order)
-
--   Alish Meklyov ([Alish](https://github.com/AlishMekliov931))
--   Blagovest Gerov ([BlagovestGerov](https://github.com/BlagovestGerov))
--   Elvis Arabadjiyski ([Dreemsuncho](https://github.com/Dreemsuncho))
--   Hristo Hristov ([hrimar](https://github.com/hrimar))
--   Pavel Denchev ([PavelDenchev](https://github.com/PavelDenchev))
--   Rachit Magon ([rmagon](https://github.com/rmagon))
--   Tsvetelina Yordanova ([tsvetelina-e-y](https://github.com/tsvetelina-e-y))
--   Valentin Peshev ([valiopld](https://github.com/valiopld))
--   Yavor Grancharov ([YavorGrancharov](https://github.com/YavorGrancharov))
-
-#### Designers & QA
-
--   [Julia Konviser](https://www.linkedin.com/in/julia-konviser-8b917552) (Graphic Designer, QA)
--   [Yordan Genovski](https://services.ever.co/teammembers/yordan-genovski) (UX/UI/Product Designer)
-
-### Contributors
-
-View full list of our [contributors](https://github.com/ever-co/gauzy/graphs/contributors).
-
-## Contact Us
-
--   [Ever.co Website Contact Us page](https://ever.co/contacts)
--   [Slack Community](https://join.slack.com/t/gauzy/shared_invite/enQtNzc5MTA5MDUwODg2LTI0MGEwYTlmNWFlNzQzMzBlOWExNTk0NzAyY2IwYWYwMzZjMTliYjMwNDI3NTJmYmM4MDQ4NDliMDNiNDY1NWU)
--   [Discord Chat](https://discord.gg/hKQfn4j)
--   [Spectrum Community](https://spectrum.chat/gauzy)
--   [Gitter Chat](https://gitter.im/ever-co/gauzy)
--   [CodeMentor](https://www.codementor.io/evereq)
--   For business inquiries: <mailto:gauzy@ever.co>
--   Please report security vulnerabilities to <mailto:security@ever.co>
--   [Gauzy Platform @ Twitter](https://twitter.com/gauzyplatform)
--   [Gauzy Platform @ Facebook](https://www.facebook.com/gauzyplatform)
-
 ## Security
 
-Gauzy™ follows good security practices, but 100% security cannot be guaranteed in any software!  
-Gauzy™ is provided AS IS without any warranty. Use at your own risk!  
+HAP™ follows good security practices, but 100% security cannot be guaranteed in any software!  
+HAP™ is provided AS IS without any warranty. Use at your own risk!  
 See more details in the [LICENSE](LICENSE).
 
 In a production setup, all client-side to server-side (backend, APIs) communications should be encrypted using HTTPS/WSS/SSL (REST APIs, GraphQL endpoint, Socket.io WebSockets, etc.).
@@ -202,7 +160,7 @@ This software is available under following licenses:
 -   [Gauzy™ Platform Small Business](https://github.com/ever-co/gauzy/blob/master/LICENSE.md#gauzy-platform-small-business-license)
 -   [Gauzy™ Platform Enterprise](https://github.com/ever-co/gauzy/blob/master/LICENSE.md#gauzy-platform-enterprise-license)
 
-#### The default Gauzy™ Platform license, without a valid Gauzy™ Platform Enterprise or Gauzy™ Platform Small Business License agreement, is the Gauzy™ Platform Community Edition License.
+#### The default HAP™ Platform license, without a valid HAP™ Platform Enterprise or HAP™ Platform Small Business License agreement, is the HAP™ Platform Community Edition License.
 
 #### Please see [LICENSE.md](LICENSE.md) for more information on licenses. You can also [compare our offering](https://ever.co/compare-gauzy/#compare).
 
@@ -210,12 +168,12 @@ This software is available under following licenses:
 
 ## Trademarks
 
-Gauzy™ is a trademark of Ever Co. LTD.  
+HAP™ is a trademark of Conexões Infinito.  
 All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
 
 ## Copyright
 
-#### Copyright © 2019-present, Ever Co. LTD. All rights reserved.
+#### Copyright © 2020-present, Conexões Infinito. LDA. All rights reserved.
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=ever-co.gauzy-platform)
 [![Circle CI](https://circleci.com/gh/ever-co/gauzy.svg?style=svg)](https://circleci.com/gh/ever-co/gauzy)

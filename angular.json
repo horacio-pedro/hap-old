@@ -12,37 +12,37 @@
 	"version": 1,
 	"newProjectRoot": "",
 	"projects": {
-		"gauzy": {
+		"hap": {
 			"projectType": "application",
 			"schematics": {
 				"@nrwl/workspace:component": {
 					"style": "scss"
 				}
 			},
-			"root": "apps/gauzy",
-			"sourceRoot": "apps/gauzy/src",
-			"prefix": "gauzy",
+			"root": "apps/hap",
+			"sourceRoot": "apps/hap/src",
+			"prefix": "hap",
 			"architect": {
 				"build": {
 					"builder": "@angular-builders/custom-webpack:browser",
 					"options": {
 						"aot": true,
 						"customWebpackConfig": {
-							"path": "apps/gauzy/config/custom-webpack.config.js"
+							"path": "apps/hap/config/custom-webpack.config.js"
 						},
-						"outputPath": "dist/apps/gauzy",
-						"index": "apps/gauzy/src/index.html",
-						"main": "apps/gauzy/src/main.ts",
-						"polyfills": "apps/gauzy/src/polyfills.ts",
-						"tsConfig": "apps/gauzy/tsconfig.app.json",
+						"outputPath": "dist/apps/hap",
+						"index": "apps/hap/src/index.html",
+						"main": "apps/hap/src/main.ts",
+						"polyfills": "apps/hap/src/polyfills.ts",
+						"tsConfig": "apps/hap/tsconfig.app.json",
 						"stylePreprocessorOptions": {
-							"includePaths": ["apps/gauzy/src/app/@theme/styles"]
+							"includePaths": ["apps/hap/src/app/@theme/styles"]
 						},
 						"assets": [
-							"apps/gauzy/src/favicon.ico",
-							"apps/gauzy/src/assets",
-							"apps/gauzy/src/manifest.json",
-							"apps/gauzy/src/silent-refresh.html"
+							"apps/hap/src/favicon.ico",
+							"apps/hap/src/assets",
+							"apps/hap/src/manifest.json",
+							"apps/hap/src/silent-refresh.html"
 						],
 						"styles": [
 							"node_modules/bootstrap/dist/css/bootstrap.css",
@@ -55,7 +55,7 @@
 							"node_modules/@circlon/angular-tree-component/css/angular-tree-component.css",
 							"node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
 							"node_modules/leaflet/dist/leaflet.css",
-							"apps/gauzy/src/app/@theme/styles/styles.scss"
+							"apps/hap/src/app/@theme/styles/styles.scss"
 						],
 						"scripts": [
 							"node_modules/pace-js/pace.min.js",
@@ -72,8 +72,8 @@
 						"production": {
 							"fileReplacements": [
 								{
-									"replace": "apps/gauzy/src/environments/environment.ts",
-									"with": "apps/gauzy/src/environments/environment.prod.ts"
+									"replace": "apps/hap/src/environments/environment.ts",
+									"with": "apps/hap/src/environments/environment.prod.ts"
 								}
 							],
 							"optimization": true,
@@ -82,7 +82,7 @@
 							"sourceMap": false,
 							"extractCss": true,
 							"namedChunks": false,
-							"ngswConfigPath": "apps/gauzy/ngsw-config.prod.json",
+							"ngswConfigPath": "apps/hap/ngsw-config.prod.json",
 							"aot": true,
 							"extractLicenses": false,
 							"vendorChunk": false,
@@ -104,28 +104,28 @@
 				"serve": {
 					"builder": "@angular-builders/custom-webpack:dev-server",
 					"options": {
-						"browserTarget": "gauzy:build",
-						"proxyConfig": "apps/gauzy/proxy.conf.json"
+						"browserTarget": "hap:build",
+						"proxyConfig": "apps/hap/proxy.conf.json"
 					},
 					"configurations": {
 						"production": {
-							"browserTarget": "gauzy:build:production",
-							"proxyConfig": "apps/gauzy/proxy.prod.conf.json"
+							"browserTarget": "hap:build:production",
+							"proxyConfig": "apps/hap/proxy.prod.conf.json"
 						}
 					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "gauzy:build"
+						"browserTarget": "hap:build"
 					}
 				},
 				"lint": {
 					"builder": "@angular-devkit/build-angular:tslint",
 					"options": {
 						"tsConfig": [
-							"apps/gauzy/tsconfig.app.json",
-							"apps/gauzy/tsconfig.spec.json"
+							"apps/hap/tsconfig.app.json",
+							"apps/hap/tsconfig.spec.json"
 						],
 						"exclude": ["**/node_modules/**"]
 					}
@@ -133,35 +133,35 @@
 				"test": {
 					"builder": "@nrwl/jest:jest",
 					"options": {
-						"jestConfig": "apps/gauzy/jest.config.js",
-						"tsConfig": "apps/gauzy/tsconfig.spec.json",
-						"setupFile": "apps/gauzy/src/test-setup.ts"
+						"jestConfig": "apps/hap/jest.config.js",
+						"tsConfig": "apps/hap/tsconfig.spec.json",
+						"setupFile": "apps/hap/src/test-setup.ts"
 					}
 				}
 			}
 		},
-		"gauzy-e2e": {
-			"root": "apps/gauzy-e2e",
-			"sourceRoot": "apps/gauzy-e2e/src",
+		"hap-e2e": {
+			"root": "apps/hap-e2e",
+			"sourceRoot": "apps/hap-e2e/src",
 			"projectType": "application",
 			"architect": {
 				"e2e": {
 					"builder": "@nrwl/cypress:cypress",
 					"options": {
-						"cypressConfig": "apps/gauzy-e2e/cypress.json",
-						"tsConfig": "apps/gauzy-e2e/tsconfig.e2e.json",
-						"devServerTarget": "gauzy:serve"
+						"cypressConfig": "apps/hap-e2e/cypress.json",
+						"tsConfig": "apps/hap-e2e/tsconfig.e2e.json",
+						"devServerTarget": "hap:serve"
 					},
 					"configurations": {
 						"production": {
-							"devServerTarget": "gauzy:serve:production"
+							"devServerTarget": "hap:serve:production"
 						}
 					}
 				},
 				"lint": {
 					"builder": "@angular-devkit/build-angular:tslint",
 					"options": {
-						"tsConfig": "apps/gauzy-e2e/tsconfig.e2e.json"
+						"tsConfig": "apps/hap-e2e/tsconfig.e2e.json"
 					}
 				}
 			}
@@ -311,26 +311,26 @@
 					"style": "scss"
 				}
 			},
-			"root": "apps/gauzy",
-			"sourceRoot": "apps/gauzy/src",
-			"prefix": "gauzy",
+			"root": "apps/hap",
+			"sourceRoot": "apps/hap/src",
+			"prefix": "hap",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
 						"outputPath": "dist/apps/desktop",
-						"index": "apps/gauzy/src/index.html",
-						"main": "apps/gauzy/src/main.ts",
-						"polyfills": "apps/gauzy/src/polyfills.ts",
-						"tsConfig": "apps/gauzy/tsconfig.app.json",
+						"index": "apps/hap/src/index.html",
+						"main": "apps/hap/src/main.ts",
+						"polyfills": "apps/hap/src/polyfills.ts",
+						"tsConfig": "apps/hap/tsconfig.app.json",
 						"stylePreprocessorOptions": {
-							"includePaths": ["apps/gauzy/src/app/@theme/styles"]
+							"includePaths": ["apps/hap/src/app/@theme/styles"]
 						},
 						"assets": [
-							"apps/gauzy/src/favicon.ico",
-							"apps/gauzy/src/assets",
-							"apps/gauzy/src/manifest.json",
-							"apps/gauzy/src/silent-refresh.html",
+							"apps/hap/src/favicon.ico",
+							"apps/hap/src/assets",
+							"apps/hap/src/manifest.json",
+							"apps/hap/src/silent-refresh.html",
 							{
 								"glob": "**/*",
 								"input": "apps/desktop/src/",
@@ -349,7 +349,7 @@
 							"node_modules/@circlon/angular-tree-component/css/angular-tree-component.css",
 							"node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
 							"node_modules/leaflet/dist/leaflet.css",
-							"apps/gauzy/src/app/@theme/styles/styles.scss"
+							"apps/hap/src/app/@theme/styles/styles.scss"
 						],
 						"scripts": [
 							"node_modules/pace-js/pace.min.js",
@@ -366,8 +366,8 @@
 						"production": {
 							"fileReplacements": [
 								{
-									"replace": "apps/gauzy/src/environments/environment.ts",
-									"with": "apps/gauzy/src/environments/environment.prod.ts"
+									"replace": "apps/hap/src/environments/environment.ts",
+									"with": "apps/hap/src/environments/environment.prod.ts"
 								}
 							],
 							"optimization": true,
@@ -376,7 +376,7 @@
 							"sourceMap": false,
 							"extractCss": true,
 							"namedChunks": false,
-							"ngswConfigPath": "apps/gauzy/ngsw-config.prod.json",
+							"ngswConfigPath": "apps/hap/ngsw-config.prod.json",
 							"aot": true,
 							"extractLicenses": false,
 							"vendorChunk": false,
@@ -395,12 +395,12 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"options": {
 						"browserTarget": "desktop:build",
-						"proxyConfig": "apps/gauzy/proxy.conf.json"
+						"proxyConfig": "apps/hap/proxy.conf.json"
 					},
 					"configurations": {
 						"production": {
 							"browserTarget": "desktop:build:production",
-							"proxyConfig": "apps/gauzy/proxy.prod.conf.json"
+							"proxyConfig": "apps/hap/proxy.prod.conf.json"
 						}
 					}
 				}
@@ -451,7 +451,7 @@
 			},
 			"root": "apps/desktop",
 			"sourceRoot": "apps/desktop/src",
-			"prefix": "gauzy",
+			"prefix": "hap",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
@@ -702,5 +702,5 @@
 			"unitTestRunner": "jest"
 		}
 	},
-	"defaultProject": "gauzy"
+	"defaultProject": "hap"
 }

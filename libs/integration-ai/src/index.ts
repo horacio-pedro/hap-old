@@ -1,2 +1,2 @@
-export * from './lib/sdk/gauzy-ai-sdk';
-export * from './lib/gauzy-ai.service';
+export * from './lib/sdk/hap-ai-sdk';
+export * from './lib/hap-ai.service';

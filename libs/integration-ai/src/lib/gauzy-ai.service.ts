@@ -7,7 +7,7 @@ import {
 	EmployeeQuery,
 	UpdateEmployeeJobPost,
 	UpworkJobsSearchCriterion
-} from './sdk/gauzy-ai-sdk';
+} from './sdk/hap-ai-sdk';
 import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 import fetch from 'cross-fetch';
 import {
@@ -34,11 +34,11 @@ import {
 	JobPostStatusEnum,
 	JobPostTypeEnum,
 	IEmployeeJobsStatistics
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
-export class GauzyAIService {
-	private readonly _logger = new Logger(GauzyAIService.name);
+export class HapAIService {
+	private readonly _logger = new Logger(HapAIService.name);
 	private _client: ApolloClient<NormalizedCacheObject>;
 
 	// For now, we disable Apollo client caching for all GraphQL queries and mutations
@@ -57,14 +57,14 @@ export class GauzyAIService {
 		}
 	};
 
-	private gauzyAIGraphQLEndpoint: string;
+	private hapAIGraphQLEndpoint: string;
 
 	private initClient() {
 		this._client = new ApolloClient({
 			typeDefs: EmployeeJobPostsDocument,
 			link: new HttpLink({
 				// TODO: use endpoint from .env. We probably should inject settings into constructor for this.
-				uri: this.gauzyAIGraphQLEndpoint,
+				uri: this.hapAIGraphQLEndpoint,
 				fetch
 			}),
 			cache: new InMemoryCache(),
@@ -75,11 +75,11 @@ export class GauzyAIService {
 	constructor() {
 		try {
 			// TODO: read from constructor injected parameter (e.g. config service)
-			this.gauzyAIGraphQLEndpoint = process.env.GAUZY_AI_GRAPHQL_ENDPOINT;
+			this.hapAIGraphQLEndpoint = process.env.HAP_AI_GRAPHQL_ENDPOINT;
 
-			if (this.gauzyAIGraphQLEndpoint) {
+			if (this.hapAIGraphQLEndpoint) {
 				this._logger.log(
-					'Gauzy AI Endpoint configured in the environment'
+					'HAP AI Endpoint configured in the environment'
 				);
 
 				this.initClient();
@@ -120,7 +120,7 @@ export class GauzyAIService {
 				testConnectionQuery();
 			} else {
 				this._logger.warn(
-					'Gauzy AI Endpoint not configured in the environment'
+					'HAP AI Endpoint not configured in the environment'
 				);
 				this._client = null;
 			}
@@ -131,7 +131,7 @@ export class GauzyAIService {
 	}
 
 	/**
-	 * Get statistic from Gauzy AI about how many jobs are available for given employee
+	 * Get statistic from HAP AI about how many jobs are available for given employee
 	 * and to how many of jobs employee already applied and more statistic in the future.
 	 */
 	public async getEmployeesStatistics(): Promise<IEmployeeJobsStatistics[]> {
@@ -139,8 +139,8 @@ export class GauzyAIService {
 	}
 
 	/**
-	 * Updates in Gauzy AI if given Employee looking for a jobs or not.
-	 * If not looking, Gauzy AI will NOT return jobs for such employee and will NOT crawl sources for jobs for such employee
+	 * Updates in HAP AI if given Employee looking for a jobs or not.
+	 * If not looking, HAP AI will NOT return jobs for such employee and will NOT crawl sources for jobs for such employee
 	 * @param employeeId
 	 * @param isJobSearchActive
 	 */
@@ -153,10 +153,10 @@ export class GauzyAIService {
 		}
 
 		// First we need to get employee id because we have only externalId
-		const gauzyAIEmployeeId = await this.getEmployeeGauzyAIId(employeeId);
+		const hapAIEmployeeId = await this.getEmployeeHapAIId(employeeId);
 
 		console.log(
-			`updateVisibility called. EmployeeId: ${employeeId}. Gauzy AI EmployeeId: ${gauzyAIEmployeeId}`
+			`updateVisibility called. EmployeeId: ${employeeId}. HAP AI EmployeeId: ${hapAIEmployeeId}`
 		);
 
 		return true;
@@ -164,9 +164,9 @@ export class GauzyAIService {
 
 	/**
 	 * Updates job visibility
-	 * @param hide Should job be hidden or visible. This will set isActive field to false in Gauzy AI
-	 * @param employeeId If employeeId set, job will be set not active only for that specific employee (using EmployeeJobPost record update in Gauzy AI)
-	 * If employeeId is not set, job will be set not active for all employees (using JobPost record update in Gauzy AI)
+	 * @param hide Should job be hidden or visible. This will set isActive field to false in HAP AI
+	 * @param employeeId If employeeId set, job will be set not active only for that specific employee (using EmployeeJobPost record update in HAP AI)
+	 * If employeeId is not set, job will be set not active for all employees (using JobPost record update in HAP AI)
 	 * @param providerCode e.g. 'upwork'
 	 * @param providerJobId Unique job id in the provider, e.g. in Upwork. If this value is not set, it will update ALL jobs for given provider
 	 */
@@ -180,7 +180,7 @@ export class GauzyAIService {
 		// If it's for specific employee and specific job
 		if (input.employeeId && input.providerCode && input.providerJobId) {
 			// First we need to get employee id because we have only externalId
-			const employeeId = await this.getEmployeeGauzyAIId(
+			const employeeId = await this.getEmployeeHapAIId(
 				input.employeeId
 			);
 
@@ -194,7 +194,7 @@ export class GauzyAIService {
 
 			console.log(`updateVisibility called. jobPostId: ${jobPostId}`);
 
-			// Next, we need to find `public employee job post` table record in Gauzy AI to get id of record.
+			// Next, we need to find `public employee job post` table record in HAP AI to get id of record.
 			// We can find by employeeId and jobPostId
 
 			const employeeJobPostId = await this.getEmployeeJobPostId(
@@ -251,7 +251,7 @@ export class GauzyAIService {
 
 	/**
 	 * Updates if Employee Applied to a job
-	 * @param applied This will set isApplied and appliedDate fields in Gauzy AI
+	 * @param applied This will set isApplied and appliedDate fields in HAP AI
 	 * @param employeeId Employee who applied for a job
 	 * @param providerCode e.g. 'upwork'
 	 * @p  aram providerJobId Unique job id in the provider, e.g. in Upwork
@@ -264,7 +264,7 @@ export class GauzyAIService {
 		}
 
 		// First we need to get employee id because we have only externalId
-		const employeeId = await this.getEmployeeGauzyAIId(input.employeeId);
+		const employeeId = await this.getEmployeeHapAIId(input.employeeId);
 
 		console.log(`updateApplied called. EmployeeId: ${employeeId}`);
 
@@ -276,7 +276,7 @@ export class GauzyAIService {
 
 		console.log(`updateApplied called. jobPostId: ${jobPostId}`);
 
-		// Next, we need to find `public employee job post` table record in Gauzy AI to get id of record.
+		// Next, we need to find `public employee job post` table record in hap AI to get id of record.
 		// We can find by employeeId and jobPostId
 
 		const employeeJobPostId = await this.getEmployeeJobPostId(
@@ -321,9 +321,9 @@ export class GauzyAIService {
 			});
 		}
 
-		// TODO: here we need to check what returned from Gauzy AI
+		// TODO: here we need to check what returned from hap AI
 		// Because for some providers (e.g. Upwork), redirect to apply manually required
-		// But for other providers, apply can work inside Gauzy AI automatically
+		// But for other providers, apply can work inside hap AI automatically
 		return { isRedirectRequired: true };
 	}
 
@@ -331,18 +331,18 @@ export class GauzyAIService {
 	// Both when Preset saved for given employee and when any criteria saved for given employee (new criteria or changes in criteria)
 	// You should pass `employee` entity for which anything on Matching page was changes
 	// IMPORTANT: You should ALWAYS pass ALL criteria defined for given employee on Matching page, not only new or changed!
-	// Best way to call this method, is to reload from Gauzy DB all criteria for given employee before call this method.
+	// Best way to call this method, is to reload from hap DB all criteria for given employee before call this method.
 	// We DO NOT USE DATA YOU PASS FROM UI!
 	// INSTEAD, We CALL THIS METHOD FROM YOUR CQRS COMMAND HANDLERS when you detect that anything related to matching changes
 	// But as explained above, we must reload criteria from DB, not use anything you have in the local variables
-	// (because it might not be full data, but this method requires all data to be synced to Gauzy AI, even if such data was previously already synced)
+	// (because it might not be full data, but this method requires all data to be synced to hap AI, even if such data was previously already synced)
 	// How this method will work internally:
-	// - it will call sync for employee first and if no such employee exists in Gauzy AI, it will create new. If exists, it will update employee properties, e.g. lastName
-	// - next, it will remove all criteria for employee in Gauzy AI and create new records again for criterions.
+	// - it will call sync for employee first and if no such employee exists in hap AI, it will create new. If exists, it will update employee properties, e.g. lastName
+	// - next, it will remove all criteria for employee in hap AI and create new records again for criterions.
 	// I.e. no update will be done, it will be full replacement
 	// The reason it's acceptable is because such data changes rarely for given employee, so it's totally fine to recreate it
 	// NOTE: will need to call this method from multiple different CQRS command handlers!
-	public async syncGauzyEmployeeJobSearchCriteria(
+	public async syncHapEmployeeJobSearchCriteria(
 		employee: IEmployee,
 		criteria: IEmployeeUpworkJobsSearchCriterion[]
 	): Promise<boolean> {
@@ -351,13 +351,13 @@ export class GauzyAIService {
 		}
 
 		console.log(
-			`syncGauzyEmployeeJobSearchCriteria called. Criteria: ${JSON.stringify(
+			`syncHapEmployeeJobSearchCriteria called. Criteria: ${JSON.stringify(
 				criteria
 			)}. Employee: ${JSON.stringify(employee)}`
 		);
 
 		try {
-			const gauzyAIEmployee: Employee = await this.syncEmployee({
+			const hapAIEmployee: Employee = await this.syncEmployee({
 				externalEmployeeId: employee.id,
 				isActive: employee.isActive,
 				isArchived: false,
@@ -367,7 +367,7 @@ export class GauzyAIService {
 				lastName: employee.user.lastName
 			});
 
-			console.log(`Synced Employee ${JSON.stringify(gauzyAIEmployee)}`);
+			console.log(`Synced Employee ${JSON.stringify(hapAIEmployee)}`);
 
 			// let's delete all criteria for Employee
 
@@ -390,7 +390,7 @@ export class GauzyAIService {
 								is: true
 							},
 							employeeId: {
-								eq: gauzyAIEmployee.id
+								eq: hapAIEmployee.id
 							}
 						}
 					}
@@ -404,16 +404,16 @@ export class GauzyAIService {
 				)}`
 			);
 
-			// now let's create new criteria in Gauzy AI based on Gauzy criterions data
+			// now let's create new criteria in hap AI based on hap criterions data
 
 			if (criteria && criteria.length > 0) {
-				const gauzyAICriteria: UpworkJobsSearchCriterion[] = [];
+				const hapAICriteria: UpworkJobsSearchCriterion[] = [];
 
 				criteria.forEach(
 					(criterion: IEmployeeUpworkJobsSearchCriterion) => {
-						gauzyAICriteria.push({
+						hapAICriteria.push({
 							employee: undefined,
-							employeeId: gauzyAIEmployee.id,
+							employeeId: hapAIEmployee.id,
 							isActive: true,
 							isArchived: false,
 							jobType: 'hourly', // TODO: criterion.jobType
@@ -440,7 +440,7 @@ export class GauzyAIService {
 					mutation: createCriteriaMutation,
 					variables: {
 						input: {
-							upworkJobsSearchCriteria: gauzyAICriteria
+							upworkJobsSearchCriteria: hapAICriteria
 						}
 					}
 				});
@@ -462,11 +462,11 @@ export class GauzyAIService {
 
 	/**
 	 *
-	 * Creates employees in Gauzy AI if not exists yet. If exists, updates fields, including externalEmployeeId
+	 * Creates employees in hap AI if not exists yet. If exists, updates fields, including externalEmployeeId
 	 * How it works:
-	 * - search done externalEmployeeId field first in Gauzy AI to be equal to Gauzy employee Id.
-	 * - if no record found in Gauzy AI, it search Gauzy AI employees records by employee name
-	 * - if no record found in Gauzy AI, it creates new employee in Gauzy AI
+	 * - search done externalEmployeeId field first in hap AI to be equal to hap employee Id.
+	 * - if no record found in hap AI, it search hap AI employees records by employee name
+	 * - if no record found in hap AI, it creates new employee in hap AI
 	 *
 	 * @param employees
 	 */
@@ -478,7 +478,7 @@ export class GauzyAIService {
 		await Promise.all(
 			employees.map(async (employee) => {
 				try {
-					const gauzyAIEmployee: Employee = await this.syncEmployee({
+					const hapAIEmployee: Employee = await this.syncEmployee({
 						externalEmployeeId: employee.id,
 						isActive: employee.isActive,
 						isArchived: false,
@@ -489,7 +489,7 @@ export class GauzyAIService {
 					});
 
 					console.log(
-						`Synced Employee ${JSON.stringify(gauzyAIEmployee)}`
+						`Synced Employee ${JSON.stringify(hapAIEmployee)}`
 					);
 				} catch (err) {
 					this._logger.error(err);
@@ -587,7 +587,7 @@ export class GauzyAIService {
 		return null;
 	}
 
-	private async getEmployeeGauzyAIId(
+	private async getEmployeeHapAIId(
 		externalEmployeeId: string
 	): Promise<string> {
 		const employeesQuery: DocumentNode<EmployeeQuery> = gql`
@@ -628,12 +628,12 @@ export class GauzyAIService {
 		return null;
 	}
 
-	/** Sync Employee between Gauzy and Gauzy AI
-	 *  Creates new Employee in Gauzy AI if it's not yet exists there yet (it try to find by externalEmployeeId field value or by name)
-	 *  Update existed Gauzy AI Employee record with new data from Gauzy DB
+	/** Sync Employee between hap and hap AI
+	 *  Creates new Employee in hap AI if it's not yet exists there yet (it try to find by externalEmployeeId field value or by name)
+	 *  Update existed hap AI Employee record with new data from hap DB
 	 */
 	private async syncEmployee(employee: Employee): Promise<Employee> {
-		// First, let's search by employee.externalEmployeeId (which is Gauzy employeeId)
+		// First, let's search by employee.externalEmployeeId (which is hap employeeId)
 
 		let employeesQuery: DocumentNode<EmployeeQuery> = gql`
 			query employeeByExternalEmployeeId(
@@ -669,7 +669,7 @@ export class GauzyAIService {
 		let isAlreadyCreated = employeesResponse.length > 0;
 
 		console.log(
-			`Is Employee ${employee.externalEmployeeId} already exists in Gauzy AI: ${isAlreadyCreated} by externalEmployeeId field`
+			`Is Employee ${employee.externalEmployeeId} already exists in HAP AI: ${isAlreadyCreated} by externalEmployeeId field`
 		);
 
 		if (!isAlreadyCreated) {
@@ -712,7 +712,7 @@ export class GauzyAIService {
 			isAlreadyCreated = employeesResponse.length > 0;
 
 			console.log(
-				`Is Employee ${employee.externalEmployeeId} already exists in Gauzy AI: ${isAlreadyCreated} by name fields`
+				`Is Employee ${employee.externalEmployeeId} already exists in HAP AI: ${isAlreadyCreated} by name fields`
 			);
 
 			if (!isAlreadyCreated) {
@@ -878,7 +878,7 @@ export class GauzyAIService {
 			};
 
 			if (employeeIdFilter) {
-				const employeeId = await this.getEmployeeGauzyAIId(
+				const employeeId = await this.getEmployeeHapAIId(
 					employeeIdFilter
 				);
 
@@ -896,7 +896,7 @@ export class GauzyAIService {
 				(data.page * data.limit) / graphQLPageSize
 			);
 
-			console.log(`Round trips to Gauzy API: ${loadCounts}`);
+			console.log(`Round trips to HAP API: ${loadCounts}`);
 
 			let currentCount = 1;
 

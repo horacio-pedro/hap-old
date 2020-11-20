@@ -4,7 +4,7 @@ import * as UpworkApi from 'upwork-api';
 import { Billings } from 'upwork-api/lib/routers/reports/finance/billings.js';
 import { Earnings } from 'upwork-api/lib/routers/reports/finance/earnings.js';
 import { Time } from 'upwork-api/lib/routers/reports/time.js';
-import { IUpworkApiConfig, IUpworkDateRange } from '@gauzy/models';
+import { IUpworkApiConfig, IUpworkDateRange } from '@hap/models';
 
 const DEFAULT_DATE_RANGE = {
 	start: moment()

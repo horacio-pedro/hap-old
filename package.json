@@ -1,32 +1,32 @@
 {
-	"name": "gauzy",
+	"name": "hap",
 	"version": "0.1.0",
-	"description": "Gauzy Desktop",
+	"description": "HAP Desktop",
 	"license": "AGPL-3.0",
-	"homepage": "https://gauzy.co",
+	"homepage": "https://hap.conexoesinfinito.com",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ever-co/gauzy.git"
+		"url": "git+https://github.com/horacio-pedro/hap.git"
 	},
 	"bugs": {
-		"url": "https://github.com/ever-co/gauzy/issues"
+		"url": "https://github.com/horacio-pedro/hap/issues"
 	},
 	"private": true,
 	"author": {
-		"name": "Ever Co. LTD",
-		"email": "ever@ever.co",
-		"url": "https://ever.co"
+		"name": "HAP. LDA",
+		"email": "info@hap.ao",
+		"url": "https://hap.ao"
 	},
 	"scripts": {
 		"ng": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng",
 		"config": "yarn ts-node ./.scripts/configure.ts",
 		"config:dev": "yarn run config -- --environment=dev",
 		"config:prod": "yarn run config -- --environment=prod",
-		"start": "npm run postinstall.web && yarn start:gauzy",
-		"start:prod": "yarn start:gauzy:prod",
-		"start:gauzy": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn run config:dev && yarn ng serve gauzy",
-		"start:gauzy:pm2": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn run build && yarn ts-node ./apps/gauzy/src/pm2bootstrap.ts",
-		"start:gauzy:prod": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng serve gauzy --disable-host-check --host 0.0.0.0 -c=production --prod",
+		"start": "npm run postinstall.web && yarn start:hap",
+		"start:prod": "yarn start:hap:prod",
+		"start:hap": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn run config:dev && yarn ng serve hap",
+		"start:hap:pm2": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn run build && yarn ts-node ./apps/hap/src/pm2bootstrap.ts",
+		"start:hap:prod": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng serve hap --disable-host-check --host 0.0.0.0 -c=production --prod",
 		"start:api": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn ng serve api",
 		"start:api:prod": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn ng serve api --host 0.0.0.0 -c=production --prod",
 		"start:api:pm2": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn run build:api && yarn ts-node -r tsconfig-paths/register --project apps/api/tsconfig.app.json ./apps/api/src/pm2bootstrap.ts",
@@ -37,12 +37,12 @@
 		"seed:prod": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=8192 yarn run config:prod && yarn ts-node -r tsconfig-paths/register --project apps/api/tsconfig.app.json ./apps/api/src/seed.ts",
 		"bootstrap": "yarn lerna bootstrap",
 		"prebuild": "rimraf dist coverage",
-		"build": "npm run postinstall.web && cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn run config:dev && yarn ng build gauzy",
-		"build:prod": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng build gauzy -c=production --prod",
-		"build:prod:circle": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng build gauzy -c=production --prod --no-progress",
+		"build": "npm run postinstall.web && cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn run config:dev && yarn ng build hap",
+		"build:prod": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng build hap -c=production --prod",
+		"build:prod:circle": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng build hap -c=production --prod --no-progress",
 		"build:api": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 yarn ng build api",
 		"build:api:prod": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn ng build api -c=production --prod",
-		"bundle-report": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng build -c=production --stats-json && webpack-bundle-analyzer dist/apps/gauzy/stats.json",
+		"bundle-report": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 yarn run config:prod && yarn ng build -c=production --stats-json && webpack-bundle-analyzer dist/apps/hap/stats.json",
 		"commit": "git-cz",
 		"commit:lint": "commitlint -E HUSKY_GIT_PARAMS",
 		"semantic-release": "semantic-release",
@@ -82,14 +82,14 @@
 		"prepare:desktop": "npm run postinstall.electron && tsc -p apps/desktop/tsconfig.json",
 		"serve:desktop.target": "nx serve desktop",
 		"serve:desktop": "wait-on http-get://localhost:4200/ && electron apps/desktop/src --serve",
-		"start:desktop": "npm run prepare:desktop && npm-run-all -p serve.electron.gauzy-desktop.target serve.electron.gauzy-desktop",
-		"start.gauzy": "npm run postinstall.web && nx serve gauzy",
+		"start:desktop": "npm run prepare:desktop && npm-run-all -p serve.electron.hap-desktop.target serve.electron.hap-desktop",
+		"start.hap": "npm run postinstall.web && nx serve hap",
 		"build:desktop:mac:quick": "cd dist/apps/desktop && npx electron-builder@22.9.1 -c.electronVersion=10.1.3 build --mac",
 		"build:desktop:local:quick": "electron dist/apps/desktop --prod",
 		"build:desktop:windows:quick": "cd dist/apps/desktop && npx electron-builder@22.9.1 -c.electronVersion=10.1.3 build --windows",
 		"build:sqlite:mac": "cd node_modules/sqlite3 && HOME=~/.electron-gyp node-pre-gyp rebuild --target=8.3.0 --arch=x64 --dist-url=https://electronjs.org/headers",
 		"build:sqlite:windows": "cd node_modules/sqlite3 && cross-env HOME=~/.electron-gyp node-pre-gyp rebuild --target=8.3.0 --arch=x64 --target_platform=win32 --dist-url=https://electronjs.org/headers",
-		"debug:desktop:app:mac": "lldb ./dist/apps/desktop-packages/mac/GauzyDesktop.app && run",
+		"debug:desktop:app:mac": "lldb ./dist/apps/desktop-packages/mac/hapDesktop.app && run",
 		"start:desktop:ui": "npm run postinstall.web && cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 && yarn ng serve desktop-ui",
 		"build:desktop:ui": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 && ng build desktop-ui --prod --base-href",
 		"prepare:desktop:dev": "npm run postinstall.electron && tsc -p apps/desktop/tsconfig.dev.json",
@@ -369,7 +369,7 @@
 	},
 	"snyk": true,
 	"xplat": {
-		"prefix": "gauzy",
+		"prefix": "hap",
 		"framework": "angular"
 	}
 }

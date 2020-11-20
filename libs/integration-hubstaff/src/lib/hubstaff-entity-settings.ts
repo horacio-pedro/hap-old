@@ -1,4 +1,4 @@
-import { IntegrationEntity } from '@gauzy/models';
+import { IntegrationEntity } from '@hap/models';
 
 export const DEFAULT_ENTITY_SETTINGS = [
 	{

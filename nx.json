@@ -1,5 +1,5 @@
 {
-	"npmScope": "gauzy",
+	"npmScope": "hap",
 	"implicitDependencies": {
 		"angular.json": "*",
 		"package.json": "*",
@@ -8,10 +8,10 @@
 		"nx.json": "*"
 	},
 	"projects": {
-		"gauzy-e2e": {
+		"hap-e2e": {
 			"tags": []
 		},
-		"gauzy": {
+		"hap": {
 			"tags": []
 		},
 		"api": {

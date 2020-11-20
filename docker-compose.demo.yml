@@ -113,7 +113,7 @@ services:
 
     api:
         container_name: api
-        image: docker.pkg.github.com/ever-co/gauzy/gauzy-api:latest
+        image: docker.pkg.github.com/horacio-pedro/hap/hap-api:latest
         environment:
             NODE_ENV: ${NODE_ENV:-development}
             DB_HOST: db
@@ -127,8 +127,8 @@ services:
         entrypoint: './entrypoint'
         command: ['pm2-runtime', 'main.js']
         volumes:
-            - webapp_node_modules:/srv/gauzy/node_modules
-            - api_node_modules:/srv/gauzy/apps/api/node_modules
+            - webapp_node_modules:/srv/hap/node_modules
+            - api_node_modules:/srv/hap/apps/api/node_modules
         ports:
             - 3000:3000:${API_PORT:-3000}
         networks:
@@ -136,7 +136,7 @@ services:
 
     webapp:
         container_name: webapp
-        image: docker.pkg.github.com/ever-co/gauzy/gauzy-webapp:latest
+        image: docker.pkg.github.com/horacio-pedro/hap/hap-webapp:latest
         environment:
             NODE_ENV: ${NODE_ENV:-development}
         env_file:
@@ -151,7 +151,7 @@ services:
         entrypoint: './entrypoint'
         command: ['nginx', '-g', 'daemon off;']
         volumes:
-            - webapp_node_modules:/srv/gauzy/node_modules
+            - webapp_node_modules:/srv/hap/node_modules
         ports:
             - 4200:${HOST:-4200}
         networks:

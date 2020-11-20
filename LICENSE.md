@@ -1,6 +1,6 @@
 # License
 
-Copyright © 2019-present, Ever Co. LTD. All rights reserved.
+Copyright © 2020-present, HAP. LDA. All rights reserved.
 
 This software is available under an Open Source Licenses ("Community Edition"). It is suitable if your business can comply with the requirements of corresponding open-source licenses, see more information below (e.g. requirements to release your modifications under the same open-source licenses for the benefits of our community).
 

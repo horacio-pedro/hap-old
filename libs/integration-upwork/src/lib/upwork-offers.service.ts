@@ -6,7 +6,7 @@ import {
 	IUpworkApiConfig,
 	IUpworkProposalStatusEnum,
 	IUpworkOfferStatusEnum
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class UpworkOffersService {

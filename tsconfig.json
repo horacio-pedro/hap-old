@@ -18,13 +18,13 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
-			"@gauzy/utils": ["libs/utils/src/index.ts"],
-			"@gauzy/models": ["libs/models/src/index.ts"],
-			"@gauzy/integration-ai": ["libs/integration-ai/src/index.ts"],
-			"@gauzy/integration-hubstaff": [
+			"@hap/utils": ["libs/utils/src/index.ts"],
+			"@hap/models": ["libs/models/src/index.ts"],
+			"@hap/integration-ai": ["libs/integration-ai/src/index.ts"],
+			"@hap/integration-hubstaff": [
 				"libs/integration-hubstaff/src/index.ts"
 			],
-			"@gauzy/integration-upwork": [
+			"@hap/integration-upwork": [
 				"libs/integration-upwork/src/index.ts"
 			],
 			"@env-api/environment": [
