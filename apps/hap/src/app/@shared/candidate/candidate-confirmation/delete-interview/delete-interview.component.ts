@@ -1,13 +1,13 @@
-import { ICandidateInterview } from '@gauzy/models';
+import { ICandidateInterview } from '@hap/models';
 import { Component, OnDestroy, Input } from '@angular/core';
 import { NbDialogRef, NbToastrService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationBaseComponent } from '../../../language-base/translation-base.component';
-import { CandidateTechnologiesService } from 'apps/gauzy/src/app/@core/services/candidate-technologies.service';
-import { CandidatePersonalQualitiesService } from 'apps/gauzy/src/app/@core/services/candidate-personal-qualities.service';
-import { CandidateInterviewersService } from 'apps/gauzy/src/app/@core/services/candidate-interviewers.service';
-import { CandidateInterviewService } from 'apps/gauzy/src/app/@core/services/candidate-interview.service';
+import { CandidateTechnologiesService } from 'apps/hap/src/app/@core/services/candidate-technologies.service';
+import { CandidatePersonalQualitiesService } from 'apps/hap/src/app/@core/services/candidate-personal-qualities.service';
+import { CandidateInterviewersService } from 'apps/hap/src/app/@core/services/candidate-interviewers.service';
+import { CandidateInterviewService } from 'apps/hap/src/app/@core/services/candidate-interview.service';
 
 @Component({
 	selector: 'ga-delete-interview',

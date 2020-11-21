@@ -2,7 +2,7 @@ import {
 	IHelpCenterAuthor,
 	IHelpCenterAuthorCreate,
 	IHelpCenterAuthorFind
-} from '@gauzy/models';
+} from '@hap/models';
 import { HttpClient } from '@angular/common/http';
 import { first } from 'rxjs/operators';
 import { Injectable } from '@angular/core';

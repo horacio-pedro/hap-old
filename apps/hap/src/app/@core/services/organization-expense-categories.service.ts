@@ -6,7 +6,7 @@ import {
 	IOrganizationExpenseCategoryCreateInput,
 	IOrganizationExpenseCategory,
 	IOrganizationExpenseCategoryFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable({
 	providedIn: 'root'

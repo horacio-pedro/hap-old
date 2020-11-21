@@ -13,7 +13,7 @@ import {
 	ICandidate,
 	ICandidateDocument,
 	ICandidateSource
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationsService } from '../../../@core/services/organizations.service';
 import { RoleService } from '../../../@core/services/role.service';
 import { Store } from '../../../@core/services/store.service';

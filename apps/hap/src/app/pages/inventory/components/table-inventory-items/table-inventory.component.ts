@@ -11,7 +11,7 @@ import {
 	IProductCategoryTranslated,
 	ComponentLayoutStyleEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { TranslationBaseComponent } from '../../../../@shared/language-base/translation-base.component';
 import { PictureNameTagsComponent } from '../../../../@shared/table-components/picture-name-tags/picture-name-tags.component';
 import { DeleteConfirmationComponent } from '../../../../@shared/user/forms/delete-confirmation/delete-confirmation.component';

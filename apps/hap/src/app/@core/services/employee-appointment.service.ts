@@ -7,7 +7,7 @@ import {
 	IEmployeeAppointmentCreateInput,
 	IEmployeeAppointmentFindInput,
 	IEmployeeAppointmentUpdateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class EmployeeAppointmentService {

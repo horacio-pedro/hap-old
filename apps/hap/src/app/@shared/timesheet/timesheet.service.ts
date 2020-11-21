@@ -11,8 +11,8 @@ import {
 	IGetTimeSlotInput,
 	ITimeSlot,
 	IGetTimeLogReportInput
-} from '@gauzy/models';
-import { toParams } from '@gauzy/utils';
+} from '@hap/models';
+import { toParams } from '@hap/utils';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 

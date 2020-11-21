@@ -3,8 +3,8 @@ import { NbDialogRef, NbToastrService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationBaseComponent } from '../../../language-base/translation-base.component';
-import { CandidateFeedbacksService } from 'apps/gauzy/src/app/@core/services/candidate-feedbacks.service';
-import { CandidateCriterionsRatingService } from 'apps/gauzy/src/app/@core/services/candidate-criterions-rating.service';
+import { CandidateFeedbacksService } from 'apps/hap/src/app/@core/services/candidate-feedbacks.service';
+import { CandidateCriterionsRatingService } from 'apps/hap/src/app/@core/services/candidate-criterions-rating.service';
 
 @Component({
 	selector: 'ga-delete-feedback',

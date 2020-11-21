@@ -5,7 +5,7 @@ import {
 	ICandidateFeedback,
 	ICandidateFeedbackFindInput,
 	ICandidateFeedbackCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable({
 	providedIn: 'root'

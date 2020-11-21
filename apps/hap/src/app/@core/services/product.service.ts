@@ -5,7 +5,7 @@ import {
 	IProduct,
 	IProductFindInput,
 	IProductCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class ProductService {

@@ -6,7 +6,7 @@ import {
 	Output,
 	EventEmitter
 } from '@angular/core';
-import { IDailyActivity } from '@gauzy/models';
+import { IDailyActivity } from '@hap/models';
 @Component({
 	selector: 'ngx-activity-item',
 	templateUrl: './activity-item.component.html',

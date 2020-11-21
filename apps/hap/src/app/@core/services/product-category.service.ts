@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {
 	IProductCategoryTranslatable,
 	IProductCategoryTranslated
-} from '@gauzy/models';
+} from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable()

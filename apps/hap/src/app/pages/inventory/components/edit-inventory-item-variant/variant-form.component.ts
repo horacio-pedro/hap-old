@@ -4,19 +4,19 @@ import {
 	BillingInvoicingPolicyEnum,
 	IProductVariant,
 	IOrganization
-} from '@gauzy/models';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+} from '@hap/models';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { NbToastrService } from '@nebular/theme';
-import { ProductVariantService } from 'apps/gauzy/src/app/@core/services/product-variant.service';
-import { ProductVariantPriceService } from 'apps/gauzy/src/app/@core/services/product-variant-price.service';
-import { ProductVariantSettingsService } from 'apps/gauzy/src/app/@core/services/product-variant-settings.service';
+import { ProductVariantService } from 'apps/hap/src/app/@core/services/product-variant.service';
+import { ProductVariantPriceService } from 'apps/hap/src/app/@core/services/product-variant-price.service';
+import { ProductVariantSettingsService } from 'apps/hap/src/app/@core/services/product-variant-settings.service';
 import { Subject } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { takeUntil } from 'rxjs/operators';
 import { Location } from '@angular/common';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 
 export interface IOptionCreateInput {
 	name: string;

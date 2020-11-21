@@ -6,7 +6,7 @@ import {
 	IPipeline,
 	IPipelineCreateInput,
 	IPipelineFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { Injectable } from '@angular/core';
 
 @Injectable()

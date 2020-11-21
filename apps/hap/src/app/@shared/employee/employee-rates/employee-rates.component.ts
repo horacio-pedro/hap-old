@@ -7,7 +7,7 @@ import {
 	OrganizationSelectInput,
 	PayPeriodEnum,
 	ICandidate
-} from '@gauzy/models';
+} from '@hap/models';
 import { Subject, Subscription } from 'rxjs';
 import { first, takeUntil } from 'rxjs/operators';
 import { CandidateStore } from '../../../@core/services/candidate-store.service';

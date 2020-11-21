@@ -80,7 +80,7 @@ export class ImageUploaderComponent implements OnInit {
 		): any => {
 			form.append('upload_preset', 'ml_default');
 			form.append('context', `photo=${fileItem.file.name}`);
-			form.append('folder', 'gauzy_profile_pictures');
+			form.append('folder', 'hap_profile_pictures');
 			form.append('file', fileItem);
 
 			fileItem.withCredentials = false;

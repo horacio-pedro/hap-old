@@ -6,7 +6,7 @@ import {
 	HttpInterceptor
 } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import { environment } from 'apps/gauzy/src/environments/environment';
+import { environment } from 'apps/hap/src/environments/environment';
 
 const baseUrl = environment.API_BASE_URL;
 

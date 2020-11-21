@@ -7,15 +7,15 @@ import {
 	AfterViewInit
 } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
-import { RolesEnum, ITag, ITenant, IUser } from '@gauzy/models';
-import { AuthService } from 'apps/gauzy/src/app/@core/services/auth.service';
+import { RolesEnum, ITag, ITenant, IUser } from '@hap/models';
+import { AuthService } from 'apps/hap/src/app/@core/services/auth.service';
 import { first } from 'rxjs/operators';
-import { RoleService } from 'apps/gauzy/src/app/@core/services/role.service';
+import { RoleService } from 'apps/hap/src/app/@core/services/role.service';
 import { TranslateService } from '@ngx-translate/core';
-import { ValidationService } from 'apps/gauzy/src/app/@core/services/validation.service';
+import { ValidationService } from 'apps/hap/src/app/@core/services/validation.service';
 import { TranslationBaseComponent } from '../../../language-base/translation-base.component';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
-import { EmployeesService } from 'apps/gauzy/src/app/@core/services';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
+import { EmployeesService } from 'apps/hap/src/app/@core/services';
 
 @Component({
 	selector: 'ga-user-basic-info-form',

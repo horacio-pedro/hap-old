@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { IOrganization, ITask } from '@gauzy/models';
+import { IOrganization, ITask } from '@hap/models';
 import { map, tap } from 'rxjs/operators';
 import { TasksService } from './tasks.service';
 

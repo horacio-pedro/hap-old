@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { environment } from 'apps/gauzy/src/environments/environment';
+import { environment } from 'apps/hap/src/environments/environment';
 
 @Component({
 	selector: 'ngx-footer',

@@ -9,11 +9,11 @@ import {
 	ChangeDetectorRef,
 	ChangeDetectionStrategy
 } from '@angular/core';
-import { EmployeesService } from 'apps/gauzy/src/app/@core/services/employees.service';
+import { EmployeesService } from 'apps/hap/src/app/@core/services/employees.service';
 import { takeUntil, filter, debounceTime } from 'rxjs/operators';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { Subject } from 'rxjs';
-import { ITag, IOrganization, ISkill } from '@gauzy/models';
+import { ITag, IOrganization, ISkill } from '@hap/models';
 import { ActivatedRoute } from '@angular/router';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 

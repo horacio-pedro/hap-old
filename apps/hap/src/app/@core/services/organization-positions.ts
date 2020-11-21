@@ -4,7 +4,7 @@ import {
 	IOrganizationPositionCreateInput,
 	IOrganizationPosition,
 	IOrganizationPositionFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable({

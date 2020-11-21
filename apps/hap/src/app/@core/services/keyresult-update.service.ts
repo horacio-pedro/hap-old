@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { IKeyResultUpdate } from '@gauzy/models';
+import { IKeyResultUpdate } from '@hap/models';
 import { throwError } from 'rxjs';
 import { tap, catchError, first } from 'rxjs/operators';
 import { NbToastrService } from '@nebular/theme';

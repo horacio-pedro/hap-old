@@ -10,19 +10,19 @@ import {
 	IProductVariant,
 	LanguagesEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { TranslateService } from '@ngx-translate/core';
-import { ProductTypeService } from 'apps/gauzy/src/app/@core/services/product-type.service';
-import { ProductCategoryService } from 'apps/gauzy/src/app/@core/services/product-category.service';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
+import { ProductTypeService } from 'apps/hap/src/app/@core/services/product-type.service';
+import { ProductCategoryService } from 'apps/hap/src/app/@core/services/product-category.service';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
 import { Subject, BehaviorSubject } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { takeUntil } from 'rxjs/operators';
-import { ProductService } from 'apps/gauzy/src/app/@core/services/product.service';
+import { ProductService } from 'apps/hap/src/app/@core/services/product.service';
 import { Location } from '@angular/common';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { NbToastrService } from '@nebular/theme';
-import { ProductVariantService } from 'apps/gauzy/src/app/@core/services/product-variant.service';
+import { ProductVariantService } from 'apps/hap/src/app/@core/services/product-variant.service';
 
 @Component({
 	selector: 'ngx-product-form',

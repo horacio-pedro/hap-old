@@ -14,8 +14,8 @@ import {
 	IProjectsStatistics,
 	ITasksStatistics,
 	IManualTimesStatistics
-} from '@gauzy/models';
-import { toParams } from '@gauzy/utils';
+} from '@hap/models';
+import { toParams } from '@hap/utils';
 
 @Injectable({
 	providedIn: 'root'

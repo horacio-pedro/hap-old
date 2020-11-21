@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { IProductOption } from '@gauzy/models';
+import { IProductOption } from '@hap/models';
 
 export interface OptionCreateInput {
 	name: string;

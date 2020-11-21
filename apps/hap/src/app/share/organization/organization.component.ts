@@ -11,7 +11,7 @@ import {
 	IOrganizationLanguages,
 	PermissionsEnum,
 	IOrganizationContact
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { first, takeUntil, tap } from 'rxjs/operators';

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 
 @Component({
 	template: `

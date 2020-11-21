@@ -13,8 +13,8 @@ import {
 	IOrganizationContact,
 	ContactType,
 	IOrganization
-} from '@gauzy/models';
-import { CurrenciesEnum } from '@gauzy/models';
+} from '@hap/models';
+import { CurrenciesEnum } from '@hap/models';
 import { OrganizationsService } from '../../../@core/services/organizations.service';
 import { Store } from '../../../@core/services/store.service';
 import { first } from 'rxjs/operators';

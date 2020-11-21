@@ -15,11 +15,11 @@ import {
 	IDateRange,
 	ICandidateInterview,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { EmployeesService } from '../../../../@core/services';
 import { NbDialogService } from '@nebular/theme';
 import { CandidateCalendarInfoComponent } from '../../candidate-calendar-info/candidate-calendar-info.component';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 
 @Component({
 	selector: 'ga-candidate-interview-form',

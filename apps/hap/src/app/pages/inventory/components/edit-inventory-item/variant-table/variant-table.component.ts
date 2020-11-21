@@ -1,14 +1,14 @@
 import { Component, ViewChild, OnInit, Input } from '@angular/core';
 import { LocalDataSource } from 'ng2-smart-table';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationBaseComponent } from 'apps/gauzy/src/app/@shared/language-base/translation-base.component';
-import { IProductVariant } from '@gauzy/models';
+import { TranslationBaseComponent } from 'apps/hap/src/app/@shared/language-base/translation-base.component';
+import { IProductVariant } from '@hap/models';
 import { Subject, BehaviorSubject } from 'rxjs';
 import { takeUntil, first } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
-import { DeleteConfirmationComponent } from 'apps/gauzy/src/app/@shared/user/forms/delete-confirmation/delete-confirmation.component';
-import { ProductVariantService } from 'apps/gauzy/src/app/@core/services/product-variant.service';
+import { DeleteConfirmationComponent } from 'apps/hap/src/app/@shared/user/forms/delete-confirmation/delete-confirmation.component';
+import { ProductVariantService } from 'apps/hap/src/app/@core/services/product-variant.service';
 import { EnabledStatusComponent } from '../../table-components/enabled-row.component';
 
 export interface SelectedProductVariant {

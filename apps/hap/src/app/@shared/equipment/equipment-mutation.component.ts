@@ -1,7 +1,7 @@
 import { OnInit, Component } from '@angular/core';
 import { TranslationBaseComponent } from '../language-base/translation-base.component';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { IEquipment, CurrenciesEnum, ITag, IOrganization } from '@gauzy/models';
+import { IEquipment, CurrenciesEnum, ITag, IOrganization } from '@hap/models';
 import { NbDialogRef } from '@nebular/theme';
 import { EquipmentService } from '../../@core/services/equipment.service';
 import { TranslateService } from '@ngx-translate/core';

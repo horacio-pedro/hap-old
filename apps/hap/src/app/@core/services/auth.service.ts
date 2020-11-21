@@ -6,7 +6,7 @@ import {
 	RolesEnum,
 	IUserRegistrationInput,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { Observable } from 'rxjs';
 
 @Injectable()

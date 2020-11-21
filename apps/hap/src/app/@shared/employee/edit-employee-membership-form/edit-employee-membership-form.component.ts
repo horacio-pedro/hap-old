@@ -4,7 +4,7 @@ import {
 	IBaseEntityWithMembers,
 	IEditEntityByMemberInput,
 	IEmployee
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Component({
 	selector: 'ga-edit-employee-membership',

@@ -1,4 +1,4 @@
-import { IEmployee, IEmployeeUpdateInput, IUserFindInput } from '@gauzy/models';
+import { IEmployee, IEmployeeUpdateInput, IUserFindInput } from '@hap/models';
 import { BehaviorSubject } from 'rxjs';
 import { Injectable } from '@angular/core';
 

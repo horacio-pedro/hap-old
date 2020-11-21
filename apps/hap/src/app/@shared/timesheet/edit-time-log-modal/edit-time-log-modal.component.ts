@@ -13,8 +13,8 @@ import {
 	PermissionsEnum,
 	OrganizationPermissionsEnum,
 	IGetTimeLogConflictInput
-} from '@gauzy/models';
-import { toUTC, toLocal } from '@gauzy/utils';
+} from '@hap/models';
+import { toUTC, toLocal } from '@hap/utils';
 import { TimesheetService } from '../timesheet.service';
 import { FormGroup, FormControl } from '@angular/forms';
 import { NbDialogRef } from '@nebular/theme';

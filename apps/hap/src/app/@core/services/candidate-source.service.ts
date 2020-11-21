@@ -5,7 +5,7 @@ import {
 	ICandidateSourceFindInput,
 	ICandidateSource,
 	ICandidateSourceCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable({
 	providedIn: 'root'

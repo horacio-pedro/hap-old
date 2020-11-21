@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IActivity, IGetActivitiesInput, IDailyActivity } from '@gauzy/models';
-import { toParams } from '@gauzy/utils';
+import { IActivity, IGetActivitiesInput, IDailyActivity } from '@hap/models';
+import { toParams } from '@hap/utils';
 
 @Injectable({
 	providedIn: 'root'

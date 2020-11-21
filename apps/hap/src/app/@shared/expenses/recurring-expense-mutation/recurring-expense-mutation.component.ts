@@ -8,7 +8,7 @@ import {
 	StartDateUpdateTypeEnum,
 	IEmployee,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogRef, NbToastrService } from '@nebular/theme';
 import { first } from 'rxjs/operators';
 import * as moment from 'moment';

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { IUser } from '@gauzy/models';
+import { IUser } from '@hap/models';
 
 @Component({
 	selector: 'ga-user-multi-select',

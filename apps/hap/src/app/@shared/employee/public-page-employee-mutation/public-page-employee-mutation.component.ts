@@ -13,7 +13,7 @@ import {
 	CurrenciesEnum,
 	LanguagesEnum,
 	IEmployeeAward
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationEmploymentTypesService } from '../../../@core/services/organization-employment-types.service';
 import {
 	switchMap,

@@ -4,7 +4,7 @@ import {
 	IOrganizationLanguagesCreateInput,
 	IOrganizationLanguages,
 	IOrganizationLanguagesFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable({

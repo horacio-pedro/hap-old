@@ -6,7 +6,7 @@ import {
 	ISettingFindInput,
 	IGoalGeneralSetting,
 	IGoalTimeFrameFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { throwError } from 'rxjs';
 import { catchError, tap, first } from 'rxjs/operators';

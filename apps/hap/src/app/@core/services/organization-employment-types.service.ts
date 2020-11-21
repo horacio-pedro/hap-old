@@ -6,7 +6,7 @@ import {
 	IOrganizationEmploymentType,
 	IOrganizationEmploymentTypeFindInput,
 	IOrganizationEmploymentTypeCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class OrganizationEmploymentTypesService {

@@ -18,7 +18,7 @@ import {
 	RegionsEnum,
 	WeekDaysEnum,
 	ITag
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

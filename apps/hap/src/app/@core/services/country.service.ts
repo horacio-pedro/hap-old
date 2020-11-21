@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ICountry } from '@gauzy/models';
+import { ICountry } from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable()

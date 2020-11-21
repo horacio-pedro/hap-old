@@ -3,7 +3,7 @@ import {
 	IOrganization,
 	IOrganizationContact,
 	InvoiceTypeEnum
-} from '@gauzy/models';
+} from '@hap/models';
 
 export async function generatePdf(
 	invoice: IInvoice,

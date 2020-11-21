@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import 'rxjs/add/observable/of';
 import { catchError, map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { IUser, ITag, ITenant } from '@gauzy/models';
+import { IUser, ITag, ITenant } from '@hap/models';
 import { NbAuthStrategyClass } from '@nebular/auth/auth.options';
 import { AuthService } from '../services/auth.service';
 import { Store } from '../services/store.service';

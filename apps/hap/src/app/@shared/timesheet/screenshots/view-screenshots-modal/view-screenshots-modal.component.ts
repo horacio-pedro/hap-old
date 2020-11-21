@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NbDialogRef, NbDialogService } from '@nebular/theme';
-import { ITimeSlot, PermissionsEnum } from '@gauzy/models';
-import { progressStatus } from '@gauzy/utils';
-import { TimeLogsLable } from 'apps/gauzy/src/app/static-data/timesheet';
+import { ITimeSlot, PermissionsEnum } from '@hap/models';
+import { progressStatus } from '@hap/utils';
+import { TimeLogsLable } from 'apps/hap/src/app/static-data/timesheet';
 import { TimesheetService } from '../../timesheet.service';
 import { ViewTimeLogModalComponent } from '../../view-time-log-modal/view-time-log-modal/view-time-log-modal.component';
 

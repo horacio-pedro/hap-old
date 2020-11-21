@@ -5,7 +5,7 @@ import {
 	ICandidatePersonalQualities,
 	ICandidateCriterionsRating,
 	ICandidateTechnologies
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class CandidateCriterionsRatingService {

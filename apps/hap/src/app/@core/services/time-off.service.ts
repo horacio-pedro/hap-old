@@ -9,7 +9,7 @@ import {
 	ITimeOff,
 	ITimeOffFindInput,
 	ITimeOffUpdateInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })

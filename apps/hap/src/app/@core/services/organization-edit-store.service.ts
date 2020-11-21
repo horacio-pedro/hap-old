@@ -1,4 +1,4 @@
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 import { BehaviorSubject } from 'rxjs';
 import { Injectable } from '@angular/core';
 

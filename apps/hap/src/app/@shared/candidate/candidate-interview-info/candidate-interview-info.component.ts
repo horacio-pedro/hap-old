@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { NbDialogRef, NbDialogService, NbToastrService } from '@nebular/theme';
-import { ICandidateInterview, ICandidate, IOrganization } from '@gauzy/models';
+import { ICandidateInterview, ICandidate, IOrganization } from '@hap/models';
 import { CandidateInterviewersService } from '../../../@core/services/candidate-interviewers.service';
 import { EmployeesService } from '../../../@core/services';
 import { CandidateInterviewService } from '../../../@core/services/candidate-interview.service';

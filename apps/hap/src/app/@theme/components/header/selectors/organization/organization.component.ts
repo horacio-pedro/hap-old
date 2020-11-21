@@ -1,9 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { IOrganization } from '@gauzy/models';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { IOrganization } from '@hap/models';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 import { Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
-import { UsersOrganizationsService } from 'apps/gauzy/src/app/@core/services/users-organizations.service';
+import { UsersOrganizationsService } from 'apps/hap/src/app/@core/services/users-organizations.service';
 
 @Component({
 	selector: 'ga-organization-selector',

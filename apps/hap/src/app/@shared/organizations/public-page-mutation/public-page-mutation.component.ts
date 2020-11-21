@@ -10,8 +10,8 @@ import {
 	IOrganizationLanguages,
 	ClientFocusEnum,
 	MinimumProjectSizeEnum
-} from '@gauzy/models';
-import { CurrenciesEnum } from '@gauzy/models';
+} from '@hap/models';
+import { CurrenciesEnum } from '@hap/models';
 import { TranslateService } from '@ngx-translate/core';
 import { OrganizationAwardsService } from '../../../@core/services/organization-awards.service';
 import { OrganizationLanguagesService } from '../../../@core/services/organization-languages.service';

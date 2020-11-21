@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IProductVariantPrice } from '@gauzy/models';
+import { IProductVariantPrice } from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable()

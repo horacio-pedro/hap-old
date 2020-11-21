@@ -4,7 +4,7 @@ import {
 	IEmployeeAward,
 	IEmployeeAwardFindInput,
 	IEmployeeAwardCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { Observable } from 'rxjs';
 
 @Injectable({

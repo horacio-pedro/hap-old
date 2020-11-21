@@ -1,7 +1,7 @@
 import { OnInit, OnDestroy, Component, Input } from '@angular/core';
 import { Subject } from 'rxjs';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { IEmployee, ICountry, ICandidate } from '@gauzy/models';
+import { IEmployee, ICountry, ICandidate } from '@hap/models';
 import { takeUntil } from 'rxjs/operators';
 import { CandidateStore } from '../../../@core/services/candidate-store.service';
 import { EmployeeStore } from '../../../@core/services/employee-store.service';

@@ -9,7 +9,7 @@ import {
 	IOrganizationProject,
 	ILanguage,
 	IProposalViewModel
-} from '@gauzy/models';
+} from '@hap/models';
 import { SelectedEmployee } from '../../@theme/components/header/selectors/employee/employee.component';
 import { Injectable } from '@angular/core';
 import { StoreConfig, Store as AkitaStore, Query } from '@datorama/akita';
@@ -18,7 +18,7 @@ import {
 	ComponentEnum,
 	SYSTEM_DEFAULT_LAYOUT
 } from '../constants/layout.constants';
-import { ComponentLayoutStyleEnum } from '@gauzy/models';
+import { ComponentLayoutStyleEnum } from '@hap/models';
 import { map } from 'rxjs/operators';
 import { merge, Subject } from 'rxjs';
 

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { NbDialogRef, NbToastrService } from '@nebular/theme';
 import * as Holidays from 'date-holidays';
-import { IEmployee, ITimeOffPolicy, ITimeOff } from '@gauzy/models';
+import { IEmployee, ITimeOffPolicy, ITimeOff } from '@hap/models';
 import { EmployeeSelectorComponent } from '../../../@theme/components/header/selectors/employee/employee.component';
 import { Store } from '../../../@core/services/store.service';
 import { TimeOffService } from '../../../@core/services/time-off.service';

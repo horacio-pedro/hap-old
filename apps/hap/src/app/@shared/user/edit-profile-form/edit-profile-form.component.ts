@@ -20,7 +20,7 @@ import {
 	RolesEnum,
 	ITag,
 	LanguagesEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbToastrService } from '@nebular/theme';
 import { RoleService } from '../../../@core/services/role.service';
 import { Subject } from 'rxjs';

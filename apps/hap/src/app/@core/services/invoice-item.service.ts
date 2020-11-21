@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IInvoiceItem, IInvoiceItemFindInput } from '@gauzy/models';
+import { IInvoiceItem, IInvoiceItemFindInput } from '@hap/models';
 import { first } from 'rxjs/operators';
 @Injectable()
 export class InvoiceItemService {

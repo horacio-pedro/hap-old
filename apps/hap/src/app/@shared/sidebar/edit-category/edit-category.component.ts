@@ -1,4 +1,4 @@
-import { IHelpCenter } from '@gauzy/models';
+import { IHelpCenter } from '@hap/models';
 import { Component, OnDestroy, Input } from '@angular/core';
 import { NbDialogRef } from '@nebular/theme';
 import { Subject } from 'rxjs';

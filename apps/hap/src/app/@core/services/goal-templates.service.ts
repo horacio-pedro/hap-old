@@ -6,7 +6,7 @@ import {
 	IKeyResultTemplate,
 	IGoalKPITemplate,
 	IGoalTemplateFind
-} from '@gauzy/models';
+} from '@hap/models';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 

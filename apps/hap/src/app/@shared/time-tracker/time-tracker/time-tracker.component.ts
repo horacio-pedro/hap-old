@@ -5,9 +5,9 @@ import {
 	IUser,
 	IDateRange,
 	OrganizationPermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import * as moment from 'moment';
-import { toUTC } from '@gauzy/utils';
+import { toUTC } from '@hap/utils';
 import { ToastrService } from '../../../@core/services/toastr.service';
 import { Store } from '../../../@core/services/store.service';
 import { NgForm } from '@angular/forms';

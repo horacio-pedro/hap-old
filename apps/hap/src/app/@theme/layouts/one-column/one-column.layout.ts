@@ -20,7 +20,7 @@ import { UsersOrganizationsService } from '../../../@core/services/users-organiz
 import { OrganizationsService } from '../../../@core/services/organizations.service';
 import { first } from 'rxjs/operators';
 import { EmployeesService } from '../../../@core/services';
-import { PermissionsEnum } from '@gauzy/models';
+import { PermissionsEnum } from '@hap/models';
 import { NO_EMPLOYEE_SELECTED } from '../../components/header/selectors/employee/employee.component';
 import { Router } from '@angular/router';
 import { ElectronService } from 'ngx-electron';

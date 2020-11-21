@@ -3,7 +3,7 @@ import { NbDialogRef } from '@nebular/theme';
 import { Subject } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationBaseComponent } from '../../language-base/translation-base.component';
-import { IHelpCenter, IOrganization } from '@gauzy/models';
+import { IHelpCenter, IOrganization } from '@hap/models';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HelpCenterService } from '../../../@core/services/help-center.service';
 

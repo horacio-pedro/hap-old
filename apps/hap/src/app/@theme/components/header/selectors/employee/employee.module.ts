@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
 import { EmployeeSelectorComponent } from './employee.component';
-import { EmployeesService } from 'apps/gauzy/src/app/@core/services/employees.service';
+import { EmployeesService } from 'apps/hap/src/app/@core/services/employees.service';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';

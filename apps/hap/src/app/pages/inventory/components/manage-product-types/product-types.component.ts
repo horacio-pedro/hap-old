@@ -4,7 +4,7 @@ import {
 	IProductTypeTranslated,
 	LanguagesEnum,
 	ComponentLayoutStyleEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { LocalDataSource, Ng2SmartTableComponent } from 'ng2-smart-table';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationBaseComponent } from '../../../../@shared/language-base/translation-base.component';

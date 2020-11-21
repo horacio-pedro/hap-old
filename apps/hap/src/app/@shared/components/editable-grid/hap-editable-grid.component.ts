@@ -19,10 +19,10 @@ export type ItemActionType = 'create' | 'edit' | 'delete';
 
 @Component({
 	selector: 'ga-editable-grid',
-	templateUrl: './gauzy-editable-grid.component.html',
-	styleUrls: ['./gauzy-editable-grid.component.css']
+	templateUrl: './hap-editable-grid.component.html',
+	styleUrls: ['./hap-editable-grid.component.css']
 })
-export class GauzyEditableGridComponent<T extends { id?: string }>
+export class HapEditableGridComponent<T extends { id?: string }>
 	extends TranslationBaseComponent
 	implements OnInit, OnDestroy {
 	@Input() items: T[];

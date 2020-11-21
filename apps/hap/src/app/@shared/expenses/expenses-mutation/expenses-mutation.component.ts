@@ -19,7 +19,7 @@ import {
 	IOrganizationExpenseCategory,
 	ContactType,
 	IExpenseViewModel
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationsService } from '../../../@core/services/organizations.service';
 import { Store } from '../../../@core/services/store.service';
 import { first, takeUntil } from 'rxjs/operators';

@@ -4,7 +4,7 @@ import { first } from 'rxjs/operators';
 import {
 	IProductTypeTranslatable,
 	IProductTypeTranslated
-} from '@gauzy/models';
+} from '@hap/models';
 
 @Injectable()
 export class ProductTypeService {

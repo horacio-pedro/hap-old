@@ -3,7 +3,7 @@ import {
 	IOrganization,
 	IOrganizationProject,
 	PermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { OrganizationProjectsService } from '../../../@core/services/organization-projects.service';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Subject } from 'rxjs';

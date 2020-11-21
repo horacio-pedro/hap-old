@@ -2,13 +2,13 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TranslationBaseComponent } from '../../@shared/language-base/translation-base.component';
 import { Subject } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ITimeOff, IEmployee, IEventType } from '@gauzy/models';
+import { ITimeOff, IEmployee, IEventType } from '@hap/models';
 import { TranslateService } from '@ngx-translate/core';
 import { timeOff } from './test-data';
 import { takeUntil } from 'rxjs/operators';
 import { EmployeesService } from '../../@core/services';
 import { EventTypeService } from '../../@core/services/event-type.service';
-import { Store } from 'apps/gauzy/src/app/@core/services/store.service';
+import { Store } from 'apps/hap/src/app/@core/services/store.service';
 
 @Component({
 	selector: 'ga-public-appointments',

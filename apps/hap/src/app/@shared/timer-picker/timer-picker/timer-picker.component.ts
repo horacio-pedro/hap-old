@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import * as moment from 'moment';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 
 @Component({
 	selector: 'ga-timer-picker',
@@ -22,8 +22,8 @@ import { IOrganization } from '@gauzy/models';
 	]
 })
 export class TimerPickerComponent implements OnInit {
-	private _max: string = '23:00';
-	private _min: string = '00:00';
+	private _max = '23:00';
+	private _min = '00:00';
 	timeSlots: { value: string; label: string }[] = [];
 	organization: IOrganization;
 	onChange: any = () => {};

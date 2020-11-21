@@ -12,7 +12,7 @@ import {
 	NbButtonModule
 } from '@nebular/theme';
 import { OrganizationSelectorComponent } from './organization/organization.component';
-import { OrganizationsService } from 'apps/gauzy/src/app/@core/services/organizations.service';
+import { OrganizationsService } from 'apps/hap/src/app/@core/services/organizations.service';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';

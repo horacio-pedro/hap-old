@@ -5,7 +5,7 @@ import {
 	IOrganization,
 	IUpworkApiConfig,
 	IUpworkDateRange
-} from '@gauzy/models';
+} from '@hap/models';
 import { UpworkService } from './upwork.service';
 import { tap, switchMap, map } from 'rxjs/operators';
 import { Store } from './store.service';

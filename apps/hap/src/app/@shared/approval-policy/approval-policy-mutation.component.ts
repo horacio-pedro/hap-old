@@ -7,7 +7,7 @@ import {
 	IApprovalPolicyCreateInput,
 	ApprovalPolicyTypesEnum,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { NbDialogRef } from '@nebular/theme';
 import { ApprovalPolicyService } from '../../@core/services/approval-policy.service';
 import { TranslateService } from '@ngx-translate/core';

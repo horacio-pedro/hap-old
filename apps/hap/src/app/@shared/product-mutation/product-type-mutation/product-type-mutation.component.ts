@@ -7,7 +7,7 @@ import {
 	IProductTypeTranslation,
 	IProductTypeTranslatable,
 	IOrganization
-} from '@gauzy/models';
+} from '@hap/models';
 import { TranslateService } from '@ngx-translate/core';
 import { ProductTypeService } from '../../../@core/services/product-type.service';
 import { NbDialogRef } from '@nebular/theme';

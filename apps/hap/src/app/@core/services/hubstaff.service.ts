@@ -11,11 +11,11 @@ import {
 	IIntegrationMap,
 	IntegrationEntity,
 	IntegrationEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { v4 as uuid } from 'uuid';
 import { Store } from './store.service';
 import { switchMap, tap } from 'rxjs/operators';
-import { environment } from 'apps/gauzy/src/environments/environment';
+import { environment } from 'apps/hap/src/environments/environment';
 import { cloneDeep } from 'lodash';
 import * as moment from 'moment';
 
@@ -202,7 +202,7 @@ export class HubstaffService {
 			(setting) => setting.entity === IntegrationEntity.ORGANIZATION
 		);
 
-		// if organization is set to true, map all entities to this organizations, else use hubstaff organizations id and map all entities to current selected gauzy organization
+		// if organization is set to true, map all entities to this organizations, else use hubstaff organizations id and map all entities to current selected hap organization
 
 		if (organizationSetting.sync) {
 			const organizationsMap$ = this._http.post<IIntegrationMap[]>(
@@ -254,9 +254,9 @@ export class HubstaffService {
 					{
 						entitiesToSync,
 						dateRange,
-						gauzyId: organizationId
+						hapId: organizationId
 							? organizationId
-							: organization.gauzyId,
+							: organization.hapId,
 						sourceId: organization.sourceId
 							? organization.sourceId
 							: organization.id,

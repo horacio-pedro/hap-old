@@ -4,7 +4,7 @@ import {
 	IRolePermission,
 	IRolePermissionCreateInput,
 	IRolePermissionUpdateInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable()

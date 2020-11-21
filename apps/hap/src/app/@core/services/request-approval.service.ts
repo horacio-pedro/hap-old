@@ -4,7 +4,7 @@ import {
 	IRequestApproval,
 	IRequestApprovalCreateInput,
 	IRequestApprovalFindInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable()

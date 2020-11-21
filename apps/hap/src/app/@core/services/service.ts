@@ -1,4 +1,4 @@
-import { BaseEntityModel } from '@gauzy/models';
+import { BaseEntityModel } from '@hap/models';
 import { HttpClient } from '@angular/common/http';
 import { first } from 'rxjs/operators';
 

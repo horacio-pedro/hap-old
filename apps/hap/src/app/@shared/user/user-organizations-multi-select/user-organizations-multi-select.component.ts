@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { IOrganization } from '@gauzy/models';
+import { IOrganization } from '@hap/models';
 
 @Component({
 	selector: 'ga-user-organizations-multi-select',

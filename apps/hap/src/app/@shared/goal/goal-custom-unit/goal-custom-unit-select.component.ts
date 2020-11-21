@@ -4,7 +4,7 @@ import {
 	KeyResultTypeEnum,
 	CurrenciesEnum,
 	KeyResultNumberUnitsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

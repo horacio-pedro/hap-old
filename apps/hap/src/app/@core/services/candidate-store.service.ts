@@ -3,7 +3,7 @@ import {
 	ICandidate,
 	ICandidateUpdateInput,
 	ICandidateInterview
-} from '@gauzy/models';
+} from '@hap/models';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 

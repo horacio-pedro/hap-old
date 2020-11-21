@@ -4,7 +4,7 @@ import {
 	IIntegrationFilter,
 	IntegrationTypeNameEnum,
 	IntegrationTypeGroupEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { IntegrationsService } from './integrations.service';
 import {

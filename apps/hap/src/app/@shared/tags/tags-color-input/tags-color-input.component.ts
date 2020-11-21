@@ -7,8 +7,8 @@ import {
 	OnDestroy
 } from '@angular/core';
 import { TagsService } from '../../../@core/services/tags.service';
-import { ITag, IOrganization } from '@gauzy/models';
-import { getContrastColor } from '@gauzy/utils';
+import { ITag, IOrganization } from '@hap/models';
+import { getContrastColor } from '@hap/utils';
 import { Store } from '../../../@core/services/store.service';
 import { Subscription } from 'rxjs';
 
@@ -24,10 +24,10 @@ export class TagsColorInputComponent implements OnInit, OnDestroy {
 	private subscribeTakingSelectedOrganziation: Subscription;
 
 	@Input('isOrgLevel')
-	isOrgLevel: boolean = false;
+	isOrgLevel = false;
 
 	@Input('isTenantLevel')
-	isTenantLevel: boolean = false;
+	isTenantLevel = false;
 
 	@Input('selectedTags')
 	selectedTags: ITag[];

@@ -3,7 +3,7 @@ import { TranslationBaseComponent } from '../../../@shared/language-base/transla
 import { Subject } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { IEventType, IEmployee } from '@gauzy/models';
+import { IEventType, IEmployee } from '@hap/models';
 import { takeUntil } from 'rxjs/operators';
 import { EmployeesService } from '../../../@core/services';
 
@@ -14,7 +14,7 @@ export class AppointmentFormComponent
 	extends TranslationBaseComponent
 	implements OnInit, OnDestroy {
 	private _ngDestroy$ = new Subject<void>();
-	loading: boolean = true;
+	loading = true;
 	selectedRange: { start: Date; end: Date };
 	selectedEventType: IEventType;
 	allowedDuration: Number;

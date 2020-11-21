@@ -13,7 +13,7 @@ import {
 
 import { Store } from '../../../@core/services/store.service';
 import { ThemeModule } from '../../../@theme/theme.module';
-import { GauzyEditableGridComponent } from './gauzy-editable-grid.component';
+import { HapEditableGridComponent } from './hap-editable-grid.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -39,9 +39,9 @@ const NbModules = [
 			}
 		})
 	],
-	declarations: [GauzyEditableGridComponent],
-	exports: [GauzyEditableGridComponent],
+	declarations: [HapEditableGridComponent],
+	exports: [HapEditableGridComponent],
 	entryComponents: [],
 	providers: [Store]
 })
-export class GauzyEditableGridModule {}
+export class HapEditableGridModule {}

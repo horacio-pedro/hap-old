@@ -11,7 +11,7 @@ import { ProposalsService } from '../../../@core/services/proposals.service';
 import { NbToastrService } from '@nebular/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationBaseComponent } from '../../../@shared/language-base/translation-base.component';
-import { IProposalViewModel, ITag } from '@gauzy/models';
+import { IProposalViewModel, ITag } from '@hap/models';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { filter, tap } from 'rxjs/operators';
 @UntilDestroy({ checkProperties: true })

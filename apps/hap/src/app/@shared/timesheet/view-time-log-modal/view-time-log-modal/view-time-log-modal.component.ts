@@ -4,11 +4,11 @@ import {
 	ITimeLog,
 	PermissionsEnum,
 	OrganizationPermissionsEnum
-} from '@gauzy/models';
+} from '@hap/models';
 import { EditTimeLogModalComponent } from '../../edit-time-log-modal/edit-time-log-modal.component';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { TimesheetService } from '../../timesheet.service';
-import { TimeLogsLable } from 'apps/gauzy/src/app/static-data/timesheet';
+import { TimeLogsLable } from 'apps/hap/src/app/static-data/timesheet';
 
 @UntilDestroy({ checkProperties: true })
 @Component({

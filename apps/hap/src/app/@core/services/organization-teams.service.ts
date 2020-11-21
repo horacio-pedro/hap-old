@@ -4,7 +4,7 @@ import {
 	IOrganizationTeam,
 	IOrganizationTeamFindInput,
 	IOrganizationTeamCreateInput
-} from '@gauzy/models';
+} from '@hap/models';
 import { first } from 'rxjs/operators';
 
 @Injectable({
